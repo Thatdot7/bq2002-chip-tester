@@ -10,6 +10,7 @@
  * ========================================
 */
 #include <project.h>
+#include "bq2002.h"
 
 int main()
 {
@@ -20,6 +21,8 @@ int main()
     for(;;)
     {
         /* Place your application code here. */
+        TM_Mode_SetMode((TM_Mode_GetMode() + 1) % 3);
+        CyDelay(2000);
     }
 }
 

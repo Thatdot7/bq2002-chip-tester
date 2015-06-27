@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2015-06-26T17:58:46Z")
+ (DATE "2015-06-27T06:20:57Z")
  (DESIGN "bq2002 Tester")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -10,5 +10,12 @@
  (CELL
   (CELLTYPE "bq2002 Tester")
   (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT TM\(0\)_PAD TM\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT V_DD\(0\)_PAD V_DD\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT V_SS\(0\)_PAD V_SS\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
  )
 )

@@ -18,6 +18,15 @@
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\cydisabledsheets.h" value="NONE;" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Bootloadable_1.c" value="ARM_C_FILE;Bootloadable_1" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Bootloadable_1.h" value="NONE;Bootloadable_1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_DD.c" value="ARM_C_FILE;V_DD" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_DD.h" value="NONE;V_DD" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_DD_aliases.h" value="NONE;V_DD" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_SS.c" value="ARM_C_FILE;V_SS" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_SS.h" value="NONE;V_SS" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_SS_aliases.h" value="NONE;V_SS" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TM.c" value="ARM_C_FILE;TM" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TM.h" value="NONE;TM" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TM_aliases.h" value="NONE;TM" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\cm0gcc.ld" value="NONE;cy_boot" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Cm0RealView.scat" value="NONE;cy_boot" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Cm0Start.c" value="ARM_C_FILE;cy_boot" />
