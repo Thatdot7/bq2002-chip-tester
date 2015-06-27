@@ -43,7 +43,7 @@ Temporary Items
 .apdisk
 
 # Other file types directly associated with the PSoC Creator application
-*.cywkr.*
+*.cywrk.*
 *.cyprj.*
 *.cycdx
 *.cyfit
