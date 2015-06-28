@@ -58,6 +58,21 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cydisabledsheets.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Bootloadable_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Bootloadable_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TM.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TM_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\IDAC_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\IDAC_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\IDAC_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\BAT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\BAT.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\BAT_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Cm0Start.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\core_cm0_psoc4.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\core_cm0.h</File>
@@ -78,15 +93,17 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CyLFClk.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CyLFClk.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\project.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TM.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TM_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\INH.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\INH.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\INH_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CC.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CC.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CC_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Counter_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Counter_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Counter_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ResolutionClk.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ResolutionClk.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\Export\ARM_GCC_Generic">

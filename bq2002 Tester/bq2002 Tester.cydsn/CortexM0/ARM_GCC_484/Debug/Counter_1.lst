@@ -1,0 +1,2057 @@
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"Counter_1.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.Counter_1_Enable,"ax",%progbits
+  18              		.align	2
+  19              		.global	Counter_1_Enable
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	Counter_1_Enable, %function
+  23              	Counter_1_Enable:
+  24              	.LFB1:
+  25              		.file 1 ".\\Generated_Source\\PSoC4\\Counter_1.c"
+   1:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/Counter_1.c **** * File Name: Counter_1.c  
+   3:.\Generated_Source\PSoC4/Counter_1.c **** * Version 3.0
+   4:.\Generated_Source\PSoC4/Counter_1.c **** *
+   5:.\Generated_Source\PSoC4/Counter_1.c **** *  Description:
+   6:.\Generated_Source\PSoC4/Counter_1.c **** *     The Counter component consists of a 8, 16, 24 or 32-bit counter with
+   7:.\Generated_Source\PSoC4/Counter_1.c **** *     a selectable period between 2 and 2^Width - 1.  
+   8:.\Generated_Source\PSoC4/Counter_1.c **** *
+   9:.\Generated_Source\PSoC4/Counter_1.c **** *   Note:
+  10:.\Generated_Source\PSoC4/Counter_1.c **** *     None
+  11:.\Generated_Source\PSoC4/Counter_1.c **** *
+  12:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+  13:.\Generated_Source\PSoC4/Counter_1.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC4/Counter_1.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  15:.\Generated_Source\PSoC4/Counter_1.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  16:.\Generated_Source\PSoC4/Counter_1.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC4/Counter_1.c **** 
+  19:.\Generated_Source\PSoC4/Counter_1.c **** #include "Counter_1.h"
+  20:.\Generated_Source\PSoC4/Counter_1.c **** 
+  21:.\Generated_Source\PSoC4/Counter_1.c **** uint8 Counter_1_initVar = 0u;
+  22:.\Generated_Source\PSoC4/Counter_1.c **** 
+  23:.\Generated_Source\PSoC4/Counter_1.c **** 
+  24:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_Init
+  26:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+  28:.\Generated_Source\PSoC4/Counter_1.c **** *     Initialize to the schematic state
+  29:.\Generated_Source\PSoC4/Counter_1.c **** * 
+  30:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+  31:.\Generated_Source\PSoC4/Counter_1.c **** *  void  
+  32:.\Generated_Source\PSoC4/Counter_1.c **** *
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 2
+
+
+  33:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+  34:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+  35:.\Generated_Source\PSoC4/Counter_1.c **** *
+  36:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+  37:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_Init(void) 
+  38:.\Generated_Source\PSoC4/Counter_1.c **** {
+  39:.\Generated_Source\PSoC4/Counter_1.c ****         #if (!Counter_1_UsingFixedFunction && !Counter_1_ControlRegRemoved)
+  40:.\Generated_Source\PSoC4/Counter_1.c ****             uint8 ctrl;
+  41:.\Generated_Source\PSoC4/Counter_1.c ****         #endif /* (!Counter_1_UsingFixedFunction && !Counter_1_ControlRegRemoved) */
+  42:.\Generated_Source\PSoC4/Counter_1.c ****         
+  43:.\Generated_Source\PSoC4/Counter_1.c ****         #if(!Counter_1_UsingFixedFunction) 
+  44:.\Generated_Source\PSoC4/Counter_1.c ****             /* Interrupt State Backup for Critical Region*/
+  45:.\Generated_Source\PSoC4/Counter_1.c ****             uint8 Counter_1_interruptState;
+  46:.\Generated_Source\PSoC4/Counter_1.c ****         #endif /* (!Counter_1_UsingFixedFunction) */
+  47:.\Generated_Source\PSoC4/Counter_1.c ****         
+  48:.\Generated_Source\PSoC4/Counter_1.c ****         #if (Counter_1_UsingFixedFunction)
+  49:.\Generated_Source\PSoC4/Counter_1.c ****             /* Clear all bits but the enable bit (if it's already set for Timer operation */
+  50:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_CONTROL &= Counter_1_CTRL_ENABLE;
+  51:.\Generated_Source\PSoC4/Counter_1.c ****             
+  52:.\Generated_Source\PSoC4/Counter_1.c ****             /* Clear the mode bits for continuous run mode */
+  53:.\Generated_Source\PSoC4/Counter_1.c ****             #if (CY_PSOC5A)
+  54:.\Generated_Source\PSoC4/Counter_1.c ****                 Counter_1_CONTROL2 &= ((uint8)(~Counter_1_CTRL_MODE_MASK));
+  55:.\Generated_Source\PSoC4/Counter_1.c ****             #endif /* (CY_PSOC5A) */
+  56:.\Generated_Source\PSoC4/Counter_1.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
+  57:.\Generated_Source\PSoC4/Counter_1.c ****                 Counter_1_CONTROL3 &= ((uint8)(~Counter_1_CTRL_MODE_MASK));                
+  58:.\Generated_Source\PSoC4/Counter_1.c ****             #endif /* (CY_PSOC3 || CY_PSOC5LP) */
+  59:.\Generated_Source\PSoC4/Counter_1.c ****             /* Check if One Shot mode is enabled i.e. RunMode !=0*/
+  60:.\Generated_Source\PSoC4/Counter_1.c ****             #if (Counter_1_RunModeUsed != 0x0u)
+  61:.\Generated_Source\PSoC4/Counter_1.c ****                 /* Set 3rd bit of Control register to enable one shot mode */
+  62:.\Generated_Source\PSoC4/Counter_1.c ****                 Counter_1_CONTROL |= Counter_1_ONESHOT;
+  63:.\Generated_Source\PSoC4/Counter_1.c ****             #endif /* (Counter_1_RunModeUsed != 0x0u) */
+  64:.\Generated_Source\PSoC4/Counter_1.c ****             
+  65:.\Generated_Source\PSoC4/Counter_1.c ****             /* Set the IRQ to use the status register interrupts */
+  66:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_CONTROL2 |= Counter_1_CTRL2_IRQ_SEL;
+  67:.\Generated_Source\PSoC4/Counter_1.c ****             
+  68:.\Generated_Source\PSoC4/Counter_1.c ****             /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+  69:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_RT1 &= ((uint8)(~Counter_1_RT1_MASK));
+  70:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_RT1 |= Counter_1_SYNC;     
+  71:.\Generated_Source\PSoC4/Counter_1.c ****                     
+  72:.\Generated_Source\PSoC4/Counter_1.c ****             /*Enable DSI Sync all all inputs of the Timer*/
+  73:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_RT1 &= ((uint8)(~Counter_1_SYNCDSI_MASK));
+  74:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_RT1 |= Counter_1_SYNCDSI_EN;
+  75:.\Generated_Source\PSoC4/Counter_1.c **** 
+  76:.\Generated_Source\PSoC4/Counter_1.c ****         #else
+  77:.\Generated_Source\PSoC4/Counter_1.c ****             #if(!Counter_1_ControlRegRemoved)
+  78:.\Generated_Source\PSoC4/Counter_1.c ****             /* Set the default compare mode defined in the parameter */
+  79:.\Generated_Source\PSoC4/Counter_1.c ****             ctrl = Counter_1_CONTROL & ((uint8)(~Counter_1_CTRL_CMPMODE_MASK));
+  80:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_CONTROL = ctrl | Counter_1_DEFAULT_COMPARE_MODE;
+  81:.\Generated_Source\PSoC4/Counter_1.c ****             
+  82:.\Generated_Source\PSoC4/Counter_1.c ****             /* Set the default capture mode defined in the parameter */
+  83:.\Generated_Source\PSoC4/Counter_1.c ****             ctrl = Counter_1_CONTROL & ((uint8)(~Counter_1_CTRL_CAPMODE_MASK));
+  84:.\Generated_Source\PSoC4/Counter_1.c ****             
+  85:.\Generated_Source\PSoC4/Counter_1.c ****             #if( 0 != Counter_1_CAPTURE_MODE_CONF)
+  86:.\Generated_Source\PSoC4/Counter_1.c ****                 Counter_1_CONTROL = ctrl | Counter_1_DEFAULT_CAPTURE_MODE;
+  87:.\Generated_Source\PSoC4/Counter_1.c ****             #else
+  88:.\Generated_Source\PSoC4/Counter_1.c ****                 Counter_1_CONTROL = ctrl;
+  89:.\Generated_Source\PSoC4/Counter_1.c ****             #endif /* 0 != Counter_1_CAPTURE_MODE */ 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 3
+
+
+  90:.\Generated_Source\PSoC4/Counter_1.c ****             
+  91:.\Generated_Source\PSoC4/Counter_1.c ****             #endif /* (!Counter_1_ControlRegRemoved) */
+  92:.\Generated_Source\PSoC4/Counter_1.c ****         #endif /* (Counter_1_UsingFixedFunction) */
+  93:.\Generated_Source\PSoC4/Counter_1.c ****         
+  94:.\Generated_Source\PSoC4/Counter_1.c ****         /* Clear all data in the FIFO's */
+  95:.\Generated_Source\PSoC4/Counter_1.c ****         #if (!Counter_1_UsingFixedFunction)
+  96:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_ClearFIFO();
+  97:.\Generated_Source\PSoC4/Counter_1.c ****         #endif /* (!Counter_1_UsingFixedFunction) */
+  98:.\Generated_Source\PSoC4/Counter_1.c ****         
+  99:.\Generated_Source\PSoC4/Counter_1.c ****         /* Set Initial values from Configuration */
+ 100:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_WritePeriod(Counter_1_INIT_PERIOD_VALUE);
+ 101:.\Generated_Source\PSoC4/Counter_1.c ****         #if (!(Counter_1_UsingFixedFunction && (CY_PSOC5A)))
+ 102:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_WriteCounter(Counter_1_INIT_COUNTER_VALUE);
+ 103:.\Generated_Source\PSoC4/Counter_1.c ****         #endif /* (!(Counter_1_UsingFixedFunction && (CY_PSOC5A))) */
+ 104:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_SetInterruptMode(Counter_1_INIT_INTERRUPTS_MASK);
+ 105:.\Generated_Source\PSoC4/Counter_1.c ****         
+ 106:.\Generated_Source\PSoC4/Counter_1.c ****         #if (!Counter_1_UsingFixedFunction)
+ 107:.\Generated_Source\PSoC4/Counter_1.c ****             /* Read the status register to clear the unwanted interrupts */
+ 108:.\Generated_Source\PSoC4/Counter_1.c ****             (void)Counter_1_ReadStatusRegister();
+ 109:.\Generated_Source\PSoC4/Counter_1.c ****             /* Set the compare value (only available to non-fixed function implementation */
+ 110:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_WriteCompare(Counter_1_INIT_COMPARE_VALUE);
+ 111:.\Generated_Source\PSoC4/Counter_1.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 112:.\Generated_Source\PSoC4/Counter_1.c ****             
+ 113:.\Generated_Source\PSoC4/Counter_1.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 114:.\Generated_Source\PSoC4/Counter_1.c ****             /* Enter Critical Region*/
+ 115:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_interruptState = CyEnterCriticalSection();
+ 116:.\Generated_Source\PSoC4/Counter_1.c ****             
+ 117:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_STATUS_AUX_CTRL |= Counter_1_STATUS_ACTL_INT_EN_MASK;
+ 118:.\Generated_Source\PSoC4/Counter_1.c ****             
+ 119:.\Generated_Source\PSoC4/Counter_1.c ****             /* Exit Critical Region*/
+ 120:.\Generated_Source\PSoC4/Counter_1.c ****             CyExitCriticalSection(Counter_1_interruptState);
+ 121:.\Generated_Source\PSoC4/Counter_1.c ****             
+ 122:.\Generated_Source\PSoC4/Counter_1.c ****         #endif /* (!Counter_1_UsingFixedFunction) */
+ 123:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 124:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 125:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 126:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 127:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_Enable
+ 128:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 129:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 130:.\Generated_Source\PSoC4/Counter_1.c **** *     Enable the Counter
+ 131:.\Generated_Source\PSoC4/Counter_1.c **** * 
+ 132:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 133:.\Generated_Source\PSoC4/Counter_1.c **** *  void  
+ 134:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 135:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 136:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 137:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 138:.\Generated_Source\PSoC4/Counter_1.c **** * Side Effects: 
+ 139:.\Generated_Source\PSoC4/Counter_1.c **** *   If the Enable mode is set to Hardware only then this function has no effect 
+ 140:.\Generated_Source\PSoC4/Counter_1.c **** *   on the operation of the counter.
+ 141:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 142:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 143:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_Enable(void) 
+ 144:.\Generated_Source\PSoC4/Counter_1.c **** {
+  26              		.loc 1 144 0
+  27              		.cfi_startproc
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 4
+
+
+ 145:.\Generated_Source\PSoC4/Counter_1.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 146:.\Generated_Source\PSoC4/Counter_1.c ****     #if (Counter_1_UsingFixedFunction)
+ 147:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_GLOBAL_ENABLE |= Counter_1_BLOCK_EN_MASK;
+ 148:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_GLOBAL_STBY_ENABLE |= Counter_1_BLOCK_STBY_EN_MASK;
+ 149:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */  
+ 150:.\Generated_Source\PSoC4/Counter_1.c ****         
+ 151:.\Generated_Source\PSoC4/Counter_1.c ****     /* Enable the counter from the control register  */
+ 152:.\Generated_Source\PSoC4/Counter_1.c ****     /* If Fixed Function then make sure Mode is set correctly */
+ 153:.\Generated_Source\PSoC4/Counter_1.c ****     /* else make sure reset is clear */
+ 154:.\Generated_Source\PSoC4/Counter_1.c ****     #if(!Counter_1_ControlRegRemoved || Counter_1_UsingFixedFunction)
+ 155:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_CONTROL |= Counter_1_CTRL_ENABLE;                
+ 156:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (!Counter_1_ControlRegRemoved || Counter_1_UsingFixedFunction) */
+ 157:.\Generated_Source\PSoC4/Counter_1.c ****     
+ 158:.\Generated_Source\PSoC4/Counter_1.c **** }
+  28              		.loc 1 158 0
+  29              		@ sp needed
+  30 0000 7047     		bx	lr
+  31              		.cfi_endproc
+  32              	.LFE1:
+  33              		.size	Counter_1_Enable, .-Counter_1_Enable
+  34 0002 C046     		.section	.text.Counter_1_Stop,"ax",%progbits
+  35              		.align	2
+  36              		.global	Counter_1_Stop
+  37              		.code	16
+  38              		.thumb_func
+  39              		.type	Counter_1_Stop, %function
+  40              	Counter_1_Stop:
+  41              	.LFB3:
+ 159:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 160:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 161:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 162:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_Start
+ 163:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 164:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 165:.\Generated_Source\PSoC4/Counter_1.c **** *  Enables the counter for operation 
+ 166:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 167:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 168:.\Generated_Source\PSoC4/Counter_1.c **** *  void  
+ 169:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 170:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 171:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 172:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 173:.\Generated_Source\PSoC4/Counter_1.c **** * Global variables:
+ 174:.\Generated_Source\PSoC4/Counter_1.c **** *  Counter_1_initVar: Is modified when this function is called for the  
+ 175:.\Generated_Source\PSoC4/Counter_1.c **** *   first time. Is used to ensure that initialization happens only once.
+ 176:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 177:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 178:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_Start(void) 
+ 179:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 180:.\Generated_Source\PSoC4/Counter_1.c ****     if(Counter_1_initVar == 0u)
+ 181:.\Generated_Source\PSoC4/Counter_1.c ****     {
+ 182:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_Init();
+ 183:.\Generated_Source\PSoC4/Counter_1.c ****         
+ 184:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_initVar = 1u; /* Clear this bit for Initialization */        
+ 185:.\Generated_Source\PSoC4/Counter_1.c ****     }
+ 186:.\Generated_Source\PSoC4/Counter_1.c ****     
+ 187:.\Generated_Source\PSoC4/Counter_1.c ****     /* Enable the Counter */
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 5
+
+
+ 188:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_Enable();        
+ 189:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 190:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 191:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 192:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 193:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_Stop
+ 194:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 195:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 196:.\Generated_Source\PSoC4/Counter_1.c **** * Halts the counter, but does not change any modes or disable interrupts.
+ 197:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 198:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 199:.\Generated_Source\PSoC4/Counter_1.c **** *  void  
+ 200:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 201:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 202:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 203:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 204:.\Generated_Source\PSoC4/Counter_1.c **** * Side Effects: If the Enable mode is set to Hardware only then this function
+ 205:.\Generated_Source\PSoC4/Counter_1.c **** *               has no effect on the operation of the counter.
+ 206:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 207:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 208:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_Stop(void) 
+ 209:.\Generated_Source\PSoC4/Counter_1.c **** {
+  42              		.loc 1 209 0
+  43              		.cfi_startproc
+ 210:.\Generated_Source\PSoC4/Counter_1.c ****     /* Disable Counter */
+ 211:.\Generated_Source\PSoC4/Counter_1.c ****     #if(!Counter_1_ControlRegRemoved || Counter_1_UsingFixedFunction)
+ 212:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_CONTROL &= ((uint8)(~Counter_1_CTRL_ENABLE));        
+ 213:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (!Counter_1_ControlRegRemoved || Counter_1_UsingFixedFunction) */
+ 214:.\Generated_Source\PSoC4/Counter_1.c ****     
+ 215:.\Generated_Source\PSoC4/Counter_1.c ****     /* Globally disable the Fixed Function Block chosen */
+ 216:.\Generated_Source\PSoC4/Counter_1.c ****     #if (Counter_1_UsingFixedFunction)
+ 217:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_GLOBAL_ENABLE &= ((uint8)(~Counter_1_BLOCK_EN_MASK));
+ 218:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_GLOBAL_STBY_ENABLE &= ((uint8)(~Counter_1_BLOCK_STBY_EN_MASK));
+ 219:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 220:.\Generated_Source\PSoC4/Counter_1.c **** }
+  44              		.loc 1 220 0
+  45              		@ sp needed
+  46 0000 7047     		bx	lr
+  47              		.cfi_endproc
+  48              	.LFE3:
+  49              		.size	Counter_1_Stop, .-Counter_1_Stop
+  50 0002 C046     		.section	.text.Counter_1_SetInterruptMode,"ax",%progbits
+  51              		.align	2
+  52              		.global	Counter_1_SetInterruptMode
+  53              		.code	16
+  54              		.thumb_func
+  55              		.type	Counter_1_SetInterruptMode, %function
+  56              	Counter_1_SetInterruptMode:
+  57              	.LFB4:
+ 221:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 222:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 223:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 224:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_SetInterruptMode
+ 225:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 226:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 227:.\Generated_Source\PSoC4/Counter_1.c **** * Configures which interrupt sources are enabled to generate the final interrupt
+ 228:.\Generated_Source\PSoC4/Counter_1.c **** *
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 6
+
+
+ 229:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 230:.\Generated_Source\PSoC4/Counter_1.c **** *  InterruptsMask: This parameter is an or'd collection of the status bits
+ 231:.\Generated_Source\PSoC4/Counter_1.c **** *                   which will be allowed to generate the counters interrupt.   
+ 232:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 233:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 234:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 235:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 236:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 237:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_SetInterruptMode(uint8 interruptsMask) 
+ 238:.\Generated_Source\PSoC4/Counter_1.c **** {
+  58              		.loc 1 238 0
+  59              		.cfi_startproc
+  60              	.LVL0:
+ 239:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_STATUS_MASK = interruptsMask;
+  61              		.loc 1 239 0
+  62 0000 014B     		ldr	r3, .L4
+  63 0002 1870     		strb	r0, [r3]
+ 240:.\Generated_Source\PSoC4/Counter_1.c **** }
+  64              		.loc 1 240 0
+  65              		@ sp needed
+  66 0004 7047     		bx	lr
+  67              	.L5:
+  68 0006 C046     		.align	2
+  69              	.L4:
+  70 0008 81000F40 		.word	1074724993
+  71              		.cfi_endproc
+  72              	.LFE4:
+  73              		.size	Counter_1_SetInterruptMode, .-Counter_1_SetInterruptMode
+  74              		.section	.text.Counter_1_ReadStatusRegister,"ax",%progbits
+  75              		.align	2
+  76              		.global	Counter_1_ReadStatusRegister
+  77              		.code	16
+  78              		.thumb_func
+  79              		.type	Counter_1_ReadStatusRegister, %function
+  80              	Counter_1_ReadStatusRegister:
+  81              	.LFB5:
+ 241:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 242:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 243:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 244:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ReadStatusRegister
+ 245:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 246:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 247:.\Generated_Source\PSoC4/Counter_1.c **** *   Reads the status register and returns it's state. This function should use
+ 248:.\Generated_Source\PSoC4/Counter_1.c **** *       defined types for the bit-field information as the bits in this
+ 249:.\Generated_Source\PSoC4/Counter_1.c **** *       register may be permuteable.
+ 250:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 251:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 252:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 253:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 254:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 255:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint8) The contents of the status register
+ 256:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 257:.\Generated_Source\PSoC4/Counter_1.c **** * Side Effects:
+ 258:.\Generated_Source\PSoC4/Counter_1.c **** *   Status register bits may be clear on read. 
+ 259:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 260:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 261:.\Generated_Source\PSoC4/Counter_1.c **** uint8   Counter_1_ReadStatusRegister(void) 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 7
+
+
+ 262:.\Generated_Source\PSoC4/Counter_1.c **** {
+  82              		.loc 1 262 0
+  83              		.cfi_startproc
+ 263:.\Generated_Source\PSoC4/Counter_1.c ****     return Counter_1_STATUS;
+  84              		.loc 1 263 0
+  85 0000 014B     		ldr	r3, .L7
+  86 0002 1878     		ldrb	r0, [r3]
+  87 0004 C0B2     		uxtb	r0, r0
+ 264:.\Generated_Source\PSoC4/Counter_1.c **** }
+  88              		.loc 1 264 0
+  89              		@ sp needed
+  90 0006 7047     		bx	lr
+  91              	.L8:
+  92              		.align	2
+  93              	.L7:
+  94 0008 61000F40 		.word	1074724961
+  95              		.cfi_endproc
+  96              	.LFE5:
+  97              		.size	Counter_1_ReadStatusRegister, .-Counter_1_ReadStatusRegister
+  98              		.section	.text.Counter_1_WriteCounter,"ax",%progbits
+  99              		.align	2
+ 100              		.global	Counter_1_WriteCounter
+ 101              		.code	16
+ 102              		.thumb_func
+ 103              		.type	Counter_1_WriteCounter, %function
+ 104              	Counter_1_WriteCounter:
+ 105              	.LFB6:
+ 265:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 266:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 267:.\Generated_Source\PSoC4/Counter_1.c **** #if(!Counter_1_ControlRegRemoved)
+ 268:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 269:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ReadControlRegister
+ 270:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 271:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 272:.\Generated_Source\PSoC4/Counter_1.c **** *   Reads the control register and returns it's state. This function should use
+ 273:.\Generated_Source\PSoC4/Counter_1.c **** *       defined types for the bit-field information as the bits in this
+ 274:.\Generated_Source\PSoC4/Counter_1.c **** *       register may be permuteable.
+ 275:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 276:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 277:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 278:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 279:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 280:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint8) The contents of the control register
+ 281:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 282:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 283:.\Generated_Source\PSoC4/Counter_1.c **** uint8   Counter_1_ReadControlRegister(void) 
+ 284:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 285:.\Generated_Source\PSoC4/Counter_1.c ****     return Counter_1_CONTROL;
+ 286:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 287:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 288:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 289:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 290:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_WriteControlRegister
+ 291:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 292:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 293:.\Generated_Source\PSoC4/Counter_1.c **** *   Sets the bit-field of the control register.  This function should use
+ 294:.\Generated_Source\PSoC4/Counter_1.c **** *       defined types for the bit-field information as the bits in this
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 8
+
+
+ 295:.\Generated_Source\PSoC4/Counter_1.c **** *       register may be permuteable.
+ 296:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 297:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 298:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 299:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 300:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 301:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint8) The contents of the control register
+ 302:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 303:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 304:.\Generated_Source\PSoC4/Counter_1.c **** void    Counter_1_WriteControlRegister(uint8 control) 
+ 305:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 306:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_CONTROL = control;
+ 307:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 308:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 309:.\Generated_Source\PSoC4/Counter_1.c **** #endif  /* (!Counter_1_ControlRegRemoved) */
+ 310:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 311:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 312:.\Generated_Source\PSoC4/Counter_1.c **** #if (!(Counter_1_UsingFixedFunction && (CY_PSOC5A)))
+ 313:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 314:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_WriteCounter
+ 315:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 316:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 317:.\Generated_Source\PSoC4/Counter_1.c **** *   This funtion is used to set the counter to a specific value
+ 318:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 319:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 320:.\Generated_Source\PSoC4/Counter_1.c **** *  counter:  New counter value. 
+ 321:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 322:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 323:.\Generated_Source\PSoC4/Counter_1.c **** *  void 
+ 324:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 325:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 326:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_WriteCounter(uint16 counter) \
+ 327:.\Generated_Source\PSoC4/Counter_1.c ****                                    
+ 328:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 106              		.loc 1 328 0
+ 107              		.cfi_startproc
+ 108              	.LVL1:
+ 329:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 330:.\Generated_Source\PSoC4/Counter_1.c ****         /* assert if block is already enabled */
+ 331:.\Generated_Source\PSoC4/Counter_1.c ****         CYASSERT (0u == (Counter_1_GLOBAL_ENABLE & Counter_1_BLOCK_EN_MASK));
+ 332:.\Generated_Source\PSoC4/Counter_1.c ****         /* If block is disabled, enable it and then write the counter */
+ 333:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_GLOBAL_ENABLE |= Counter_1_BLOCK_EN_MASK;
+ 334:.\Generated_Source\PSoC4/Counter_1.c ****         CY_SET_REG16(Counter_1_COUNTER_LSB_PTR, (uint16)counter);
+ 335:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_GLOBAL_ENABLE &= ((uint8)(~Counter_1_BLOCK_EN_MASK));
+ 336:.\Generated_Source\PSoC4/Counter_1.c ****     #else
+ 337:.\Generated_Source\PSoC4/Counter_1.c ****         CY_SET_REG16(Counter_1_COUNTER_LSB_PTR, counter);
+ 109              		.loc 1 337 0
+ 110 0000 014B     		ldr	r3, .L10
+ 111 0002 1880     		strh	r0, [r3]
+ 338:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 339:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 112              		.loc 1 339 0
+ 113              		@ sp needed
+ 114 0004 7047     		bx	lr
+ 115              	.L11:
+ 116 0006 C046     		.align	2
+ 117              	.L10:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 9
+
+
+ 118 0008 00100F40 		.word	1074728960
+ 119              		.cfi_endproc
+ 120              	.LFE6:
+ 121              		.size	Counter_1_WriteCounter, .-Counter_1_WriteCounter
+ 122              		.section	.text.Counter_1_ReadCounter,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	Counter_1_ReadCounter
+ 125              		.code	16
+ 126              		.thumb_func
+ 127              		.type	Counter_1_ReadCounter, %function
+ 128              	Counter_1_ReadCounter:
+ 129              	.LFB7:
+ 340:.\Generated_Source\PSoC4/Counter_1.c **** #endif /* (!(Counter_1_UsingFixedFunction && (CY_PSOC5A))) */
+ 341:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 342:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 343:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 344:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ReadCounter
+ 345:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 346:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 347:.\Generated_Source\PSoC4/Counter_1.c **** * Returns the current value of the counter.  It doesn't matter
+ 348:.\Generated_Source\PSoC4/Counter_1.c **** * if the counter is enabled or running.
+ 349:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 350:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 351:.\Generated_Source\PSoC4/Counter_1.c **** *  void:  
+ 352:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 353:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 354:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint16) The present value of the counter.
+ 355:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 356:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 357:.\Generated_Source\PSoC4/Counter_1.c **** uint16 Counter_1_ReadCounter(void) 
+ 358:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 130              		.loc 1 358 0
+ 131              		.cfi_startproc
+ 359:.\Generated_Source\PSoC4/Counter_1.c ****     /* Force capture by reading Accumulator */
+ 360:.\Generated_Source\PSoC4/Counter_1.c ****     /* Must first do a software capture to be able to read the counter */
+ 361:.\Generated_Source\PSoC4/Counter_1.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 362:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 363:.\Generated_Source\PSoC4/Counter_1.c **** 		(void)CY_GET_REG16(Counter_1_COUNTER_LSB_PTR);
+ 364:.\Generated_Source\PSoC4/Counter_1.c **** 	#else
+ 365:.\Generated_Source\PSoC4/Counter_1.c **** 		(void)CY_GET_REG8(Counter_1_COUNTER_LSB_PTR_8BIT);
+ 132              		.loc 1 365 0
+ 133 0000 024B     		ldr	r3, .L13
+ 134 0002 1B78     		ldrb	r3, [r3]
+ 366:.\Generated_Source\PSoC4/Counter_1.c **** 	#endif/* (Counter_1_UsingFixedFunction) */
+ 367:.\Generated_Source\PSoC4/Counter_1.c ****     
+ 368:.\Generated_Source\PSoC4/Counter_1.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
+ 369:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 370:.\Generated_Source\PSoC4/Counter_1.c ****         return ((uint16)CY_GET_REG16(Counter_1_STATICCOUNT_LSB_PTR));
+ 371:.\Generated_Source\PSoC4/Counter_1.c ****     #else
+ 372:.\Generated_Source\PSoC4/Counter_1.c ****         return (CY_GET_REG16(Counter_1_STATICCOUNT_LSB_PTR));
+ 135              		.loc 1 372 0
+ 136 0004 024B     		ldr	r3, .L13+4
+ 137 0006 1888     		ldrh	r0, [r3]
+ 138 0008 80B2     		uxth	r0, r0
+ 373:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 374:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 139              		.loc 1 374 0
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 10
+
+
+ 140              		@ sp needed
+ 141 000a 7047     		bx	lr
+ 142              	.L14:
+ 143              		.align	2
+ 144              	.L13:
+ 145 000c 00000F40 		.word	1074724864
+ 146 0010 80100F40 		.word	1074729088
+ 147              		.cfi_endproc
+ 148              	.LFE7:
+ 149              		.size	Counter_1_ReadCounter, .-Counter_1_ReadCounter
+ 150              		.section	.text.Counter_1_ReadCapture,"ax",%progbits
+ 151              		.align	2
+ 152              		.global	Counter_1_ReadCapture
+ 153              		.code	16
+ 154              		.thumb_func
+ 155              		.type	Counter_1_ReadCapture, %function
+ 156              	Counter_1_ReadCapture:
+ 157              	.LFB8:
+ 375:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 376:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 377:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 378:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ReadCapture
+ 379:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 380:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 381:.\Generated_Source\PSoC4/Counter_1.c **** *   This function returns the last value captured.
+ 382:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 383:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 384:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 385:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 386:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 387:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint16) Present Capture value.
+ 388:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 389:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 390:.\Generated_Source\PSoC4/Counter_1.c **** uint16 Counter_1_ReadCapture(void) 
+ 391:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 158              		.loc 1 391 0
+ 159              		.cfi_startproc
+ 392:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 393:.\Generated_Source\PSoC4/Counter_1.c ****         return ((uint16)CY_GET_REG16(Counter_1_STATICCOUNT_LSB_PTR));
+ 394:.\Generated_Source\PSoC4/Counter_1.c ****     #else
+ 395:.\Generated_Source\PSoC4/Counter_1.c ****         return (CY_GET_REG16(Counter_1_STATICCOUNT_LSB_PTR));
+ 160              		.loc 1 395 0
+ 161 0000 014B     		ldr	r3, .L16
+ 162 0002 1888     		ldrh	r0, [r3]
+ 163 0004 80B2     		uxth	r0, r0
+ 396:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 397:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 164              		.loc 1 397 0
+ 165              		@ sp needed
+ 166 0006 7047     		bx	lr
+ 167              	.L17:
+ 168              		.align	2
+ 169              	.L16:
+ 170 0008 80100F40 		.word	1074729088
+ 171              		.cfi_endproc
+ 172              	.LFE8:
+ 173              		.size	Counter_1_ReadCapture, .-Counter_1_ReadCapture
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 11
+
+
+ 174              		.section	.text.Counter_1_WritePeriod,"ax",%progbits
+ 175              		.align	2
+ 176              		.global	Counter_1_WritePeriod
+ 177              		.code	16
+ 178              		.thumb_func
+ 179              		.type	Counter_1_WritePeriod, %function
+ 180              	Counter_1_WritePeriod:
+ 181              	.LFB9:
+ 398:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 399:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 400:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 401:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_WritePeriod
+ 402:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 403:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 404:.\Generated_Source\PSoC4/Counter_1.c **** * Changes the period of the counter.  The new period 
+ 405:.\Generated_Source\PSoC4/Counter_1.c **** * will be loaded the next time terminal count is detected.
+ 406:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 407:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 408:.\Generated_Source\PSoC4/Counter_1.c **** *  period: (uint16) A value of 0 will result in
+ 409:.\Generated_Source\PSoC4/Counter_1.c **** *         the counter remaining at zero.  
+ 410:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 411:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 412:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 413:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 414:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 415:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_WritePeriod(uint16 period) 
+ 416:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 182              		.loc 1 416 0
+ 183              		.cfi_startproc
+ 184              	.LVL2:
+ 417:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 418:.\Generated_Source\PSoC4/Counter_1.c ****         CY_SET_REG16(Counter_1_PERIOD_LSB_PTR,(uint16)period);
+ 419:.\Generated_Source\PSoC4/Counter_1.c ****     #else
+ 420:.\Generated_Source\PSoC4/Counter_1.c ****         CY_SET_REG16(Counter_1_PERIOD_LSB_PTR, period);
+ 185              		.loc 1 420 0
+ 186 0000 014B     		ldr	r3, .L19
+ 187 0002 1880     		strh	r0, [r3]
+ 421:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 422:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 188              		.loc 1 422 0
+ 189              		@ sp needed
+ 190 0004 7047     		bx	lr
+ 191              	.L20:
+ 192 0006 C046     		.align	2
+ 193              	.L19:
+ 194 0008 40100F40 		.word	1074729024
+ 195              		.cfi_endproc
+ 196              	.LFE9:
+ 197              		.size	Counter_1_WritePeriod, .-Counter_1_WritePeriod
+ 198              		.section	.text.Counter_1_ReadPeriod,"ax",%progbits
+ 199              		.align	2
+ 200              		.global	Counter_1_ReadPeriod
+ 201              		.code	16
+ 202              		.thumb_func
+ 203              		.type	Counter_1_ReadPeriod, %function
+ 204              	Counter_1_ReadPeriod:
+ 205              	.LFB10:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 12
+
+
+ 423:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 424:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 425:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 426:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ReadPeriod
+ 427:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 428:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 429:.\Generated_Source\PSoC4/Counter_1.c **** * Reads the current period value without affecting counter operation.
+ 430:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 431:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 432:.\Generated_Source\PSoC4/Counter_1.c **** *  void:  
+ 433:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 434:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 435:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint16) Present period value.
+ 436:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 437:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 438:.\Generated_Source\PSoC4/Counter_1.c **** uint16 Counter_1_ReadPeriod(void) 
+ 439:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 206              		.loc 1 439 0
+ 207              		.cfi_startproc
+ 440:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 441:.\Generated_Source\PSoC4/Counter_1.c ****         return ((uint16)CY_GET_REG16(Counter_1_PERIOD_LSB_PTR));
+ 442:.\Generated_Source\PSoC4/Counter_1.c ****     #else
+ 443:.\Generated_Source\PSoC4/Counter_1.c ****         return (CY_GET_REG16(Counter_1_PERIOD_LSB_PTR));
+ 208              		.loc 1 443 0
+ 209 0000 014B     		ldr	r3, .L22
+ 210 0002 1888     		ldrh	r0, [r3]
+ 211 0004 80B2     		uxth	r0, r0
+ 444:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 445:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 212              		.loc 1 445 0
+ 213              		@ sp needed
+ 214 0006 7047     		bx	lr
+ 215              	.L23:
+ 216              		.align	2
+ 217              	.L22:
+ 218 0008 40100F40 		.word	1074729024
+ 219              		.cfi_endproc
+ 220              	.LFE10:
+ 221              		.size	Counter_1_ReadPeriod, .-Counter_1_ReadPeriod
+ 222              		.section	.text.Counter_1_WriteCompare,"ax",%progbits
+ 223              		.align	2
+ 224              		.global	Counter_1_WriteCompare
+ 225              		.code	16
+ 226              		.thumb_func
+ 227              		.type	Counter_1_WriteCompare, %function
+ 228              	Counter_1_WriteCompare:
+ 229              	.LFB11:
+ 446:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 447:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 448:.\Generated_Source\PSoC4/Counter_1.c **** #if (!Counter_1_UsingFixedFunction)
+ 449:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 450:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_WriteCompare
+ 451:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 452:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 453:.\Generated_Source\PSoC4/Counter_1.c **** * Changes the compare value.  The compare output will 
+ 454:.\Generated_Source\PSoC4/Counter_1.c **** * reflect the new value on the next UDB clock.  The compare output will be 
+ 455:.\Generated_Source\PSoC4/Counter_1.c **** * driven high when the present counter value compares true based on the 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 13
+
+
+ 456:.\Generated_Source\PSoC4/Counter_1.c **** * configured compare mode setting. 
+ 457:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 458:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 459:.\Generated_Source\PSoC4/Counter_1.c **** *  Compare:  New compare value. 
+ 460:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 461:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 462:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 463:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 464:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 465:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_WriteCompare(uint16 compare) \
+ 466:.\Generated_Source\PSoC4/Counter_1.c ****                                    
+ 467:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 230              		.loc 1 467 0
+ 231              		.cfi_startproc
+ 232              	.LVL3:
+ 468:.\Generated_Source\PSoC4/Counter_1.c ****     #if(Counter_1_UsingFixedFunction)
+ 469:.\Generated_Source\PSoC4/Counter_1.c ****         CY_SET_REG16(Counter_1_COMPARE_LSB_PTR, (uint16)compare);
+ 470:.\Generated_Source\PSoC4/Counter_1.c ****     #else
+ 471:.\Generated_Source\PSoC4/Counter_1.c ****         CY_SET_REG16(Counter_1_COMPARE_LSB_PTR, compare);
+ 233              		.loc 1 471 0
+ 234 0000 014B     		ldr	r3, .L25
+ 235 0002 1880     		strh	r0, [r3]
+ 472:.\Generated_Source\PSoC4/Counter_1.c ****     #endif /* (Counter_1_UsingFixedFunction) */
+ 473:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 236              		.loc 1 473 0
+ 237              		@ sp needed
+ 238 0004 7047     		bx	lr
+ 239              	.L26:
+ 240 0006 C046     		.align	2
+ 241              	.L25:
+ 242 0008 60100F40 		.word	1074729056
+ 243              		.cfi_endproc
+ 244              	.LFE11:
+ 245              		.size	Counter_1_WriteCompare, .-Counter_1_WriteCompare
+ 246              		.section	.text.Counter_1_ReadCompare,"ax",%progbits
+ 247              		.align	2
+ 248              		.global	Counter_1_ReadCompare
+ 249              		.code	16
+ 250              		.thumb_func
+ 251              		.type	Counter_1_ReadCompare, %function
+ 252              	Counter_1_ReadCompare:
+ 253              	.LFB12:
+ 474:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 475:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 476:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 477:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ReadCompare
+ 478:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 479:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 480:.\Generated_Source\PSoC4/Counter_1.c **** * Returns the compare value.
+ 481:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 482:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 483:.\Generated_Source\PSoC4/Counter_1.c **** *  void:
+ 484:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 485:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 486:.\Generated_Source\PSoC4/Counter_1.c **** *  (uint16) Present compare value.
+ 487:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 488:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 14
+
+
+ 489:.\Generated_Source\PSoC4/Counter_1.c **** uint16 Counter_1_ReadCompare(void) 
+ 490:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 254              		.loc 1 490 0
+ 255              		.cfi_startproc
+ 491:.\Generated_Source\PSoC4/Counter_1.c ****     return (CY_GET_REG16(Counter_1_COMPARE_LSB_PTR));
+ 256              		.loc 1 491 0
+ 257 0000 014B     		ldr	r3, .L28
+ 258 0002 1888     		ldrh	r0, [r3]
+ 259 0004 80B2     		uxth	r0, r0
+ 492:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 260              		.loc 1 492 0
+ 261              		@ sp needed
+ 262 0006 7047     		bx	lr
+ 263              	.L29:
+ 264              		.align	2
+ 265              	.L28:
+ 266 0008 60100F40 		.word	1074729056
+ 267              		.cfi_endproc
+ 268              	.LFE12:
+ 269              		.size	Counter_1_ReadCompare, .-Counter_1_ReadCompare
+ 270              		.section	.text.Counter_1_ClearFIFO,"ax",%progbits
+ 271              		.align	2
+ 272              		.global	Counter_1_ClearFIFO
+ 273              		.code	16
+ 274              		.thumb_func
+ 275              		.type	Counter_1_ClearFIFO, %function
+ 276              	Counter_1_ClearFIFO:
+ 277              	.LFB13:
+ 493:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 494:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 495:.\Generated_Source\PSoC4/Counter_1.c **** #if (Counter_1_COMPARE_MODE_SOFTWARE)
+ 496:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 497:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_SetCompareMode
+ 498:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 499:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 500:.\Generated_Source\PSoC4/Counter_1.c **** *  Sets the software controlled Compare Mode.
+ 501:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 502:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:
+ 503:.\Generated_Source\PSoC4/Counter_1.c **** *  compareMode:  Compare Mode Enumerated Type.
+ 504:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 505:.\Generated_Source\PSoC4/Counter_1.c **** * Return:
+ 506:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 507:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 508:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 509:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_SetCompareMode(uint8 compareMode) 
+ 510:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 511:.\Generated_Source\PSoC4/Counter_1.c ****     /* Clear the compare mode bits in the control register */
+ 512:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_CONTROL &= ((uint8)(~Counter_1_CTRL_CMPMODE_MASK));
+ 513:.\Generated_Source\PSoC4/Counter_1.c ****     
+ 514:.\Generated_Source\PSoC4/Counter_1.c ****     /* Write the new setting */
+ 515:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_CONTROL |= compareMode;
+ 516:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 517:.\Generated_Source\PSoC4/Counter_1.c **** #endif  /* (Counter_1_COMPARE_MODE_SOFTWARE) */
+ 518:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 519:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 520:.\Generated_Source\PSoC4/Counter_1.c **** #if (Counter_1_CAPTURE_MODE_SOFTWARE)
+ 521:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 15
+
+
+ 522:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_SetCaptureMode
+ 523:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 524:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 525:.\Generated_Source\PSoC4/Counter_1.c **** *  Sets the software controlled Capture Mode.
+ 526:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 527:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:
+ 528:.\Generated_Source\PSoC4/Counter_1.c **** *  captureMode:  Capture Mode Enumerated Type.
+ 529:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 530:.\Generated_Source\PSoC4/Counter_1.c **** * Return:
+ 531:.\Generated_Source\PSoC4/Counter_1.c **** *  void
+ 532:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 533:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 534:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_SetCaptureMode(uint8 captureMode) 
+ 535:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 536:.\Generated_Source\PSoC4/Counter_1.c ****     /* Clear the capture mode bits in the control register */
+ 537:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_CONTROL &= ((uint8)(~Counter_1_CTRL_CAPMODE_MASK));
+ 538:.\Generated_Source\PSoC4/Counter_1.c ****     
+ 539:.\Generated_Source\PSoC4/Counter_1.c ****     /* Write the new setting */
+ 540:.\Generated_Source\PSoC4/Counter_1.c ****     Counter_1_CONTROL |= ((uint8)((uint8)captureMode << Counter_1_CTRL_CAPMODE0_SHIFT));
+ 541:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 542:.\Generated_Source\PSoC4/Counter_1.c **** #endif  /* (Counter_1_CAPTURE_MODE_SOFTWARE) */
+ 543:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 544:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 545:.\Generated_Source\PSoC4/Counter_1.c **** /*******************************************************************************
+ 546:.\Generated_Source\PSoC4/Counter_1.c **** * Function Name: Counter_1_ClearFIFO
+ 547:.\Generated_Source\PSoC4/Counter_1.c **** ********************************************************************************
+ 548:.\Generated_Source\PSoC4/Counter_1.c **** * Summary:
+ 549:.\Generated_Source\PSoC4/Counter_1.c **** *   This function clears all capture data from the capture FIFO
+ 550:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 551:.\Generated_Source\PSoC4/Counter_1.c **** * Parameters:  
+ 552:.\Generated_Source\PSoC4/Counter_1.c **** *  void:
+ 553:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 554:.\Generated_Source\PSoC4/Counter_1.c **** * Return: 
+ 555:.\Generated_Source\PSoC4/Counter_1.c **** *  None
+ 556:.\Generated_Source\PSoC4/Counter_1.c **** *
+ 557:.\Generated_Source\PSoC4/Counter_1.c **** *******************************************************************************/
+ 558:.\Generated_Source\PSoC4/Counter_1.c **** void Counter_1_ClearFIFO(void) 
+ 559:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 278              		.loc 1 559 0
+ 279              		.cfi_startproc
+ 280 0000 10B5     		push	{r4, lr}
+ 281              		.cfi_def_cfa_offset 8
+ 282              		.cfi_offset 4, -8
+ 283              		.cfi_offset 14, -4
+ 560:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 561:.\Generated_Source\PSoC4/Counter_1.c ****     while(0u != (Counter_1_ReadStatusRegister() & Counter_1_STATUS_FIFONEMP))
+ 284              		.loc 1 561 0
+ 285 0002 4024     		mov	r4, #64
+ 286 0004 01E0     		b	.L31
+ 287              	.L32:
+ 562:.\Generated_Source\PSoC4/Counter_1.c ****     {
+ 563:.\Generated_Source\PSoC4/Counter_1.c ****         (void)Counter_1_ReadCapture();
+ 288              		.loc 1 563 0
+ 289 0006 FFF7FEFF 		bl	Counter_1_ReadCapture
+ 290              	.LVL4:
+ 291              	.L31:
+ 561:.\Generated_Source\PSoC4/Counter_1.c ****     while(0u != (Counter_1_ReadStatusRegister() & Counter_1_STATUS_FIFONEMP))
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 16
+
+
+ 292              		.loc 1 561 0 discriminator 1
+ 293 000a FFF7FEFF 		bl	Counter_1_ReadStatusRegister
+ 294              	.LVL5:
+ 295 000e 0442     		tst	r4, r0
+ 296 0010 F9D1     		bne	.L32
+ 564:.\Generated_Source\PSoC4/Counter_1.c ****     }
+ 565:.\Generated_Source\PSoC4/Counter_1.c **** 
+ 566:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 297              		.loc 1 566 0
+ 298              		@ sp needed
+ 299 0012 10BD     		pop	{r4, pc}
+ 300              		.cfi_endproc
+ 301              	.LFE13:
+ 302              		.size	Counter_1_ClearFIFO, .-Counter_1_ClearFIFO
+ 303              		.section	.text.Counter_1_Init,"ax",%progbits
+ 304              		.align	2
+ 305              		.global	Counter_1_Init
+ 306              		.code	16
+ 307              		.thumb_func
+ 308              		.type	Counter_1_Init, %function
+ 309              	Counter_1_Init:
+ 310              	.LFB0:
+  38:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 311              		.loc 1 38 0
+ 312              		.cfi_startproc
+ 313 0000 08B5     		push	{r3, lr}
+ 314              		.cfi_def_cfa_offset 8
+ 315              		.cfi_offset 3, -8
+ 316              		.cfi_offset 14, -4
+  96:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_ClearFIFO();
+ 317              		.loc 1 96 0
+ 318 0002 FFF7FEFF 		bl	Counter_1_ClearFIFO
+ 319              	.LVL6:
+ 100:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_WritePeriod(Counter_1_INIT_PERIOD_VALUE);
+ 320              		.loc 1 100 0
+ 321 0006 FF20     		mov	r0, #255
+ 322 0008 FFF7FEFF 		bl	Counter_1_WritePeriod
+ 323              	.LVL7:
+ 102:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_WriteCounter(Counter_1_INIT_COUNTER_VALUE);
+ 324              		.loc 1 102 0
+ 325 000c 0020     		mov	r0, #0
+ 326 000e FFF7FEFF 		bl	Counter_1_WriteCounter
+ 327              	.LVL8:
+ 104:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_SetInterruptMode(Counter_1_INIT_INTERRUPTS_MASK);
+ 328              		.loc 1 104 0
+ 329 0012 0020     		mov	r0, #0
+ 330 0014 FFF7FEFF 		bl	Counter_1_SetInterruptMode
+ 331              	.LVL9:
+ 108:.\Generated_Source\PSoC4/Counter_1.c ****             (void)Counter_1_ReadStatusRegister();
+ 332              		.loc 1 108 0
+ 333 0018 FFF7FEFF 		bl	Counter_1_ReadStatusRegister
+ 334              	.LVL10:
+ 110:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_WriteCompare(Counter_1_INIT_COMPARE_VALUE);
+ 335              		.loc 1 110 0
+ 336 001c 8020     		mov	r0, #128
+ 337 001e FFF7FEFF 		bl	Counter_1_WriteCompare
+ 338              	.LVL11:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 17
+
+
+ 115:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_interruptState = CyEnterCriticalSection();
+ 339              		.loc 1 115 0
+ 340 0022 FFF7FEFF 		bl	CyEnterCriticalSection
+ 341              	.LVL12:
+ 117:.\Generated_Source\PSoC4/Counter_1.c ****             Counter_1_STATUS_AUX_CTRL |= Counter_1_STATUS_ACTL_INT_EN_MASK;
+ 342              		.loc 1 117 0
+ 343 0026 044B     		ldr	r3, .L34
+ 344 0028 1978     		ldrb	r1, [r3]
+ 345 002a 1022     		mov	r2, #16
+ 346 002c 0A43     		orr	r2, r1
+ 347 002e 1A70     		strb	r2, [r3]
+ 120:.\Generated_Source\PSoC4/Counter_1.c ****             CyExitCriticalSection(Counter_1_interruptState);
+ 348              		.loc 1 120 0
+ 349 0030 FFF7FEFF 		bl	CyExitCriticalSection
+ 350              	.LVL13:
+ 123:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 351              		.loc 1 123 0
+ 352              		@ sp needed
+ 353 0034 08BD     		pop	{r3, pc}
+ 354              	.L35:
+ 355 0036 C046     		.align	2
+ 356              	.L34:
+ 357 0038 91000F40 		.word	1074725009
+ 358              		.cfi_endproc
+ 359              	.LFE0:
+ 360              		.size	Counter_1_Init, .-Counter_1_Init
+ 361              		.section	.text.Counter_1_Start,"ax",%progbits
+ 362              		.align	2
+ 363              		.global	Counter_1_Start
+ 364              		.code	16
+ 365              		.thumb_func
+ 366              		.type	Counter_1_Start, %function
+ 367              	Counter_1_Start:
+ 368              	.LFB2:
+ 179:.\Generated_Source\PSoC4/Counter_1.c **** {
+ 369              		.loc 1 179 0
+ 370              		.cfi_startproc
+ 371 0000 08B5     		push	{r3, lr}
+ 372              		.cfi_def_cfa_offset 8
+ 373              		.cfi_offset 3, -8
+ 374              		.cfi_offset 14, -4
+ 180:.\Generated_Source\PSoC4/Counter_1.c ****     if(Counter_1_initVar == 0u)
+ 375              		.loc 1 180 0
+ 376 0002 054B     		ldr	r3, .L38
+ 377 0004 1B78     		ldrb	r3, [r3]
+ 378 0006 002B     		cmp	r3, #0
+ 379 0008 04D1     		bne	.L36
+ 182:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_Init();
+ 380              		.loc 1 182 0
+ 381 000a FFF7FEFF 		bl	Counter_1_Init
+ 382              	.LVL14:
+ 184:.\Generated_Source\PSoC4/Counter_1.c ****         Counter_1_initVar = 1u; /* Clear this bit for Initialization */        
+ 383              		.loc 1 184 0
+ 384 000e 0122     		mov	r2, #1
+ 385 0010 014B     		ldr	r3, .L38
+ 386 0012 1A70     		strb	r2, [r3]
+ 387              	.L36:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 18
+
+
+ 189:.\Generated_Source\PSoC4/Counter_1.c **** }
+ 388              		.loc 1 189 0
+ 389              		@ sp needed
+ 390 0014 08BD     		pop	{r3, pc}
+ 391              	.L39:
+ 392 0016 C046     		.align	2
+ 393              	.L38:
+ 394 0018 00000000 		.word	.LANCHOR0
+ 395              		.cfi_endproc
+ 396              	.LFE2:
+ 397              		.size	Counter_1_Start, .-Counter_1_Start
+ 398              		.global	Counter_1_initVar
+ 399              		.bss
+ 400              		.set	.LANCHOR0,. + 0
+ 401              		.type	Counter_1_initVar, %object
+ 402              		.size	Counter_1_initVar, 1
+ 403              	Counter_1_initVar:
+ 404 0000 00       		.space	1
+ 405              		.text
+ 406              	.Letext0:
+ 407              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
+ 408              		.file 3 ".\\Generated_Source\\PSoC4\\CyLib.h"
+ 409              		.section	.debug_info,"",%progbits
+ 410              	.Ldebug_info0:
+ 411 0000 E6020000 		.4byte	0x2e6
+ 412 0004 0400     		.2byte	0x4
+ 413 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 414 000a 04       		.byte	0x4
+ 415 000b 01       		.uleb128 0x1
+ 416 000c D0010000 		.4byte	.LASF35
+ 417 0010 01       		.byte	0x1
+ 418 0011 B3020000 		.4byte	.LASF36
+ 419 0015 1C000000 		.4byte	.LASF37
+ 420 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 421 001d 00000000 		.4byte	0
+ 422 0021 00000000 		.4byte	.Ldebug_line0
+ 423 0025 02       		.uleb128 0x2
+ 424 0026 01       		.byte	0x1
+ 425 0027 06       		.byte	0x6
+ 426 0028 22030000 		.4byte	.LASF0
+ 427 002c 02       		.uleb128 0x2
+ 428 002d 01       		.byte	0x1
+ 429 002e 08       		.byte	0x8
+ 430 002f DB000000 		.4byte	.LASF1
+ 431 0033 02       		.uleb128 0x2
+ 432 0034 02       		.byte	0x2
+ 433 0035 05       		.byte	0x5
+ 434 0036 D8020000 		.4byte	.LASF2
+ 435 003a 02       		.uleb128 0x2
+ 436 003b 02       		.byte	0x2
+ 437 003c 07       		.byte	0x7
+ 438 003d 6C000000 		.4byte	.LASF3
+ 439 0041 02       		.uleb128 0x2
+ 440 0042 04       		.byte	0x4
+ 441 0043 05       		.byte	0x5
+ 442 0044 F8020000 		.4byte	.LASF4
+ 443 0048 02       		.uleb128 0x2
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 19
+
+
+ 444 0049 04       		.byte	0x4
+ 445 004a 07       		.byte	0x7
+ 446 004b 05010000 		.4byte	.LASF5
+ 447 004f 02       		.uleb128 0x2
+ 448 0050 08       		.byte	0x8
+ 449 0051 05       		.byte	0x5
+ 450 0052 85020000 		.4byte	.LASF6
+ 451 0056 02       		.uleb128 0x2
+ 452 0057 08       		.byte	0x8
+ 453 0058 07       		.byte	0x7
+ 454 0059 C4000000 		.4byte	.LASF7
+ 455 005d 03       		.uleb128 0x3
+ 456 005e 04       		.byte	0x4
+ 457 005f 05       		.byte	0x5
+ 458 0060 696E7400 		.ascii	"int\000"
+ 459 0064 02       		.uleb128 0x2
+ 460 0065 04       		.byte	0x4
+ 461 0066 07       		.byte	0x7
+ 462 0067 7F000000 		.4byte	.LASF8
+ 463 006b 04       		.uleb128 0x4
+ 464 006c 17010000 		.4byte	.LASF9
+ 465 0070 02       		.byte	0x2
+ 466 0071 B3       		.byte	0xb3
+ 467 0072 2C000000 		.4byte	0x2c
+ 468 0076 04       		.uleb128 0x4
+ 469 0077 62010000 		.4byte	.LASF10
+ 470 007b 02       		.byte	0x2
+ 471 007c B4       		.byte	0xb4
+ 472 007d 3A000000 		.4byte	0x3a
+ 473 0081 02       		.uleb128 0x2
+ 474 0082 04       		.byte	0x4
+ 475 0083 04       		.byte	0x4
+ 476 0084 B6000000 		.4byte	.LASF11
+ 477 0088 02       		.uleb128 0x2
+ 478 0089 08       		.byte	0x8
+ 479 008a 04       		.byte	0x4
+ 480 008b 5B010000 		.4byte	.LASF12
+ 481 008f 02       		.uleb128 0x2
+ 482 0090 01       		.byte	0x1
+ 483 0091 08       		.byte	0x8
+ 484 0092 93020000 		.4byte	.LASF13
+ 485 0096 05       		.uleb128 0x5
+ 486 0097 E9000000 		.4byte	.LASF14
+ 487 009b 02       		.byte	0x2
+ 488 009c 5D01     		.2byte	0x15d
+ 489 009e A2000000 		.4byte	0xa2
+ 490 00a2 06       		.uleb128 0x6
+ 491 00a3 6B000000 		.4byte	0x6b
+ 492 00a7 05       		.uleb128 0x5
+ 493 00a8 00000000 		.4byte	.LASF15
+ 494 00ac 02       		.byte	0x2
+ 495 00ad 5E01     		.2byte	0x15e
+ 496 00af B3000000 		.4byte	0xb3
+ 497 00b3 06       		.uleb128 0x6
+ 498 00b4 76000000 		.4byte	0x76
+ 499 00b8 02       		.uleb128 0x2
+ 500 00b9 04       		.byte	0x4
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 20
+
+
+ 501 00ba 07       		.byte	0x7
+ 502 00bb 4C020000 		.4byte	.LASF16
+ 503 00bf 07       		.uleb128 0x7
+ 504 00c0 11030000 		.4byte	.LASF17
+ 505 00c4 01       		.byte	0x1
+ 506 00c5 8F       		.byte	0x8f
+ 507 00c6 00000000 		.4byte	.LFB1
+ 508 00ca 02000000 		.4byte	.LFE1-.LFB1
+ 509 00ce 01       		.uleb128 0x1
+ 510 00cf 9C       		.byte	0x9c
+ 511 00d0 07       		.uleb128 0x7
+ 512 00d1 36030000 		.4byte	.LASF18
+ 513 00d5 01       		.byte	0x1
+ 514 00d6 D0       		.byte	0xd0
+ 515 00d7 00000000 		.4byte	.LFB3
+ 516 00db 02000000 		.4byte	.LFE3-.LFB3
+ 517 00df 01       		.uleb128 0x1
+ 518 00e0 9C       		.byte	0x9c
+ 519 00e1 08       		.uleb128 0x8
+ 520 00e2 98020000 		.4byte	.LASF19
+ 521 00e6 01       		.byte	0x1
+ 522 00e7 ED       		.byte	0xed
+ 523 00e8 00000000 		.4byte	.LFB4
+ 524 00ec 0C000000 		.4byte	.LFE4-.LFB4
+ 525 00f0 01       		.uleb128 0x1
+ 526 00f1 9C       		.byte	0x9c
+ 527 00f2 04010000 		.4byte	0x104
+ 528 00f6 09       		.uleb128 0x9
+ 529 00f7 1D010000 		.4byte	.LASF21
+ 530 00fb 01       		.byte	0x1
+ 531 00fc ED       		.byte	0xed
+ 532 00fd 6B000000 		.4byte	0x6b
+ 533 0101 01       		.uleb128 0x1
+ 534 0102 50       		.byte	0x50
+ 535 0103 00       		.byte	0
+ 536 0104 0A       		.uleb128 0xa
+ 537 0105 3E010000 		.4byte	.LASF23
+ 538 0109 01       		.byte	0x1
+ 539 010a 0501     		.2byte	0x105
+ 540 010c 6B000000 		.4byte	0x6b
+ 541 0110 00000000 		.4byte	.LFB5
+ 542 0114 0C000000 		.4byte	.LFE5-.LFB5
+ 543 0118 01       		.uleb128 0x1
+ 544 0119 9C       		.byte	0x9c
+ 545 011a 0B       		.uleb128 0xb
+ 546 011b 55020000 		.4byte	.LASF20
+ 547 011f 01       		.byte	0x1
+ 548 0120 4601     		.2byte	0x146
+ 549 0122 00000000 		.4byte	.LFB6
+ 550 0126 0C000000 		.4byte	.LFE6-.LFB6
+ 551 012a 01       		.uleb128 0x1
+ 552 012b 9C       		.byte	0x9c
+ 553 012c 3F010000 		.4byte	0x13f
+ 554 0130 0C       		.uleb128 0xc
+ 555 0131 BC000000 		.4byte	.LASF22
+ 556 0135 01       		.byte	0x1
+ 557 0136 4601     		.2byte	0x146
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 21
+
+
+ 558 0138 76000000 		.4byte	0x76
+ 559 013c 01       		.uleb128 0x1
+ 560 013d 50       		.byte	0x50
+ 561 013e 00       		.byte	0
+ 562 013f 0A       		.uleb128 0xa
+ 563 0140 A0000000 		.4byte	.LASF24
+ 564 0144 01       		.byte	0x1
+ 565 0145 6501     		.2byte	0x165
+ 566 0147 76000000 		.4byte	0x76
+ 567 014b 00000000 		.4byte	.LFB7
+ 568 014f 14000000 		.4byte	.LFE7-.LFB7
+ 569 0153 01       		.uleb128 0x1
+ 570 0154 9C       		.byte	0x9c
+ 571 0155 0A       		.uleb128 0xa
+ 572 0156 06000000 		.4byte	.LASF25
+ 573 015a 01       		.byte	0x1
+ 574 015b 8601     		.2byte	0x186
+ 575 015d 76000000 		.4byte	0x76
+ 576 0161 00000000 		.4byte	.LFB8
+ 577 0165 0C000000 		.4byte	.LFE8-.LFB8
+ 578 0169 01       		.uleb128 0x1
+ 579 016a 9C       		.byte	0x9c
+ 580 016b 0B       		.uleb128 0xb
+ 581 016c 69010000 		.4byte	.LASF26
+ 582 0170 01       		.byte	0x1
+ 583 0171 9F01     		.2byte	0x19f
+ 584 0173 00000000 		.4byte	.LFB9
+ 585 0177 0C000000 		.4byte	.LFE9-.LFB9
+ 586 017b 01       		.uleb128 0x1
+ 587 017c 9C       		.byte	0x9c
+ 588 017d 90010000 		.4byte	0x190
+ 589 0181 0C       		.uleb128 0xc
+ 590 0182 65000000 		.4byte	.LASF27
+ 591 0186 01       		.byte	0x1
+ 592 0187 9F01     		.2byte	0x19f
+ 593 0189 76000000 		.4byte	0x76
+ 594 018d 01       		.uleb128 0x1
+ 595 018e 50       		.byte	0x50
+ 596 018f 00       		.byte	0
+ 597 0190 0A       		.uleb128 0xa
+ 598 0191 96010000 		.4byte	.LASF28
+ 599 0195 01       		.byte	0x1
+ 600 0196 B601     		.2byte	0x1b6
+ 601 0198 76000000 		.4byte	0x76
+ 602 019c 00000000 		.4byte	.LFB10
+ 603 01a0 0C000000 		.4byte	.LFE10-.LFB10
+ 604 01a4 01       		.uleb128 0x1
+ 605 01a5 9C       		.byte	0x9c
+ 606 01a6 0B       		.uleb128 0xb
+ 607 01a7 EE000000 		.4byte	.LASF29
+ 608 01ab 01       		.byte	0x1
+ 609 01ac D101     		.2byte	0x1d1
+ 610 01ae 00000000 		.4byte	.LFB11
+ 611 01b2 0C000000 		.4byte	.LFE11-.LFB11
+ 612 01b6 01       		.uleb128 0x1
+ 613 01b7 9C       		.byte	0x9c
+ 614 01b8 CB010000 		.4byte	0x1cb
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 22
+
+
+ 615 01bc 0C       		.uleb128 0xc
+ 616 01bd 2E030000 		.4byte	.LASF30
+ 617 01c1 01       		.byte	0x1
+ 618 01c2 D101     		.2byte	0x1d1
+ 619 01c4 76000000 		.4byte	0x76
+ 620 01c8 01       		.uleb128 0x1
+ 621 01c9 50       		.byte	0x50
+ 622 01ca 00       		.byte	0
+ 623 01cb 0A       		.uleb128 0xa
+ 624 01cc E2020000 		.4byte	.LASF31
+ 625 01d0 01       		.byte	0x1
+ 626 01d1 E901     		.2byte	0x1e9
+ 627 01d3 76000000 		.4byte	0x76
+ 628 01d7 00000000 		.4byte	.LFB12
+ 629 01db 0C000000 		.4byte	.LFE12-.LFB12
+ 630 01df 01       		.uleb128 0x1
+ 631 01e0 9C       		.byte	0x9c
+ 632 01e1 0B       		.uleb128 0xb
+ 633 01e2 8C000000 		.4byte	.LASF32
+ 634 01e6 01       		.byte	0x1
+ 635 01e7 2E02     		.2byte	0x22e
+ 636 01e9 00000000 		.4byte	.LFB13
+ 637 01ed 14000000 		.4byte	.LFE13-.LFB13
+ 638 01f1 01       		.uleb128 0x1
+ 639 01f2 9C       		.byte	0x9c
+ 640 01f3 0A020000 		.4byte	0x20a
+ 641 01f7 0D       		.uleb128 0xd
+ 642 01f8 0A000000 		.4byte	.LVL4
+ 643 01fc 55010000 		.4byte	0x155
+ 644 0200 0D       		.uleb128 0xd
+ 645 0201 0E000000 		.4byte	.LVL5
+ 646 0205 04010000 		.4byte	0x104
+ 647 0209 00       		.byte	0
+ 648 020a 08       		.uleb128 0x8
+ 649 020b C1010000 		.4byte	.LASF33
+ 650 020f 01       		.byte	0x1
+ 651 0210 25       		.byte	0x25
+ 652 0211 00000000 		.4byte	.LFB0
+ 653 0215 3C000000 		.4byte	.LFE0-.LFB0
+ 654 0219 01       		.uleb128 0x1
+ 655 021a 9C       		.byte	0x9c
+ 656 021b A1020000 		.4byte	0x2a1
+ 657 021f 0E       		.uleb128 0xe
+ 658 0220 6C020000 		.4byte	.LASF38
+ 659 0224 01       		.byte	0x1
+ 660 0225 2D       		.byte	0x2d
+ 661 0226 6B000000 		.4byte	0x6b
+ 662 022a 00000000 		.4byte	.LLST0
+ 663 022e 0D       		.uleb128 0xd
+ 664 022f 06000000 		.4byte	.LVL6
+ 665 0233 E1010000 		.4byte	0x1e1
+ 666 0237 0F       		.uleb128 0xf
+ 667 0238 0C000000 		.4byte	.LVL7
+ 668 023c 6B010000 		.4byte	0x16b
+ 669 0240 4B020000 		.4byte	0x24b
+ 670 0244 10       		.uleb128 0x10
+ 671 0245 01       		.uleb128 0x1
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 23
+
+
+ 672 0246 50       		.byte	0x50
+ 673 0247 02       		.uleb128 0x2
+ 674 0248 08       		.byte	0x8
+ 675 0249 FF       		.byte	0xff
+ 676 024a 00       		.byte	0
+ 677 024b 0F       		.uleb128 0xf
+ 678 024c 12000000 		.4byte	.LVL8
+ 679 0250 1A010000 		.4byte	0x11a
+ 680 0254 5E020000 		.4byte	0x25e
+ 681 0258 10       		.uleb128 0x10
+ 682 0259 01       		.uleb128 0x1
+ 683 025a 50       		.byte	0x50
+ 684 025b 01       		.uleb128 0x1
+ 685 025c 30       		.byte	0x30
+ 686 025d 00       		.byte	0
+ 687 025e 0F       		.uleb128 0xf
+ 688 025f 18000000 		.4byte	.LVL9
+ 689 0263 E1000000 		.4byte	0xe1
+ 690 0267 71020000 		.4byte	0x271
+ 691 026b 10       		.uleb128 0x10
+ 692 026c 01       		.uleb128 0x1
+ 693 026d 50       		.byte	0x50
+ 694 026e 01       		.uleb128 0x1
+ 695 026f 30       		.byte	0x30
+ 696 0270 00       		.byte	0
+ 697 0271 0D       		.uleb128 0xd
+ 698 0272 1C000000 		.4byte	.LVL10
+ 699 0276 04010000 		.4byte	0x104
+ 700 027a 0F       		.uleb128 0xf
+ 701 027b 22000000 		.4byte	.LVL11
+ 702 027f A6010000 		.4byte	0x1a6
+ 703 0283 8E020000 		.4byte	0x28e
+ 704 0287 10       		.uleb128 0x10
+ 705 0288 01       		.uleb128 0x1
+ 706 0289 50       		.byte	0x50
+ 707 028a 02       		.uleb128 0x2
+ 708 028b 08       		.byte	0x8
+ 709 028c 80       		.byte	0x80
+ 710 028d 00       		.byte	0
+ 711 028e 0D       		.uleb128 0xd
+ 712 028f 26000000 		.4byte	.LVL12
+ 713 0293 D1020000 		.4byte	0x2d1
+ 714 0297 0D       		.uleb128 0xd
+ 715 0298 34000000 		.4byte	.LVL13
+ 716 029c DC020000 		.4byte	0x2dc
+ 717 02a0 00       		.byte	0
+ 718 02a1 08       		.uleb128 0x8
+ 719 02a2 01030000 		.4byte	.LASF34
+ 720 02a6 01       		.byte	0x1
+ 721 02a7 B2       		.byte	0xb2
+ 722 02a8 00000000 		.4byte	.LFB2
+ 723 02ac 1C000000 		.4byte	.LFE2-.LFB2
+ 724 02b0 01       		.uleb128 0x1
+ 725 02b1 9C       		.byte	0x9c
+ 726 02b2 C0020000 		.4byte	0x2c0
+ 727 02b6 0D       		.uleb128 0xd
+ 728 02b7 0E000000 		.4byte	.LVL14
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 24
+
+
+ 729 02bb 0A020000 		.4byte	0x20a
+ 730 02bf 00       		.byte	0
+ 731 02c0 11       		.uleb128 0x11
+ 732 02c1 2C010000 		.4byte	.LASF39
+ 733 02c5 01       		.byte	0x1
+ 734 02c6 15       		.byte	0x15
+ 735 02c7 6B000000 		.4byte	0x6b
+ 736 02cb 05       		.uleb128 0x5
+ 737 02cc 03       		.byte	0x3
+ 738 02cd 00000000 		.4byte	Counter_1_initVar
+ 739 02d1 12       		.uleb128 0x12
+ 740 02d2 7F010000 		.4byte	.LASF40
+ 741 02d6 03       		.byte	0x3
+ 742 02d7 5E       		.byte	0x5e
+ 743 02d8 6B000000 		.4byte	0x6b
+ 744 02dc 13       		.uleb128 0x13
+ 745 02dd AB010000 		.4byte	.LASF41
+ 746 02e1 03       		.byte	0x3
+ 747 02e2 5F       		.byte	0x5f
+ 748 02e3 14       		.uleb128 0x14
+ 749 02e4 6B000000 		.4byte	0x6b
+ 750 02e8 00       		.byte	0
+ 751 02e9 00       		.byte	0
+ 752              		.section	.debug_abbrev,"",%progbits
+ 753              	.Ldebug_abbrev0:
+ 754 0000 01       		.uleb128 0x1
+ 755 0001 11       		.uleb128 0x11
+ 756 0002 01       		.byte	0x1
+ 757 0003 25       		.uleb128 0x25
+ 758 0004 0E       		.uleb128 0xe
+ 759 0005 13       		.uleb128 0x13
+ 760 0006 0B       		.uleb128 0xb
+ 761 0007 03       		.uleb128 0x3
+ 762 0008 0E       		.uleb128 0xe
+ 763 0009 1B       		.uleb128 0x1b
+ 764 000a 0E       		.uleb128 0xe
+ 765 000b 55       		.uleb128 0x55
+ 766 000c 17       		.uleb128 0x17
+ 767 000d 11       		.uleb128 0x11
+ 768 000e 01       		.uleb128 0x1
+ 769 000f 10       		.uleb128 0x10
+ 770 0010 17       		.uleb128 0x17
+ 771 0011 00       		.byte	0
+ 772 0012 00       		.byte	0
+ 773 0013 02       		.uleb128 0x2
+ 774 0014 24       		.uleb128 0x24
+ 775 0015 00       		.byte	0
+ 776 0016 0B       		.uleb128 0xb
+ 777 0017 0B       		.uleb128 0xb
+ 778 0018 3E       		.uleb128 0x3e
+ 779 0019 0B       		.uleb128 0xb
+ 780 001a 03       		.uleb128 0x3
+ 781 001b 0E       		.uleb128 0xe
+ 782 001c 00       		.byte	0
+ 783 001d 00       		.byte	0
+ 784 001e 03       		.uleb128 0x3
+ 785 001f 24       		.uleb128 0x24
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 25
+
+
+ 786 0020 00       		.byte	0
+ 787 0021 0B       		.uleb128 0xb
+ 788 0022 0B       		.uleb128 0xb
+ 789 0023 3E       		.uleb128 0x3e
+ 790 0024 0B       		.uleb128 0xb
+ 791 0025 03       		.uleb128 0x3
+ 792 0026 08       		.uleb128 0x8
+ 793 0027 00       		.byte	0
+ 794 0028 00       		.byte	0
+ 795 0029 04       		.uleb128 0x4
+ 796 002a 16       		.uleb128 0x16
+ 797 002b 00       		.byte	0
+ 798 002c 03       		.uleb128 0x3
+ 799 002d 0E       		.uleb128 0xe
+ 800 002e 3A       		.uleb128 0x3a
+ 801 002f 0B       		.uleb128 0xb
+ 802 0030 3B       		.uleb128 0x3b
+ 803 0031 0B       		.uleb128 0xb
+ 804 0032 49       		.uleb128 0x49
+ 805 0033 13       		.uleb128 0x13
+ 806 0034 00       		.byte	0
+ 807 0035 00       		.byte	0
+ 808 0036 05       		.uleb128 0x5
+ 809 0037 16       		.uleb128 0x16
+ 810 0038 00       		.byte	0
+ 811 0039 03       		.uleb128 0x3
+ 812 003a 0E       		.uleb128 0xe
+ 813 003b 3A       		.uleb128 0x3a
+ 814 003c 0B       		.uleb128 0xb
+ 815 003d 3B       		.uleb128 0x3b
+ 816 003e 05       		.uleb128 0x5
+ 817 003f 49       		.uleb128 0x49
+ 818 0040 13       		.uleb128 0x13
+ 819 0041 00       		.byte	0
+ 820 0042 00       		.byte	0
+ 821 0043 06       		.uleb128 0x6
+ 822 0044 35       		.uleb128 0x35
+ 823 0045 00       		.byte	0
+ 824 0046 49       		.uleb128 0x49
+ 825 0047 13       		.uleb128 0x13
+ 826 0048 00       		.byte	0
+ 827 0049 00       		.byte	0
+ 828 004a 07       		.uleb128 0x7
+ 829 004b 2E       		.uleb128 0x2e
+ 830 004c 00       		.byte	0
+ 831 004d 3F       		.uleb128 0x3f
+ 832 004e 19       		.uleb128 0x19
+ 833 004f 03       		.uleb128 0x3
+ 834 0050 0E       		.uleb128 0xe
+ 835 0051 3A       		.uleb128 0x3a
+ 836 0052 0B       		.uleb128 0xb
+ 837 0053 3B       		.uleb128 0x3b
+ 838 0054 0B       		.uleb128 0xb
+ 839 0055 27       		.uleb128 0x27
+ 840 0056 19       		.uleb128 0x19
+ 841 0057 11       		.uleb128 0x11
+ 842 0058 01       		.uleb128 0x1
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 26
+
+
+ 843 0059 12       		.uleb128 0x12
+ 844 005a 06       		.uleb128 0x6
+ 845 005b 40       		.uleb128 0x40
+ 846 005c 18       		.uleb128 0x18
+ 847 005d 9742     		.uleb128 0x2117
+ 848 005f 19       		.uleb128 0x19
+ 849 0060 00       		.byte	0
+ 850 0061 00       		.byte	0
+ 851 0062 08       		.uleb128 0x8
+ 852 0063 2E       		.uleb128 0x2e
+ 853 0064 01       		.byte	0x1
+ 854 0065 3F       		.uleb128 0x3f
+ 855 0066 19       		.uleb128 0x19
+ 856 0067 03       		.uleb128 0x3
+ 857 0068 0E       		.uleb128 0xe
+ 858 0069 3A       		.uleb128 0x3a
+ 859 006a 0B       		.uleb128 0xb
+ 860 006b 3B       		.uleb128 0x3b
+ 861 006c 0B       		.uleb128 0xb
+ 862 006d 27       		.uleb128 0x27
+ 863 006e 19       		.uleb128 0x19
+ 864 006f 11       		.uleb128 0x11
+ 865 0070 01       		.uleb128 0x1
+ 866 0071 12       		.uleb128 0x12
+ 867 0072 06       		.uleb128 0x6
+ 868 0073 40       		.uleb128 0x40
+ 869 0074 18       		.uleb128 0x18
+ 870 0075 9742     		.uleb128 0x2117
+ 871 0077 19       		.uleb128 0x19
+ 872 0078 01       		.uleb128 0x1
+ 873 0079 13       		.uleb128 0x13
+ 874 007a 00       		.byte	0
+ 875 007b 00       		.byte	0
+ 876 007c 09       		.uleb128 0x9
+ 877 007d 05       		.uleb128 0x5
+ 878 007e 00       		.byte	0
+ 879 007f 03       		.uleb128 0x3
+ 880 0080 0E       		.uleb128 0xe
+ 881 0081 3A       		.uleb128 0x3a
+ 882 0082 0B       		.uleb128 0xb
+ 883 0083 3B       		.uleb128 0x3b
+ 884 0084 0B       		.uleb128 0xb
+ 885 0085 49       		.uleb128 0x49
+ 886 0086 13       		.uleb128 0x13
+ 887 0087 02       		.uleb128 0x2
+ 888 0088 18       		.uleb128 0x18
+ 889 0089 00       		.byte	0
+ 890 008a 00       		.byte	0
+ 891 008b 0A       		.uleb128 0xa
+ 892 008c 2E       		.uleb128 0x2e
+ 893 008d 00       		.byte	0
+ 894 008e 3F       		.uleb128 0x3f
+ 895 008f 19       		.uleb128 0x19
+ 896 0090 03       		.uleb128 0x3
+ 897 0091 0E       		.uleb128 0xe
+ 898 0092 3A       		.uleb128 0x3a
+ 899 0093 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 27
+
+
+ 900 0094 3B       		.uleb128 0x3b
+ 901 0095 05       		.uleb128 0x5
+ 902 0096 27       		.uleb128 0x27
+ 903 0097 19       		.uleb128 0x19
+ 904 0098 49       		.uleb128 0x49
+ 905 0099 13       		.uleb128 0x13
+ 906 009a 11       		.uleb128 0x11
+ 907 009b 01       		.uleb128 0x1
+ 908 009c 12       		.uleb128 0x12
+ 909 009d 06       		.uleb128 0x6
+ 910 009e 40       		.uleb128 0x40
+ 911 009f 18       		.uleb128 0x18
+ 912 00a0 9742     		.uleb128 0x2117
+ 913 00a2 19       		.uleb128 0x19
+ 914 00a3 00       		.byte	0
+ 915 00a4 00       		.byte	0
+ 916 00a5 0B       		.uleb128 0xb
+ 917 00a6 2E       		.uleb128 0x2e
+ 918 00a7 01       		.byte	0x1
+ 919 00a8 3F       		.uleb128 0x3f
+ 920 00a9 19       		.uleb128 0x19
+ 921 00aa 03       		.uleb128 0x3
+ 922 00ab 0E       		.uleb128 0xe
+ 923 00ac 3A       		.uleb128 0x3a
+ 924 00ad 0B       		.uleb128 0xb
+ 925 00ae 3B       		.uleb128 0x3b
+ 926 00af 05       		.uleb128 0x5
+ 927 00b0 27       		.uleb128 0x27
+ 928 00b1 19       		.uleb128 0x19
+ 929 00b2 11       		.uleb128 0x11
+ 930 00b3 01       		.uleb128 0x1
+ 931 00b4 12       		.uleb128 0x12
+ 932 00b5 06       		.uleb128 0x6
+ 933 00b6 40       		.uleb128 0x40
+ 934 00b7 18       		.uleb128 0x18
+ 935 00b8 9742     		.uleb128 0x2117
+ 936 00ba 19       		.uleb128 0x19
+ 937 00bb 01       		.uleb128 0x1
+ 938 00bc 13       		.uleb128 0x13
+ 939 00bd 00       		.byte	0
+ 940 00be 00       		.byte	0
+ 941 00bf 0C       		.uleb128 0xc
+ 942 00c0 05       		.uleb128 0x5
+ 943 00c1 00       		.byte	0
+ 944 00c2 03       		.uleb128 0x3
+ 945 00c3 0E       		.uleb128 0xe
+ 946 00c4 3A       		.uleb128 0x3a
+ 947 00c5 0B       		.uleb128 0xb
+ 948 00c6 3B       		.uleb128 0x3b
+ 949 00c7 05       		.uleb128 0x5
+ 950 00c8 49       		.uleb128 0x49
+ 951 00c9 13       		.uleb128 0x13
+ 952 00ca 02       		.uleb128 0x2
+ 953 00cb 18       		.uleb128 0x18
+ 954 00cc 00       		.byte	0
+ 955 00cd 00       		.byte	0
+ 956 00ce 0D       		.uleb128 0xd
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 28
+
+
+ 957 00cf 898201   		.uleb128 0x4109
+ 958 00d2 00       		.byte	0
+ 959 00d3 11       		.uleb128 0x11
+ 960 00d4 01       		.uleb128 0x1
+ 961 00d5 31       		.uleb128 0x31
+ 962 00d6 13       		.uleb128 0x13
+ 963 00d7 00       		.byte	0
+ 964 00d8 00       		.byte	0
+ 965 00d9 0E       		.uleb128 0xe
+ 966 00da 34       		.uleb128 0x34
+ 967 00db 00       		.byte	0
+ 968 00dc 03       		.uleb128 0x3
+ 969 00dd 0E       		.uleb128 0xe
+ 970 00de 3A       		.uleb128 0x3a
+ 971 00df 0B       		.uleb128 0xb
+ 972 00e0 3B       		.uleb128 0x3b
+ 973 00e1 0B       		.uleb128 0xb
+ 974 00e2 49       		.uleb128 0x49
+ 975 00e3 13       		.uleb128 0x13
+ 976 00e4 02       		.uleb128 0x2
+ 977 00e5 17       		.uleb128 0x17
+ 978 00e6 00       		.byte	0
+ 979 00e7 00       		.byte	0
+ 980 00e8 0F       		.uleb128 0xf
+ 981 00e9 898201   		.uleb128 0x4109
+ 982 00ec 01       		.byte	0x1
+ 983 00ed 11       		.uleb128 0x11
+ 984 00ee 01       		.uleb128 0x1
+ 985 00ef 31       		.uleb128 0x31
+ 986 00f0 13       		.uleb128 0x13
+ 987 00f1 01       		.uleb128 0x1
+ 988 00f2 13       		.uleb128 0x13
+ 989 00f3 00       		.byte	0
+ 990 00f4 00       		.byte	0
+ 991 00f5 10       		.uleb128 0x10
+ 992 00f6 8A8201   		.uleb128 0x410a
+ 993 00f9 00       		.byte	0
+ 994 00fa 02       		.uleb128 0x2
+ 995 00fb 18       		.uleb128 0x18
+ 996 00fc 9142     		.uleb128 0x2111
+ 997 00fe 18       		.uleb128 0x18
+ 998 00ff 00       		.byte	0
+ 999 0100 00       		.byte	0
+ 1000 0101 11       		.uleb128 0x11
+ 1001 0102 34       		.uleb128 0x34
+ 1002 0103 00       		.byte	0
+ 1003 0104 03       		.uleb128 0x3
+ 1004 0105 0E       		.uleb128 0xe
+ 1005 0106 3A       		.uleb128 0x3a
+ 1006 0107 0B       		.uleb128 0xb
+ 1007 0108 3B       		.uleb128 0x3b
+ 1008 0109 0B       		.uleb128 0xb
+ 1009 010a 49       		.uleb128 0x49
+ 1010 010b 13       		.uleb128 0x13
+ 1011 010c 3F       		.uleb128 0x3f
+ 1012 010d 19       		.uleb128 0x19
+ 1013 010e 02       		.uleb128 0x2
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 29
+
+
+ 1014 010f 18       		.uleb128 0x18
+ 1015 0110 00       		.byte	0
+ 1016 0111 00       		.byte	0
+ 1017 0112 12       		.uleb128 0x12
+ 1018 0113 2E       		.uleb128 0x2e
+ 1019 0114 00       		.byte	0
+ 1020 0115 3F       		.uleb128 0x3f
+ 1021 0116 19       		.uleb128 0x19
+ 1022 0117 03       		.uleb128 0x3
+ 1023 0118 0E       		.uleb128 0xe
+ 1024 0119 3A       		.uleb128 0x3a
+ 1025 011a 0B       		.uleb128 0xb
+ 1026 011b 3B       		.uleb128 0x3b
+ 1027 011c 0B       		.uleb128 0xb
+ 1028 011d 27       		.uleb128 0x27
+ 1029 011e 19       		.uleb128 0x19
+ 1030 011f 49       		.uleb128 0x49
+ 1031 0120 13       		.uleb128 0x13
+ 1032 0121 3C       		.uleb128 0x3c
+ 1033 0122 19       		.uleb128 0x19
+ 1034 0123 00       		.byte	0
+ 1035 0124 00       		.byte	0
+ 1036 0125 13       		.uleb128 0x13
+ 1037 0126 2E       		.uleb128 0x2e
+ 1038 0127 01       		.byte	0x1
+ 1039 0128 3F       		.uleb128 0x3f
+ 1040 0129 19       		.uleb128 0x19
+ 1041 012a 03       		.uleb128 0x3
+ 1042 012b 0E       		.uleb128 0xe
+ 1043 012c 3A       		.uleb128 0x3a
+ 1044 012d 0B       		.uleb128 0xb
+ 1045 012e 3B       		.uleb128 0x3b
+ 1046 012f 0B       		.uleb128 0xb
+ 1047 0130 27       		.uleb128 0x27
+ 1048 0131 19       		.uleb128 0x19
+ 1049 0132 3C       		.uleb128 0x3c
+ 1050 0133 19       		.uleb128 0x19
+ 1051 0134 00       		.byte	0
+ 1052 0135 00       		.byte	0
+ 1053 0136 14       		.uleb128 0x14
+ 1054 0137 05       		.uleb128 0x5
+ 1055 0138 00       		.byte	0
+ 1056 0139 49       		.uleb128 0x49
+ 1057 013a 13       		.uleb128 0x13
+ 1058 013b 00       		.byte	0
+ 1059 013c 00       		.byte	0
+ 1060 013d 00       		.byte	0
+ 1061              		.section	.debug_loc,"",%progbits
+ 1062              	.Ldebug_loc0:
+ 1063              	.LLST0:
+ 1064 0000 26000000 		.4byte	.LVL12
+ 1065 0004 33000000 		.4byte	.LVL13-1
+ 1066 0008 0100     		.2byte	0x1
+ 1067 000a 50       		.byte	0x50
+ 1068 000b 00000000 		.4byte	0
+ 1069 000f 00000000 		.4byte	0
+ 1070              		.section	.debug_aranges,"",%progbits
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 30
+
+
+ 1071 0000 84000000 		.4byte	0x84
+ 1072 0004 0200     		.2byte	0x2
+ 1073 0006 00000000 		.4byte	.Ldebug_info0
+ 1074 000a 04       		.byte	0x4
+ 1075 000b 00       		.byte	0
+ 1076 000c 0000     		.2byte	0
+ 1077 000e 0000     		.2byte	0
+ 1078 0010 00000000 		.4byte	.LFB1
+ 1079 0014 02000000 		.4byte	.LFE1-.LFB1
+ 1080 0018 00000000 		.4byte	.LFB3
+ 1081 001c 02000000 		.4byte	.LFE3-.LFB3
+ 1082 0020 00000000 		.4byte	.LFB4
+ 1083 0024 0C000000 		.4byte	.LFE4-.LFB4
+ 1084 0028 00000000 		.4byte	.LFB5
+ 1085 002c 0C000000 		.4byte	.LFE5-.LFB5
+ 1086 0030 00000000 		.4byte	.LFB6
+ 1087 0034 0C000000 		.4byte	.LFE6-.LFB6
+ 1088 0038 00000000 		.4byte	.LFB7
+ 1089 003c 14000000 		.4byte	.LFE7-.LFB7
+ 1090 0040 00000000 		.4byte	.LFB8
+ 1091 0044 0C000000 		.4byte	.LFE8-.LFB8
+ 1092 0048 00000000 		.4byte	.LFB9
+ 1093 004c 0C000000 		.4byte	.LFE9-.LFB9
+ 1094 0050 00000000 		.4byte	.LFB10
+ 1095 0054 0C000000 		.4byte	.LFE10-.LFB10
+ 1096 0058 00000000 		.4byte	.LFB11
+ 1097 005c 0C000000 		.4byte	.LFE11-.LFB11
+ 1098 0060 00000000 		.4byte	.LFB12
+ 1099 0064 0C000000 		.4byte	.LFE12-.LFB12
+ 1100 0068 00000000 		.4byte	.LFB13
+ 1101 006c 14000000 		.4byte	.LFE13-.LFB13
+ 1102 0070 00000000 		.4byte	.LFB0
+ 1103 0074 3C000000 		.4byte	.LFE0-.LFB0
+ 1104 0078 00000000 		.4byte	.LFB2
+ 1105 007c 1C000000 		.4byte	.LFE2-.LFB2
+ 1106 0080 00000000 		.4byte	0
+ 1107 0084 00000000 		.4byte	0
+ 1108              		.section	.debug_ranges,"",%progbits
+ 1109              	.Ldebug_ranges0:
+ 1110 0000 00000000 		.4byte	.LFB1
+ 1111 0004 02000000 		.4byte	.LFE1
+ 1112 0008 00000000 		.4byte	.LFB3
+ 1113 000c 02000000 		.4byte	.LFE3
+ 1114 0010 00000000 		.4byte	.LFB4
+ 1115 0014 0C000000 		.4byte	.LFE4
+ 1116 0018 00000000 		.4byte	.LFB5
+ 1117 001c 0C000000 		.4byte	.LFE5
+ 1118 0020 00000000 		.4byte	.LFB6
+ 1119 0024 0C000000 		.4byte	.LFE6
+ 1120 0028 00000000 		.4byte	.LFB7
+ 1121 002c 14000000 		.4byte	.LFE7
+ 1122 0030 00000000 		.4byte	.LFB8
+ 1123 0034 0C000000 		.4byte	.LFE8
+ 1124 0038 00000000 		.4byte	.LFB9
+ 1125 003c 0C000000 		.4byte	.LFE9
+ 1126 0040 00000000 		.4byte	.LFB10
+ 1127 0044 0C000000 		.4byte	.LFE10
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 31
+
+
+ 1128 0048 00000000 		.4byte	.LFB11
+ 1129 004c 0C000000 		.4byte	.LFE11
+ 1130 0050 00000000 		.4byte	.LFB12
+ 1131 0054 0C000000 		.4byte	.LFE12
+ 1132 0058 00000000 		.4byte	.LFB13
+ 1133 005c 14000000 		.4byte	.LFE13
+ 1134 0060 00000000 		.4byte	.LFB0
+ 1135 0064 3C000000 		.4byte	.LFE0
+ 1136 0068 00000000 		.4byte	.LFB2
+ 1137 006c 1C000000 		.4byte	.LFE2
+ 1138 0070 00000000 		.4byte	0
+ 1139 0074 00000000 		.4byte	0
+ 1140              		.section	.debug_line,"",%progbits
+ 1141              	.Ldebug_line0:
+ 1142 0000 6B010000 		.section	.debug_str,"MS",%progbits,1
+ 1142      02005300 
+ 1142      00000201 
+ 1142      FB0E0D00 
+ 1142      01010101 
+ 1143              	.LASF15:
+ 1144 0000 72656731 		.ascii	"reg16\000"
+ 1144      3600
+ 1145              	.LASF25:
+ 1146 0006 436F756E 		.ascii	"Counter_1_ReadCapture\000"
+ 1146      7465725F 
+ 1146      315F5265 
+ 1146      61644361 
+ 1146      70747572 
+ 1147              	.LASF37:
+ 1148 001c 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
+ 1148      6F63756D 
+ 1148      656E7473 
+ 1148      5C476974 
+ 1148      4875625C 
+ 1149 004b 65737465 		.ascii	"ester\\bq2002 Tester.cydsn\000"
+ 1149      725C6271 
+ 1149      32303032 
+ 1149      20546573 
+ 1149      7465722E 
+ 1150              	.LASF27:
+ 1151 0065 70657269 		.ascii	"period\000"
+ 1151      6F6400
+ 1152              	.LASF3:
+ 1153 006c 73686F72 		.ascii	"short unsigned int\000"
+ 1153      7420756E 
+ 1153      7369676E 
+ 1153      65642069 
+ 1153      6E7400
+ 1154              	.LASF8:
+ 1155 007f 756E7369 		.ascii	"unsigned int\000"
+ 1155      676E6564 
+ 1155      20696E74 
+ 1155      00
+ 1156              	.LASF32:
+ 1157 008c 436F756E 		.ascii	"Counter_1_ClearFIFO\000"
+ 1157      7465725F 
+ 1157      315F436C 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 32
+
+
+ 1157      65617246 
+ 1157      49464F00 
+ 1158              	.LASF24:
+ 1159 00a0 436F756E 		.ascii	"Counter_1_ReadCounter\000"
+ 1159      7465725F 
+ 1159      315F5265 
+ 1159      6164436F 
+ 1159      756E7465 
+ 1160              	.LASF11:
+ 1161 00b6 666C6F61 		.ascii	"float\000"
+ 1161      7400
+ 1162              	.LASF22:
+ 1163 00bc 636F756E 		.ascii	"counter\000"
+ 1163      74657200 
+ 1164              	.LASF7:
+ 1165 00c4 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1165      206C6F6E 
+ 1165      6720756E 
+ 1165      7369676E 
+ 1165      65642069 
+ 1166              	.LASF1:
+ 1167 00db 756E7369 		.ascii	"unsigned char\000"
+ 1167      676E6564 
+ 1167      20636861 
+ 1167      7200
+ 1168              	.LASF14:
+ 1169 00e9 72656738 		.ascii	"reg8\000"
+ 1169      00
+ 1170              	.LASF29:
+ 1171 00ee 436F756E 		.ascii	"Counter_1_WriteCompare\000"
+ 1171      7465725F 
+ 1171      315F5772 
+ 1171      69746543 
+ 1171      6F6D7061 
+ 1172              	.LASF5:
+ 1173 0105 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1173      20756E73 
+ 1173      69676E65 
+ 1173      6420696E 
+ 1173      7400
+ 1174              	.LASF9:
+ 1175 0117 75696E74 		.ascii	"uint8\000"
+ 1175      3800
+ 1176              	.LASF21:
+ 1177 011d 696E7465 		.ascii	"interruptsMask\000"
+ 1177      72727570 
+ 1177      74734D61 
+ 1177      736B00
+ 1178              	.LASF39:
+ 1179 012c 436F756E 		.ascii	"Counter_1_initVar\000"
+ 1179      7465725F 
+ 1179      315F696E 
+ 1179      69745661 
+ 1179      7200
+ 1180              	.LASF23:
+ 1181 013e 436F756E 		.ascii	"Counter_1_ReadStatusRegister\000"
+ 1181      7465725F 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 33
+
+
+ 1181      315F5265 
+ 1181      61645374 
+ 1181      61747573 
+ 1182              	.LASF12:
+ 1183 015b 646F7562 		.ascii	"double\000"
+ 1183      6C6500
+ 1184              	.LASF10:
+ 1185 0162 75696E74 		.ascii	"uint16\000"
+ 1185      313600
+ 1186              	.LASF26:
+ 1187 0169 436F756E 		.ascii	"Counter_1_WritePeriod\000"
+ 1187      7465725F 
+ 1187      315F5772 
+ 1187      69746550 
+ 1187      6572696F 
+ 1188              	.LASF40:
+ 1189 017f 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1189      74657243 
+ 1189      72697469 
+ 1189      63616C53 
+ 1189      65637469 
+ 1190              	.LASF28:
+ 1191 0196 436F756E 		.ascii	"Counter_1_ReadPeriod\000"
+ 1191      7465725F 
+ 1191      315F5265 
+ 1191      61645065 
+ 1191      72696F64 
+ 1192              	.LASF41:
+ 1193 01ab 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1193      69744372 
+ 1193      69746963 
+ 1193      616C5365 
+ 1193      6374696F 
+ 1194              	.LASF33:
+ 1195 01c1 436F756E 		.ascii	"Counter_1_Init\000"
+ 1195      7465725F 
+ 1195      315F496E 
+ 1195      697400
+ 1196              	.LASF35:
+ 1197 01d0 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1197      4320342E 
+ 1197      382E3420 
+ 1197      32303134 
+ 1197      30353236 
+ 1198 0203 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 1198      20726576 
+ 1198      6973696F 
+ 1198      6E203231 
+ 1198      31333538 
+ 1199 0236 67202D66 		.ascii	"g -ffunction-sections\000"
+ 1199      66756E63 
+ 1199      74696F6E 
+ 1199      2D736563 
+ 1199      74696F6E 
+ 1200              	.LASF16:
+ 1201 024c 73697A65 		.ascii	"sizetype\000"
+ 1201      74797065 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 34
+
+
+ 1201      00
+ 1202              	.LASF20:
+ 1203 0255 436F756E 		.ascii	"Counter_1_WriteCounter\000"
+ 1203      7465725F 
+ 1203      315F5772 
+ 1203      69746543 
+ 1203      6F756E74 
+ 1204              	.LASF38:
+ 1205 026c 436F756E 		.ascii	"Counter_1_interruptState\000"
+ 1205      7465725F 
+ 1205      315F696E 
+ 1205      74657272 
+ 1205      75707453 
+ 1206              	.LASF6:
+ 1207 0285 6C6F6E67 		.ascii	"long long int\000"
+ 1207      206C6F6E 
+ 1207      6720696E 
+ 1207      7400
+ 1208              	.LASF13:
+ 1209 0293 63686172 		.ascii	"char\000"
+ 1209      00
+ 1210              	.LASF19:
+ 1211 0298 436F756E 		.ascii	"Counter_1_SetInterruptMode\000"
+ 1211      7465725F 
+ 1211      315F5365 
+ 1211      74496E74 
+ 1211      65727275 
+ 1212              	.LASF36:
+ 1213 02b3 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Counter_1.c\000"
+ 1213      6E657261 
+ 1213      7465645F 
+ 1213      536F7572 
+ 1213      63655C50 
+ 1214              	.LASF2:
+ 1215 02d8 73686F72 		.ascii	"short int\000"
+ 1215      7420696E 
+ 1215      7400
+ 1216              	.LASF31:
+ 1217 02e2 436F756E 		.ascii	"Counter_1_ReadCompare\000"
+ 1217      7465725F 
+ 1217      315F5265 
+ 1217      6164436F 
+ 1217      6D706172 
+ 1218              	.LASF4:
+ 1219 02f8 6C6F6E67 		.ascii	"long int\000"
+ 1219      20696E74 
+ 1219      00
+ 1220              	.LASF34:
+ 1221 0301 436F756E 		.ascii	"Counter_1_Start\000"
+ 1221      7465725F 
+ 1221      315F5374 
+ 1221      61727400 
+ 1222              	.LASF17:
+ 1223 0311 436F756E 		.ascii	"Counter_1_Enable\000"
+ 1223      7465725F 
+ 1223      315F456E 
+ 1223      61626C65 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccwg78q7.s 			page 35
+
+
+ 1223      00
+ 1224              	.LASF0:
+ 1225 0322 7369676E 		.ascii	"signed char\000"
+ 1225      65642063 
+ 1225      68617200 
+ 1226              	.LASF30:
+ 1227 032e 636F6D70 		.ascii	"compare\000"
+ 1227      61726500 
+ 1228              	.LASF18:
+ 1229 0336 436F756E 		.ascii	"Counter_1_Stop\000"
+ 1229      7465725F 
+ 1229      315F5374 
+ 1229      6F7000
+ 1230              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
