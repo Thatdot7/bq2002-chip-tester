@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
   30:.\Generated_Source\PSoC4/CC.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/CC.c **** *
   32:.\Generated_Source\PSoC4/CC.c **** * Summary:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 2
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/CC.c **** *  Assign a new value to the digital port's data output register.  
@@ -99,7 +99,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
   46              	.L3:
   47 0012 C046     		.align	2
   48              	.L2:
-  49 0014 00000440 		.word	1074003968
+  49 0014 00020440 		.word	1074004480
   50              		.cfi_endproc
   51              	.LFE0:
   52              		.size	CC_Write, .-CC_Write
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
   52:.\Generated_Source\PSoC4/CC.c **** ********************************************************************************
   53:.\Generated_Source\PSoC4/CC.c **** *
   54:.\Generated_Source\PSoC4/CC.c **** * Summary:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 3
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 3
 
 
   55:.\Generated_Source\PSoC4/CC.c **** *  Change the drive mode on the pins of the port.
@@ -160,7 +160,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
   75              	.L6:
   76 000e C046     		.align	2
   77              	.L5:
-  78 0010 08000440 		.word	1074003976
+  78 0010 08020440 		.word	1074004488
   79              		.cfi_endproc
   80              	.LFE1:
   81              		.size	CC_SetDriveMode, .-CC_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
   80:.\Generated_Source\PSoC4/CC.c **** * Function Name: CC_Read
   81:.\Generated_Source\PSoC4/CC.c **** ********************************************************************************
   82:.\Generated_Source\PSoC4/CC.c **** *
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 4
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 4
 
 
   83:.\Generated_Source\PSoC4/CC.c **** * Summary:
@@ -212,7 +212,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  100              	.L9:
  101 000a C046     		.align	2
  102              	.L8:
- 103 000c 04000440 		.word	1074003972
+ 103 000c 04020440 		.word	1074004484
  104              		.cfi_endproc
  105              	.LFE2:
  106              		.size	CC_Read, .-CC_Read
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  112:.\Generated_Source\PSoC4/CC.c **** *
  113:.\Generated_Source\PSoC4/CC.c **** * Return: 
  114:.\Generated_Source\PSoC4/CC.c **** *  Returns the current value assigned to the Digital Port's data output register
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 5
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 5
 
 
  115:.\Generated_Source\PSoC4/CC.c **** *  
@@ -260,7 +260,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  125              	.L12:
  126 000a C046     		.align	2
  127              	.L11:
- 128 000c 00000440 		.word	1074003968
+ 128 000c 00020440 		.word	1074004480
  129              		.cfi_endproc
  130              	.LFE3:
  131              		.size	CC_ReadDataReg, .-CC_ReadDataReg
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  141              		.cfi_startproc
  143:.\Generated_Source\PSoC4/CC.c **** 		uint8 maskedStatus = (uint8)(CC_INTSTAT & CC_MASK);
  142              		.loc 1 143 0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 6
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 6
 
 
  143 0000 024B     		ldr	r3, .L14
@@ -317,7 +317,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  153              	.L15:
  154              		.align	2
  155              	.L14:
- 156 000c 10000440 		.word	1074003984
+ 156 000c 10020440 		.word	1074004496
  157              		.cfi_endproc
  158              	.LFE4:
  159              		.size	CC_ClearInterrupt, .-CC_ClearInterrupt
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  194 0042 04       		.byte	0x4
  195 0043 05       		.byte	0x5
  196 0044 BF010000 		.4byte	.LASF4
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 7
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 7
 
 
  197 0048 02       		.uleb128 0x2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  251 00b2 18000000 		.4byte	.LFE0-.LFB0
  252 00b6 01       		.uleb128 0x1
  253 00b7 9C       		.byte	0x9c
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 8
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 8
 
 
  254 00b8 DB000000 		.4byte	0xdb
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  308 0139 10000000 		.4byte	.LFE4-.LFB4
  309 013d 01       		.uleb128 0x1
  310 013e 9C       		.byte	0x9c
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 9
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 9
 
 
  311 013f 0C       		.uleb128 0xc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  365 002b 00       		.byte	0
  366 002c 03       		.uleb128 0x3
  367 002d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 10
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 10
 
 
  368 002e 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  422 0065 05       		.uleb128 0x5
  423 0066 00       		.byte	0
  424 0067 03       		.uleb128 0x3
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 11
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 11
 
 
  425 0068 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  479 009f 3F       		.uleb128 0x3f
  480 00a0 19       		.uleb128 0x19
  481 00a1 03       		.uleb128 0x3
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 12
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 12
 
 
  482 00a2 0E       		.uleb128 0xe
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  536 0029 0100     		.2byte	0x1
  537 002b 52       		.byte	0x52
  538 002c 0E000000 		.4byte	.LVL3
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 13
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 13
 
 
  539 0030 18000000 		.4byte	.LFE0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  593              	.Ldebug_line0:
  594 0000 A3000000 		.section	.debug_str,"MS",%progbits,1
  594      02004100 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 14
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 14
 
 
  594      00000201 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  617      69676E65 
  617      6420696E 
  617      7400
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 15
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 15
 
 
  618              	.LASF3:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 1
  639      00
  640              	.LASF2:
  641 01af 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc2yNOs6.s 			page 16
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYSo7cD.s 			page 16
 
 
  641      7420696E 

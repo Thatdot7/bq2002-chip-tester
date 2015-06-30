@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="bq2002 Tester-000\bq2002 Tester\bq2002 Tester.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="bq2002 Tester-000\bq2002 Tester">
 <ExpandedNodeIds>
 <v>bq2002 Tester-000</v>
 <v>bq2002 Tester-000\bq2002 Tester</v>
@@ -35,14 +35,6 @@
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Bootloadable_1</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Bootloadable_1\Bootloadable_1.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Bootloadable_1\Bootloadable_1.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC\CC.c</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC\CC.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC\CC_aliases.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1\Counter_1.c</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1\Counter_1.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1\Counter_1_PM.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
@@ -67,6 +59,10 @@
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_lfclk</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_lfclk\CyLFClk.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_lfclk\CyLFClk.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out\Debug_Out.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out\Debug_Out.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out\Debug_Out_aliases.h</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\IDAC_1</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\IDAC_1\IDAC_1.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\IDAC_1\IDAC_1.h</v>
@@ -75,13 +71,49 @@
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\INH\INH.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\INH\INH.h</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\INH\INH_aliases.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\isr_1</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\isr_1\isr_1.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\isr_1\isr_1.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\PWM_1</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\PWM_1\PWM_1.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\PWM_1\PWM_1.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\PWM_1\PWM_1_PM.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\ResolutionClk</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\ResolutionClk\ResolutionClk.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\ResolutionClk\ResolutionClk.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TCPWM</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TCPWM\TCPWM.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TCPWM\TCPWM.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TCPWM\TCPWM_PM.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TM</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TM\TM.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TM\TM.h</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\TM\TM_aliases.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_BOOT.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_BOOT.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_PINS.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_PM.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_PVT.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_SPI_UART.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_SPI_UART.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_SPI_UART_INT.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_SPI_UART_PVT.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_UART.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1\UART_1_UART_BOOT.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_rx</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_rx\UART_1_rx.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_rx\UART_1_rx.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_rx\UART_1_rx_aliases.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_SCBCLK</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_SCBCLK\UART_1_SCBCLK.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_SCBCLK\UART_1_SCBCLK.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_tx</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_tx\UART_1_tx.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_tx\UART_1_tx.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\UART_1_tx\UART_1_tx_aliases.h</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\V_DD</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\V_DD\V_DD.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\V_DD\V_DD.h</v>
@@ -127,14 +159,6 @@
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Bootloadable_1</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Bootloadable_1\Bootloadable_1.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Bootloadable_1\Bootloadable_1.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC\CC.c</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC\CC.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\CC\CC_aliases.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1\Counter_1.c</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1\Counter_1.h</v>
-<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Counter_1\Counter_1_PM.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
@@ -154,6 +178,14 @@
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cypins.h</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
 <v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_lfclk</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_lfclk\CyLFClk.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\cy_lfclk\CyLFClk.h</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out\Debug_Out.c</v>
+<v>bq2002 Tester-000\bq2002 Tester\Generated_Source\PSoC4\Debug_Out\Debug_Out.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -181,10 +213,7 @@
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\BAT.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Bootloadable_1.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\bq2002.lst</v>
-<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\CC.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
-<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Counter_1.lst</v>
-<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Counter_1_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cybootloader.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
@@ -194,12 +223,28 @@
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Debug_Out.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\IDAC_1.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\IDAC_1_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\INH.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\isr_1.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\ResolutionClk.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\TCPWM.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\TCPWM_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\TM.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_PM.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_rx.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_SCBCLK.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_SPI_UART.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_SPI_UART_INT.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_tx.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_UART.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_UART_BOOT.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\V_DD.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\V_SS.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.cyacd</v>
@@ -220,10 +265,7 @@
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\BAT.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Bootloadable_1.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\bq2002.lst</v>
-<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\CC.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
-<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Counter_1.lst</v>
-<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Counter_1_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cybootloader.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
@@ -233,21 +275,34 @@
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\Debug_Out.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\IDAC_1.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\IDAC_1_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\INH.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\isr_1.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\ResolutionClk.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\TCPWM.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\TCPWM_PM.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\TM.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_PM.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_rx.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_SCBCLK.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_SPI_UART.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_SPI_UART_INT.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_tx.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_UART.lst</v>
+<v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\UART_1_UART_BOOT.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\V_DD.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\Listing Files\V_SS.lst</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.cyacd</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.hex</v>
 <v>bq2002 Tester-000\bq2002 Tester\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.map</v>
-<v>bq2002 Tester-000\bq2002 Tester\bq2002 Tester.gpdsc</v>
-<v>bq2002 Tester-000\bq2002 Tester\bq2002 Tester.rpt</v>
-<v>bq2002 Tester-000\bq2002 Tester\bq2002 Tester_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -265,12 +320,9 @@
 <v>bq2002 Tester-000\bq2002 Tester\System Reference Guides\cy_boot_v5_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\System Reference Guides\cy_lfclk_v1_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\Bootloadable_v1_30</v>
-<v>bq2002 Tester-000\bq2002 Tester\Counter_v3_0</v>
-<v>bq2002 Tester-000\bq2002 Tester\cy_clock_v2_20</v>
-<v>bq2002 Tester-000\bq2002 Tester\cy_constant_v1_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\cy_pins_v2_10</v>
-<v>bq2002 Tester-000\bq2002 Tester\cy_tff_v1_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\IDAC_P4_v1_10</v>
+<v>bq2002 Tester-000\bq2002 Tester\SCB_P4_v3_0</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>bq2002 Tester-000</v>
@@ -281,12 +333,9 @@
 <v>bq2002 Tester-000\bq2002 Tester\System Reference Guides\cy_boot_v5_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\System Reference Guides\cy_lfclk_v1_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\Bootloadable_v1_30</v>
-<v>bq2002 Tester-000\bq2002 Tester\Counter_v3_0</v>
-<v>bq2002 Tester-000\bq2002 Tester\cy_clock_v2_20</v>
-<v>bq2002 Tester-000\bq2002 Tester\cy_constant_v1_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\cy_pins_v2_10</v>
-<v>bq2002 Tester-000\bq2002 Tester\cy_tff_v1_0</v>
 <v>bq2002 Tester-000\bq2002 Tester\IDAC_P4_v1_10</v>
+<v>bq2002 Tester-000\bq2002 Tester\SCB_P4_v3_0</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -302,9 +351,8 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\main.c" />
-<name v=".\TopDesign\TopDesign.cysch" />
-<name v=".\bq2002.h" />
 <name v=".\bq2002 Tester.cydwr" />
+<name v=".\TopDesign\TopDesign.cysch" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

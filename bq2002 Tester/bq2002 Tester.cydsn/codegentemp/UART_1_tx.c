@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: CC.c  
+* File Name: UART_1_tx.c  
 * Version 2.10
 *
 * Description:
@@ -15,18 +15,18 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "CC.h"
+#include "UART_1_tx.h"
 
 #define SetP4PinDriveMode(shift, mode)  \
     do { \
-        CC_PC =   (CC_PC & \
-                                (uint32)(~(uint32)(CC_DRIVE_MODE_IND_MASK << (CC_DRIVE_MODE_BITS * (shift))))) | \
-                                (uint32)((uint32)(mode) << (CC_DRIVE_MODE_BITS * (shift))); \
+        UART_1_tx_PC =   (UART_1_tx_PC & \
+                                (uint32)(~(uint32)(UART_1_tx_DRIVE_MODE_IND_MASK << (UART_1_tx_DRIVE_MODE_BITS * (shift))))) | \
+                                (uint32)((uint32)(mode) << (UART_1_tx_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 
 
 /*******************************************************************************
-* Function Name: CC_Write
+* Function Name: UART_1_tx_Write
 ********************************************************************************
 *
 * Summary:
@@ -39,16 +39,16 @@
 *  None 
 *  
 *******************************************************************************/
-void CC_Write(uint8 value) 
+void UART_1_tx_Write(uint8 value) 
 {
-    uint8 drVal = (uint8)(CC_DR & (uint8)(~CC_MASK));
-    drVal = (drVal | ((uint8)(value << CC_SHIFT) & CC_MASK));
-    CC_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(UART_1_tx_DR & (uint8)(~UART_1_tx_MASK));
+    drVal = (drVal | ((uint8)(value << UART_1_tx_SHIFT) & UART_1_tx_MASK));
+    UART_1_tx_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: CC_SetDriveMode
+* Function Name: UART_1_tx_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -57,27 +57,27 @@ void CC_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  CC_DM_STRONG     Strong Drive 
-*  CC_DM_OD_HI      Open Drain, Drives High 
-*  CC_DM_OD_LO      Open Drain, Drives Low 
-*  CC_DM_RES_UP     Resistive Pull Up 
-*  CC_DM_RES_DWN    Resistive Pull Down 
-*  CC_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  CC_DM_DIG_HIZ    High Impedance Digital 
-*  CC_DM_ALG_HIZ    High Impedance Analog 
+*  UART_1_tx_DM_STRONG     Strong Drive 
+*  UART_1_tx_DM_OD_HI      Open Drain, Drives High 
+*  UART_1_tx_DM_OD_LO      Open Drain, Drives Low 
+*  UART_1_tx_DM_RES_UP     Resistive Pull Up 
+*  UART_1_tx_DM_RES_DWN    Resistive Pull Down 
+*  UART_1_tx_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  UART_1_tx_DM_DIG_HIZ    High Impedance Digital 
+*  UART_1_tx_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void CC_SetDriveMode(uint8 mode) 
+void UART_1_tx_SetDriveMode(uint8 mode) 
 {
-	SetP4PinDriveMode(CC__0__SHIFT, mode);
+	SetP4PinDriveMode(UART_1_tx__0__SHIFT, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: CC_Read
+* Function Name: UART_1_tx_Read
 ********************************************************************************
 *
 * Summary:
@@ -91,17 +91,17 @@ void CC_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro CC_ReadPS calls this function. 
+*  Macro UART_1_tx_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 CC_Read(void) 
+uint8 UART_1_tx_Read(void) 
 {
-    return (uint8)((CC_PS & CC_MASK) >> CC_SHIFT);
+    return (uint8)((UART_1_tx_PS & UART_1_tx_MASK) >> UART_1_tx_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: CC_ReadDataReg
+* Function Name: UART_1_tx_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -114,17 +114,17 @@ uint8 CC_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 CC_ReadDataReg(void) 
+uint8 UART_1_tx_ReadDataReg(void) 
 {
-    return (uint8)((CC_DR & CC_MASK) >> CC_SHIFT);
+    return (uint8)((UART_1_tx_DR & UART_1_tx_MASK) >> UART_1_tx_SHIFT);
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(CC_INTSTAT) 
+#if defined(UART_1_tx_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: CC_ClearInterrupt
+    * Function Name: UART_1_tx_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -138,11 +138,11 @@ uint8 CC_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 CC_ClearInterrupt(void) 
+    uint8 UART_1_tx_ClearInterrupt(void) 
     {
-		uint8 maskedStatus = (uint8)(CC_INTSTAT & CC_MASK);
-		CC_INTSTAT = maskedStatus;
-        return maskedStatus >> CC_SHIFT;
+		uint8 maskedStatus = (uint8)(UART_1_tx_INTSTAT & UART_1_tx_MASK);
+		UART_1_tx_INTSTAT = maskedStatus;
+        return maskedStatus >> UART_1_tx_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

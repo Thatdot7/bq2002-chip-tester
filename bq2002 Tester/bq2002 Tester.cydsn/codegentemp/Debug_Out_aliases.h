@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: CC.h  
+* File Name: Debug_Out.h  
 * Version 2.10
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_CC_ALIASES_H) /* Pins CC_ALIASES_H */
-#define CY_PINS_CC_ALIASES_H
+#if !defined(CY_PINS_Debug_Out_ALIASES_H) /* Pins Debug_Out_ALIASES_H */
+#define CY_PINS_Debug_Out_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,14 +26,14 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define CC_0		(CC__0__PC)
-#define CC_0_PS		(CC__0__PS)
-#define CC_0_PC		(CC__0__PC)
-#define CC_0_DR		(CC__0__DR)
-#define CC_0_SHIFT	(CC__0__SHIFT)
+#define Debug_Out_0		(Debug_Out__0__PC)
+#define Debug_Out_0_PS		(Debug_Out__0__PS)
+#define Debug_Out_0_PC		(Debug_Out__0__PC)
+#define Debug_Out_0_DR		(Debug_Out__0__DR)
+#define Debug_Out_0_SHIFT	(Debug_Out__0__SHIFT)
 
 
-#endif /* End Pins CC_ALIASES_H */
+#endif /* End Pins Debug_Out_ALIASES_H */
 
 
 /* [] END OF FILE */

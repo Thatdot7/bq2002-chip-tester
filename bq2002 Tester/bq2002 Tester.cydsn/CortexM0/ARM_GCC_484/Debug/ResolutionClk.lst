@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
   30:.\Generated_Source\PSoC4/ResolutionClk.c **** *
   31:.\Generated_Source\PSoC4/ResolutionClk.c **** * Parameters:
   32:.\Generated_Source\PSoC4/ResolutionClk.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 2
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/ResolutionClk.c **** *    clock is started.
@@ -118,10 +118,10 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
   38              	.L3:
   39 000e C046     		.align	2
   40              	.L2:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 3
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 3
 
 
-  41 0010 00000240 		.word	1073872896
+  41 0010 40000240 		.word	1073872960
   42              		.cfi_endproc
   43              	.LFE0:
   44              		.size	ResolutionClk_Start, .-ResolutionClk_Start
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
   57 0002 1A68     		ldr	r2, [r3]
   58 0004 5200     		lsl	r2, r2, #1
   59 0006 5208     		lsr	r2, r2, #1
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 4
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 4
 
 
   60 0008 1A60     		str	r2, [r3]
@@ -191,7 +191,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
   64              	.L6:
   65              		.align	2
   66              	.L5:
-  67 000c 00000240 		.word	1073872896
+  67 000c 40000240 		.word	1073872960
   68              		.cfi_endproc
   69              	.LFE1:
   70              		.size	ResolutionClk_Stop, .-ResolutionClk_Stop
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  145:.\Generated_Source\PSoC4/ResolutionClk.c ****     regVal = maskVal |
  146:.\Generated_Source\PSoC4/ResolutionClk.c ****         ((uint32)((uint32)clkDivider <<  ResolutionClk_DIV_INT_SHIFT) & ResolutionClk_DIV_INT_MASK)
  147:.\Generated_Source\PSoC4/ResolutionClk.c ****         ((uint32)((uint32)clkFractional << ResolutionClk_DIV_FRAC_SHIFT) & ResolutionClk_DIV_FRAC_M
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 5
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 5
 
 
  148:.\Generated_Source\PSoC4/ResolutionClk.c ****     
@@ -269,7 +269,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
   96              	.L9:
   97 000e C046     		.align	2
   98              	.L8:
-  99 0010 00000240 		.word	1073872896
+  99 0010 40000240 		.word	1073872960
  100              		.cfi_endproc
  101              	.LFE2:
  102              		.size	ResolutionClk_SetFractionalDividerRegister, .-ResolutionClk_SetFractionalDividerRegister
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  173:.\Generated_Source\PSoC4/ResolutionClk.c **** *  divide by 2, the return value will be 1.
  174:.\Generated_Source\PSoC4/ResolutionClk.c **** *
  175:.\Generated_Source\PSoC4/ResolutionClk.c **** *******************************************************************************/
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 6
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 6
 
 
  176:.\Generated_Source\PSoC4/ResolutionClk.c **** uint16 ResolutionClk_GetDividerRegister(void)
@@ -318,7 +318,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  120              	.L12:
  121              		.align	2
  122              	.L11:
- 123 0008 00000240 		.word	1073872896
+ 123 0008 40000240 		.word	1073872960
  124              		.cfi_endproc
  125              	.LFE3:
  126              		.size	ResolutionClk_GetDividerRegister, .-ResolutionClk_GetDividerRegister
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  204:.\Generated_Source\PSoC4/ResolutionClk.c **** #else
  205:.\Generated_Source\PSoC4/ResolutionClk.c ****     return 0u;
  206:.\Generated_Source\PSoC4/ResolutionClk.c **** #endif /* ResolutionClk__FRAC_MASK */
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 7
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 7
 
 
  207:.\Generated_Source\PSoC4/ResolutionClk.c **** }
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  190 0057 08       		.byte	0x8
  191 0058 07       		.byte	0x7
  192 0059 5D010000 		.4byte	.LASF7
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 8
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 8
 
 
  193 005d 03       		.uleb128 0x3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  247 00ca 00000000 		.4byte	.LFB1
  248 00ce 10000000 		.4byte	.LFE1-.LFB1
  249 00d2 01       		.uleb128 0x1
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 9
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 9
 
 
  250 00d3 9C       		.byte	0x9c
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  304 0148 01       		.uleb128 0x1
  305 0149 9C       		.byte	0x9c
  306 014a 00       		.byte	0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 10
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 10
 
 
  307              		.section	.debug_abbrev,"",%progbits
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  361 0034 00       		.byte	0
  362 0035 00       		.byte	0
  363 0036 05       		.uleb128 0x5
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 11
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 11
 
 
  364 0037 16       		.uleb128 0x16
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  418 006e 19       		.uleb128 0x19
  419 006f 11       		.uleb128 0x11
  420 0070 01       		.uleb128 0x1
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 12
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 12
 
 
  421 0071 12       		.uleb128 0x12
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  475 00a8 00       		.byte	0
  476 00a9 0C       		.uleb128 0xc
  477 00aa 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 13
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 13
 
 
  478 00ab 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  532 0028 00000000 		.4byte	.LFB3
  533 002c 0C000000 		.4byte	.LFE3-.LFB3
  534 0030 00000000 		.4byte	.LFB4
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 14
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 14
 
 
  535 0034 04000000 		.4byte	.LFE4-.LFB4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  567      7400
  568              	.LASF3:
  569 007d 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 15
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 15
 
 
  569      7420756E 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 1
  592              	.LASF7:
  593 015d 6C6F6E67 		.ascii	"long long unsigned int\000"
  593      206C6F6E 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccuZIIHj.s 			page 16
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccYXN8Hh.s 			page 16
 
 
  593      6720756E 
