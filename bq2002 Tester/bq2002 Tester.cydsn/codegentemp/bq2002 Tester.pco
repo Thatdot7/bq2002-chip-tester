@@ -1,5 +1,5 @@
 # bq2002 Tester
-# 2015-06-30 13:36:48Z
+# 2015-07-01 02:00:28Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
@@ -8,9 +8,9 @@ dont_use_io iocell 3 3
 set_io "BAT(0)" iocell 2 4
 set_location "ClockBlock" m0s8clockblockcell -1 -1 0
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
-set_io "Debug_Out(0)" iocell 2 0
 set_io "INH(0)" iocell 0 0
-set_location "Net_330" 0 0 0 1
+set_location "ISR_counter" interrupt -1 -1 16
+set_location "Net_664" 0 0 0 1
 set_io "TM(0)" iocell 2 1
 set_io "V_DD(0)" iocell 0 1
 set_io "V_SS(0)" iocell 2 2
@@ -24,4 +24,3 @@ set_location "\UART_1:SCB\" m0s8scbcell -1 -1 0
 set_io "\UART_1:rx(0)\" iocell 4 0
 set_io "\UART_1:tx(0)\" iocell 4 1
 set_location "__ONE__" 1 1 0 0
-set_location "isr_1" interrupt -1 -1 16

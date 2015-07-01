@@ -1,6 +1,6 @@
 -- ======================================================================
 -- bq2002 Tester.ctl generated from bq2002 Tester
--- 06/30/2015 at 23:36
+-- 07/01/2015 at 12:00
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

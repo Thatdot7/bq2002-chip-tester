@@ -2,7 +2,7 @@
 --	Conversion of bq2002 Tester.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Jun 30 23:36:47 2015
+--	Wed Jul 01 12:00:26 2015
 --
 
 USE cypress.cypress.all;
@@ -41,20 +41,6 @@ SIGNAL tmpFB_0__INH_net_0 : bit;
 SIGNAL tmpIO_0__INH_net_0 : bit;
 TERMINAL tmpSIOVREF__INH_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__INH_net_0 : bit;
-SIGNAL \TCPWM:Net_81\ : bit;
-SIGNAL \TCPWM:Net_75\ : bit;
-SIGNAL \TCPWM:Net_69\ : bit;
-SIGNAL \TCPWM:Net_66\ : bit;
-SIGNAL \TCPWM:Net_82\ : bit;
-SIGNAL \TCPWM:Net_72\ : bit;
-SIGNAL Net_408 : bit;
-SIGNAL Net_407 : bit;
-SIGNAL Net_409 : bit;
-SIGNAL Net_410 : bit;
-SIGNAL Net_411 : bit;
-SIGNAL Net_412 : bit;
-SIGNAL Net_330 : bit;
-SIGNAL Net_301 : bit;
 SIGNAL \UART_1:Net_847\ : bit;
 SIGNAL \UART_1:Net_459\ : bit;
 SIGNAL \UART_1:Net_652\ : bit;
@@ -106,11 +92,20 @@ SIGNAL \UART_1:Net_1087\ : bit;
 SIGNAL \UART_1:Net_899\ : bit;
 SIGNAL \UART_1:Net_915\ : bit;
 SIGNAL \UART_1:Net_1028\ : bit;
-SIGNAL tmpOE__Debug_Out_net_0 : bit;
-SIGNAL tmpFB_0__Debug_Out_net_0 : bit;
-SIGNAL tmpIO_0__Debug_Out_net_0 : bit;
-TERMINAL tmpSIOVREF__Debug_Out_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Debug_Out_net_0 : bit;
+SIGNAL \TCPWM:Net_81\ : bit;
+SIGNAL \TCPWM:Net_75\ : bit;
+SIGNAL \TCPWM:Net_69\ : bit;
+SIGNAL \TCPWM:Net_66\ : bit;
+SIGNAL \TCPWM:Net_82\ : bit;
+SIGNAL \TCPWM:Net_72\ : bit;
+SIGNAL Net_684 : bit;
+SIGNAL Net_683 : bit;
+SIGNAL Net_685 : bit;
+SIGNAL Net_686 : bit;
+SIGNAL Net_687 : bit;
+SIGNAL Net_679 : bit;
+SIGNAL Net_664 : bit;
+SIGNAL Net_674 : bit;
 SIGNAL \PWM_1:PWMUDB:km_run\ : bit;
 SIGNAL \PWM_1:PWMUDB:min_kill_reg\ : bit;
 SIGNAL \PWM_1:Net_68\ : bit;
@@ -309,9 +304,9 @@ SIGNAL \PWM_1:PWMUDB:pwm1_i\ : bit;
 SIGNAL \PWM_1:PWMUDB:pwm2_i_reg\ : bit;
 SIGNAL \PWM_1:PWMUDB:pwm2_i\ : bit;
 SIGNAL \PWM_1:PWMUDB:tc_i_reg\ : bit;
-SIGNAL Net_633 : bit;
-SIGNAL Net_634 : bit;
-SIGNAL Net_635 : bit;
+SIGNAL Net_794 : bit;
+SIGNAL Net_795 : bit;
+SIGNAL Net_796 : bit;
 SIGNAL \PWM_1:PWMUDB:pwm_temp\ : bit;
 SIGNAL \PWM_1:PWMUDB:cmp1\ : bit;
 SIGNAL \PWM_1:PWMUDB:cmp2\ : bit;
@@ -516,7 +511,7 @@ SIGNAL \PWM_1:Net_125\ : bit;
 SIGNAL \PWM_1:Net_138\ : bit;
 SIGNAL \PWM_1:Net_183\ : bit;
 SIGNAL \PWM_1:Net_181\ : bit;
-SIGNAL Net_479 : bit;
+SIGNAL Net_758 : bit;
 SIGNAL \PWM_1:PWMUDB:min_kill_reg\\D\ : bit;
 SIGNAL \PWM_1:PWMUDB:prevCapture\\D\ : bit;
 SIGNAL \PWM_1:PWMUDB:trig_last\\D\ : bit;
@@ -898,30 +893,6 @@ INH:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__V_DD_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__INH_net_0);
-\TCPWM:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
-	GENERIC MAP(cy_registers=>"")
-	PORT MAP(clock=>Net_301,
-		capture=>Net_330,
-		count=>tmpOE__V_DD_net_0,
-		reload=>Net_330,
-		stop=>zero,
-		start=>zero,
-		underflow=>Net_408,
-		overflow=>Net_407,
-		compare_match=>Net_409,
-		line_out=>Net_410,
-		line_out_compl=>Net_411,
-		interrupt=>Net_412);
-ResolutionClk:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"edf61d39-14d9-4415-943e-065f3652a64c",
-		source_clock_id=>"413DE2EF-D9F2-4233-A808-DFAF137FD877",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_301,
-		dig_domain_out=>open);
 \UART_1:SCBCLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf",
@@ -1091,81 +1062,33 @@ ResolutionClk:cy_clock_v1_0
 		sda=>\UART_1:Net_581\,
 		tx_req=>Net_355,
 		rx_req=>Net_354);
-Debug_Out:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"fcdc1696-cdf2-4f6a-a4ad-39874f159d6a",
-		drive_mode=>"110",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"1",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"1",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"O",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"10",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(tmpOE__V_DD_net_0),
-		y=>Net_330,
-		fb=>(tmpFB_0__Debug_Out_net_0),
-		analog=>(open),
-		io=>(tmpIO_0__Debug_Out_net_0),
-		siovref=>(tmpSIOVREF__Debug_Out_net_0),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>tmpOE__V_DD_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>tmpOE__V_DD_net_0,
-		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Debug_Out_net_0);
-isr_1:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10")
-	PORT MAP(int_signal=>Net_412);
+\TCPWM:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"")
+	PORT MAP(clock=>Net_674,
+		capture=>Net_664,
+		count=>tmpOE__V_DD_net_0,
+		reload=>Net_664,
+		stop=>zero,
+		start=>zero,
+		underflow=>Net_684,
+		overflow=>Net_683,
+		compare_match=>Net_685,
+		line_out=>Net_686,
+		line_out_compl=>Net_687,
+		interrupt=>Net_679);
+MicroSec_CLK:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"b427eaa3-142b-4365-b1ee-62e0dc45fdd7",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"1000000000",
+		is_direct=>'0',
+		is_digital=>'1')
+	PORT MAP(clock_out=>Net_674,
+		dig_domain_out=>open);
 \PWM_1:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_301,
+	PORT MAP(clock_in=>Net_674,
 		enable=>tmpOE__V_DD_net_0,
 		clock_out=>\PWM_1:PWMUDB:ClockOutFromEnBlock\);
 \PWM_1:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -1359,6 +1282,9 @@ isr_1:cy_isr_v1_0
 \PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_8\);
+ISR_counter:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10")
+	PORT MAP(int_signal=>Net_679);
 \PWM_1:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__V_DD_net_0,
 		s=>zero,
@@ -1404,7 +1330,7 @@ isr_1:cy_isr_v1_0
 \PWM_1:PWMUDB:pwm_i_reg\:cy_dff
 	PORT MAP(d=>\PWM_1:PWMUDB:pwm_i\,
 		clk=>\PWM_1:PWMUDB:ClockOutFromEnBlock\,
-		q=>Net_330);
+		q=>Net_664);
 \PWM_1:PWMUDB:pwm1_i_reg\:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\PWM_1:PWMUDB:ClockOutFromEnBlock\,

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
   30:.\Generated_Source\PSoC4/ISR_counter.c **** /* `#END` */
   31:.\Generated_Source\PSoC4/ISR_counter.c **** 
   32:.\Generated_Source\PSoC4/ISR_counter.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 2
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/ISR_counter.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
   87:.\Generated_Source\PSoC4/ISR_counter.c **** *   }
   88:.\Generated_Source\PSoC4/ISR_counter.c **** *   Function prototype example:
   89:.\Generated_Source\PSoC4/ISR_counter.c **** *   CY_ISR_PROTO(MyISR);
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 3
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 3
 
 
   90:.\Generated_Source\PSoC4/ISR_counter.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  144:.\Generated_Source\PSoC4/ISR_counter.c **** *
  145:.\Generated_Source\PSoC4/ISR_counter.c **** *   Add custom code between the START and END comments to keep the next version
  146:.\Generated_Source\PSoC4/ISR_counter.c **** *   of this file from over-writing your code.
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 4
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 4
 
 
  147:.\Generated_Source\PSoC4/ISR_counter.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  185:.\Generated_Source\PSoC4/ISR_counter.c **** *     CY_ISR_PROTO(MyISR);
  186:.\Generated_Source\PSoC4/ISR_counter.c **** *
  187:.\Generated_Source\PSoC4/ISR_counter.c **** * Parameters:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 5
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 5
 
 
  188:.\Generated_Source\PSoC4/ISR_counter.c **** *   address: Address of the ISR to set in the interrupt vector table.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
   68              		.cfi_startproc
  216:.\Generated_Source\PSoC4/ISR_counter.c ****     return CyRamVectors[CYINT_IRQ_BASE + ISR_counter__INTC_NUMBER];
   69              		.loc 1 216 0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 6
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 6
 
 
   70 0000 8023     		mov	r3, #128
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
   95              		.cfi_def_cfa_offset 8
   96              		.cfi_offset 4, -8
   97              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 7
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 7
 
 
   98 0002 041C     		mov	r4, r0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  262:.\Generated_Source\PSoC4/ISR_counter.c **** *
  263:.\Generated_Source\PSoC4/ISR_counter.c **** * Parameters:
  264:.\Generated_Source\PSoC4/ISR_counter.c **** *   None
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 8
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 8
 
 
  265:.\Generated_Source\PSoC4/ISR_counter.c **** *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  290:.\Generated_Source\PSoC4/ISR_counter.c **** *   function, which sets the vector and the priority, has been called.
  291:.\Generated_Source\PSoC4/ISR_counter.c **** *
  292:.\Generated_Source\PSoC4/ISR_counter.c **** * Parameters:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 9
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 9
 
 
  293:.\Generated_Source\PSoC4/ISR_counter.c **** *   None
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  189              		.loc 1 321 0
  190              		.cfi_startproc
  322:.\Generated_Source\PSoC4/ISR_counter.c ****     /* Get the state of the general interrupt. */
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 10
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 10
 
 
  323:.\Generated_Source\PSoC4/ISR_counter.c ****     return ((*ISR_counter_INTC_SET_EN & (uint32)ISR_counter__INTC_MASK) != 0u) ? 1u:0u;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  223 0002 5202     		lsl	r2, r2, #9
  224 0004 014B     		ldr	r3, .L23
  225 0006 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 11
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 11
 
 
  345:.\Generated_Source\PSoC4/ISR_counter.c **** }
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  273              		.size	ISR_counter_Start, .-ISR_counter_Start
  274              		.section	.text.ISR_counter_StartEx,"ax",%progbits
  275              		.align	2
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 12
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 12
 
 
  276              		.global	ISR_counter_StartEx
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  323              		.cfi_offset 3, -8
  324              		.cfi_offset 14, -4
  131:.\Generated_Source\PSoC4/ISR_counter.c ****     ISR_counter_Disable();
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 13
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 13
 
 
  325              		.loc 1 131 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  352              		.loc 1 370 0
  353 0000 8022     		mov	r2, #128
  354 0002 5202     		lsl	r2, r2, #9
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 14
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 14
 
 
  355 0004 014B     		ldr	r3, .L33
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  383              		@ sp needed
  384 0008 7047     		bx	lr
  385              	.L37:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 15
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 15
 
 
  386 000a C046     		.align	2
@@ -858,47 +858,47 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  400 0006 00000000 		.4byte	.Ldebug_abbrev0
  401 000a 04       		.byte	0x4
  402 000b 01       		.uleb128 0x1
- 403 000c A1010000 		.4byte	.LASF33
+ 403 000c BA010000 		.4byte	.LASF33
  404 0010 01       		.byte	0x1
- 405 0011 EC020000 		.4byte	.LASF34
- 406 0015 1C000000 		.4byte	.LASF35
+ 405 0011 F8020000 		.4byte	.LASF34
+ 406 0015 84000000 		.4byte	.LASF35
  407 0019 00000000 		.4byte	.Ldebug_ranges0+0
  408 001d 00000000 		.4byte	0
  409 0021 00000000 		.4byte	.Ldebug_line0
  410 0025 02       		.uleb128 0x2
  411 0026 01       		.byte	0x1
  412 0027 06       		.byte	0x6
- 413 0028 E0020000 		.4byte	.LASF0
+ 413 0028 EC020000 		.4byte	.LASF0
  414 002c 02       		.uleb128 0x2
  415 002d 01       		.byte	0x1
  416 002e 08       		.byte	0x8
- 417 002f B2000000 		.4byte	.LASF1
+ 417 002f 76000000 		.4byte	.LASF1
  418 0033 02       		.uleb128 0x2
  419 0034 02       		.byte	0x2
  420 0035 05       		.byte	0x5
- 421 0036 A7020000 		.4byte	.LASF2
+ 421 0036 B3020000 		.4byte	.LASF2
  422 003a 02       		.uleb128 0x2
  423 003b 02       		.byte	0x2
  424 003c 07       		.byte	0x7
- 425 003d 6D000000 		.4byte	.LASF3
+ 425 003d 31000000 		.4byte	.LASF3
  426 0041 02       		.uleb128 0x2
  427 0042 04       		.byte	0x4
  428 0043 05       		.byte	0x5
- 429 0044 D7020000 		.4byte	.LASF4
+ 429 0044 E3020000 		.4byte	.LASF4
  430 0048 02       		.uleb128 0x2
  431 0049 04       		.byte	0x4
  432 004a 07       		.byte	0x7
- 433 004b E3000000 		.4byte	.LASF5
+ 433 004b FC000000 		.4byte	.LASF5
  434 004f 02       		.uleb128 0x2
  435 0050 08       		.byte	0x8
  436 0051 05       		.byte	0x5
- 437 0052 45020000 		.4byte	.LASF6
+ 437 0052 5E020000 		.4byte	.LASF6
  438 0056 02       		.uleb128 0x2
  439 0057 08       		.byte	0x8
  440 0058 07       		.byte	0x7
- 441 0059 9B000000 		.4byte	.LASF7
+ 441 0059 5F000000 		.4byte	.LASF7
  442 005d 03       		.uleb128 0x3
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 16
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 16
 
 
  443 005e 04       		.byte	0x4
@@ -907,29 +907,29 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  446 0064 02       		.uleb128 0x2
  447 0065 04       		.byte	0x4
  448 0066 07       		.byte	0x7
- 449 0067 55010000 		.4byte	.LASF8
+ 449 0067 6E010000 		.4byte	.LASF8
  450 006b 04       		.uleb128 0x4
- 451 006c F5000000 		.4byte	.LASF9
+ 451 006c 0E010000 		.4byte	.LASF9
  452 0070 02       		.byte	0x2
  453 0071 B3       		.byte	0xb3
  454 0072 2C000000 		.4byte	0x2c
  455 0076 04       		.uleb128 0x4
- 456 0077 37010000 		.4byte	.LASF10
+ 456 0077 50010000 		.4byte	.LASF10
  457 007b 02       		.byte	0x2
  458 007c B5       		.byte	0xb5
  459 007d 48000000 		.4byte	0x48
  460 0081 02       		.uleb128 0x2
  461 0082 04       		.byte	0x4
  462 0083 04       		.byte	0x4
- 463 0084 95000000 		.4byte	.LASF11
+ 463 0084 59000000 		.4byte	.LASF11
  464 0088 02       		.uleb128 0x2
  465 0089 08       		.byte	0x8
  466 008a 04       		.byte	0x4
- 467 008b 1C010000 		.4byte	.LASF12
+ 467 008b 35010000 		.4byte	.LASF12
  468 008f 02       		.uleb128 0x2
  469 0090 01       		.byte	0x1
  470 0091 08       		.byte	0x8
- 471 0092 6B020000 		.4byte	.LASF13
+ 471 0092 84020000 		.4byte	.LASF13
  472 0096 05       		.uleb128 0x5
  473 0097 16000000 		.4byte	.LASF14
  474 009b 02       		.byte	0x2
@@ -938,7 +938,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  477 00a2 06       		.uleb128 0x6
  478 00a3 76000000 		.4byte	0x76
  479 00a7 05       		.uleb128 0x5
- 480 00a8 1D020000 		.4byte	.LASF15
+ 480 00a8 36020000 		.4byte	.LASF15
  481 00ac 02       		.byte	0x2
  482 00ad 6F01     		.2byte	0x16f
  483 00af B3000000 		.4byte	0xb3
@@ -949,7 +949,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  488 00ba 02       		.uleb128 0x2
  489 00bb 04       		.byte	0x4
  490 00bc 07       		.byte	0x7
- 491 00bd 3C020000 		.4byte	.LASF16
+ 491 00bd 55020000 		.4byte	.LASF16
  492 00c1 09       		.uleb128 0x9
  493 00c2 00000000 		.4byte	.LASF23
  494 00c6 01       		.byte	0x1
@@ -958,11 +958,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  497 00cc 02000000 		.4byte	.LFE3-.LFB3
  498 00d0 01       		.uleb128 0x1
  499 00d1 9C       		.byte	0x9c
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 17
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 17
 
 
  500 00d2 0A       		.uleb128 0xa
- 501 00d3 8B010000 		.4byte	.LASF17
+ 501 00d3 A4010000 		.4byte	.LASF17
  502 00d7 01       		.byte	0x1
  503 00d8 C2       		.byte	0xc2
  504 00d9 00000000 		.4byte	.LFB4
@@ -971,7 +971,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  507 00e2 9C       		.byte	0x9c
  508 00e3 F5000000 		.4byte	0xf5
  509 00e7 0B       		.uleb128 0xb
- 510 00e8 65000000 		.4byte	.LASF19
+ 510 00e8 29000000 		.4byte	.LASF19
  511 00ec 01       		.byte	0x1
  512 00ed C2       		.byte	0xc2
  513 00ee A7000000 		.4byte	0xa7
@@ -979,7 +979,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  515 00f3 50       		.byte	0x50
  516 00f4 00       		.byte	0
  517 00f5 0C       		.uleb128 0xc
- 518 00f6 13030000 		.4byte	.LASF25
+ 518 00f6 1F030000 		.4byte	.LASF25
  519 00fa 01       		.byte	0x1
  520 00fb D6       		.byte	0xd6
  521 00fc A7000000 		.4byte	0xa7
@@ -988,7 +988,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  524 0108 01       		.uleb128 0x1
  525 0109 9C       		.byte	0x9c
  526 010a 0A       		.uleb128 0xa
- 527 010b 53020000 		.4byte	.LASF18
+ 527 010b 6C020000 		.4byte	.LASF18
  528 010f 01       		.byte	0x1
  529 0110 F4       		.byte	0xf4
  530 0111 00000000 		.4byte	.LFB6
@@ -997,19 +997,19 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  533 011a 9C       		.byte	0x9c
  534 011b 5C010000 		.4byte	0x15c
  535 011f 0D       		.uleb128 0xd
- 536 0120 FB000000 		.4byte	.LASF20
+ 536 0120 14010000 		.4byte	.LASF20
  537 0124 01       		.byte	0x1
  538 0125 F4       		.byte	0xf4
  539 0126 6B000000 		.4byte	0x6b
  540 012a 00000000 		.4byte	.LLST0
  541 012e 0E       		.uleb128 0xe
- 542 012f D4000000 		.4byte	.LASF21
+ 542 012f ED000000 		.4byte	.LASF21
  543 0133 01       		.byte	0x1
  544 0134 F6       		.byte	0xf6
  545 0135 6B000000 		.4byte	0x6b
  546 0139 21000000 		.4byte	.LLST1
  547 013d 0F       		.uleb128 0xf
- 548 013e C8020000 		.4byte	.LASF22
+ 548 013e D4020000 		.4byte	.LASF22
  549 0142 01       		.byte	0x1
  550 0143 F7       		.byte	0xf7
  551 0144 76000000 		.4byte	0x76
@@ -1018,14 +1018,14 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  554 014a 08000000 		.4byte	.LVL3
  555 014e E5020000 		.4byte	0x2e5
  556 0152 10       		.uleb128 0x10
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 18
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 18
 
 
  557 0153 1C000000 		.4byte	.LVL4
  558 0157 F0020000 		.4byte	0x2f0
  559 015b 00       		.byte	0
  560 015c 11       		.uleb128 0x11
- 561 015d 04010000 		.4byte	.LASF36
+ 561 015d 1D010000 		.4byte	.LASF36
  562 0161 01       		.byte	0x1
  563 0162 1001     		.2byte	0x110
  564 0164 6B000000 		.4byte	0x6b
@@ -1035,20 +1035,20 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  568 0171 9C       		.byte	0x9c
  569 0172 94010000 		.4byte	0x194
  570 0176 12       		.uleb128 0x12
- 571 0177 FB000000 		.4byte	.LASF20
+ 571 0177 14010000 		.4byte	.LASF20
  572 017b 01       		.byte	0x1
  573 017c 1201     		.2byte	0x112
  574 017e 76000000 		.4byte	0x76
  575 0182 34000000 		.4byte	.LLST2
  576 0186 13       		.uleb128 0x13
- 577 0187 C8020000 		.4byte	.LASF22
+ 577 0187 D4020000 		.4byte	.LASF22
  578 018b 01       		.byte	0x1
  579 018c 1301     		.2byte	0x113
  580 018e 76000000 		.4byte	0x76
  581 0192 06       		.byte	0x6
  582 0193 00       		.byte	0
  583 0194 14       		.uleb128 0x14
- 584 0195 62010000 		.4byte	.LASF24
+ 584 0195 7B010000 		.4byte	.LASF24
  585 0199 01       		.byte	0x1
  586 019a 2B01     		.2byte	0x12b
  587 019c 00000000 		.4byte	.LFB8
@@ -1056,7 +1056,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  589 01a4 01       		.uleb128 0x1
  590 01a5 9C       		.byte	0x9c
  591 01a6 15       		.uleb128 0x15
- 592 01a7 80000000 		.4byte	.LASF26
+ 592 01a7 44000000 		.4byte	.LASF26
  593 01ab 01       		.byte	0x1
  594 01ac 4001     		.2byte	0x140
  595 01ae 6B000000 		.4byte	0x6b
@@ -1065,7 +1065,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  598 01ba 01       		.uleb128 0x1
  599 01bb 9C       		.byte	0x9c
  600 01bc 14       		.uleb128 0x14
- 601 01bd 23010000 		.4byte	.LASF27
+ 601 01bd 3C010000 		.4byte	.LASF27
  602 01c1 01       		.byte	0x1
  603 01c2 5501     		.2byte	0x155
  604 01c4 00000000 		.4byte	.LFB10
@@ -1073,12 +1073,12 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  606 01cc 01       		.uleb128 0x1
  607 01cd 9C       		.byte	0x9c
  608 01ce 0A       		.uleb128 0xa
- 609 01cf 2A020000 		.4byte	.LASF28
+ 609 01cf 43020000 		.4byte	.LASF28
  610 01d3 01       		.byte	0x1
  611 01d4 37       		.byte	0x37
  612 01d5 00000000 		.4byte	.LFB0
  613 01d9 1C000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 19
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 19
 
 
  614 01dd 01       		.uleb128 0x1
@@ -1113,7 +1113,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  643 021b 94010000 		.4byte	0x194
  644 021f 00       		.byte	0
  645 0220 0A       		.uleb128 0xa
- 646 0221 C0000000 		.4byte	.LASF29
+ 646 0221 D9000000 		.4byte	.LASF29
  647 0225 01       		.byte	0x1
  648 0226 62       		.byte	0x62
  649 0227 00000000 		.4byte	.LFB1
@@ -1122,7 +1122,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  652 0230 9C       		.byte	0x9c
  653 0231 7E020000 		.4byte	0x27e
  654 0235 0D       		.uleb128 0xd
- 655 0236 65000000 		.4byte	.LASF19
+ 655 0236 29000000 		.4byte	.LASF19
  656 023a 01       		.byte	0x1
  657 023b 62       		.byte	0x62
  658 023c A7000000 		.4byte	0xa7
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  668 025b 01       		.uleb128 0x1
  669 025c 50       		.byte	0x50
  670 025d 02       		.uleb128 0x2
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 20
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 20
 
 
  671 025e 74       		.byte	0x74
@@ -1159,7 +1159,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  686 0279 94010000 		.4byte	0x194
  687 027d 00       		.byte	0
  688 027e 0A       		.uleb128 0xa
- 689 027f 70020000 		.4byte	.LASF30
+ 689 027f 89020000 		.4byte	.LASF30
  690 0283 01       		.byte	0x1
  691 0284 80       		.byte	0x80
  692 0285 00000000 		.4byte	.LFB2
@@ -1175,7 +1175,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  702 02a1 D2000000 		.4byte	0xd2
  703 02a5 00       		.byte	0
  704 02a6 14       		.uleb128 0x14
- 705 02a7 B1020000 		.4byte	.LASF31
+ 705 02a7 BD020000 		.4byte	.LASF31
  706 02ab 01       		.byte	0x1
  707 02ac 7001     		.2byte	0x170
  708 02ae 00000000 		.4byte	.LFB11
@@ -1183,7 +1183,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  710 02b6 01       		.uleb128 0x1
  711 02b7 9C       		.byte	0x9c
  712 02b8 14       		.uleb128 0x14
- 713 02b9 81020000 		.4byte	.LASF32
+ 713 02b9 9A020000 		.4byte	.LASF32
  714 02bd 01       		.byte	0x1
  715 02be 8901     		.2byte	0x189
  716 02c0 00000000 		.4byte	.LFB12
@@ -1198,20 +1198,20 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  725 02d8 2F       		.byte	0x2f
  726 02d9 00       		.byte	0
  727 02da 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 21
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 21
 
 
- 728 02db 9A020000 		.4byte	.LASF37
+ 728 02db 1C000000 		.4byte	.LASF37
  729 02df 01       		.byte	0x1
  730 02e0 20       		.byte	0x20
  731 02e1 CA020000 		.4byte	0x2ca
  732 02e5 1B       		.uleb128 0x1b
- 733 02e6 3E010000 		.4byte	.LASF38
+ 733 02e6 57010000 		.4byte	.LASF38
  734 02ea 03       		.byte	0x3
  735 02eb 5E       		.byte	0x5e
  736 02ec 6B000000 		.4byte	0x6b
  737 02f0 1C       		.uleb128 0x1c
- 738 02f1 75010000 		.4byte	.LASF39
+ 738 02f1 8E010000 		.4byte	.LASF39
  739 02f5 03       		.byte	0x3
  740 02f6 5F       		.byte	0x5f
  741 02f7 1D       		.uleb128 0x1d
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  782 0023 3E       		.uleb128 0x3e
  783 0024 0B       		.uleb128 0xb
  784 0025 03       		.uleb128 0x3
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 22
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 22
 
 
  785 0026 08       		.uleb128 0x8
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  839 005c 00       		.byte	0
  840 005d 3F       		.uleb128 0x3f
  841 005e 19       		.uleb128 0x19
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 23
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 23
 
 
  842 005f 03       		.uleb128 0x3
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  896 0097 02       		.uleb128 0x2
  897 0098 18       		.uleb128 0x18
  898 0099 00       		.byte	0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 24
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 24
 
 
  899 009a 00       		.byte	0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  953 00d1 00       		.byte	0
  954 00d2 00       		.byte	0
  955 00d3 0F       		.uleb128 0xf
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 25
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 25
 
 
  956 00d4 34       		.uleb128 0x34
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1010 010d 0E       		.uleb128 0xe
  1011 010e 3A       		.uleb128 0x3a
  1012 010f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 26
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 26
 
 
  1013 0110 3B       		.uleb128 0x3b
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1067 0147 0B       		.uleb128 0xb
  1068 0148 3B       		.uleb128 0x3b
  1069 0149 05       		.uleb128 0x5
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 27
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 27
 
 
  1070 014a 27       		.uleb128 0x27
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1124 0186 00       		.byte	0
  1125 0187 03       		.uleb128 0x3
  1126 0188 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 28
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 28
 
 
  1127 0189 3A       		.uleb128 0x3a
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1181 01bf 00       		.byte	0
  1182 01c0 00       		.byte	0
  1183              		.section	.debug_loc,"",%progbits
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 29
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 29
 
 
  1184              	.Ldebug_loc0:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1238 007e 00000000 		.4byte	0
  1239              		.section	.debug_aranges,"",%progbits
  1240 0000 7C000000 		.4byte	0x7c
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 30
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 30
 
 
  1241 0004 0200     		.2byte	0x2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1295 0048 00000000 		.4byte	.LFB1
  1296 004c 1A000000 		.4byte	.LFE1
  1297 0050 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 31
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 31
 
 
  1298 0054 14000000 		.4byte	.LFE2
@@ -1824,221 +1824,221 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 1
  1310              	.LASF14:
  1311 0016 72656733 		.ascii	"reg32\000"
  1311      3200
- 1312              	.LASF35:
- 1313 001c 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
- 1313      6F63756D 
- 1313      656E7473 
- 1313      5C476974 
- 1313      4875625C 
- 1314 004b 65737465 		.ascii	"ester\\bq2002 Tester.cydsn\000"
- 1314      725C6271 
- 1314      32303032 
- 1314      20546573 
- 1314      7465722E 
- 1315              	.LASF19:
- 1316 0065 61646472 		.ascii	"address\000"
- 1316      65737300 
- 1317              	.LASF3:
- 1318 006d 73686F72 		.ascii	"short unsigned int\000"
- 1318      7420756E 
- 1318      7369676E 
- 1318      65642069 
- 1318      6E7400
- 1319              	.LASF26:
- 1320 0080 4953525F 		.ascii	"ISR_counter_GetState\000"
- 1320      636F756E 
- 1320      7465725F 
- 1320      47657453 
- 1320      74617465 
- 1321              	.LASF11:
- 1322 0095 666C6F61 		.ascii	"float\000"
- 1322      7400
- 1323              	.LASF7:
- 1324 009b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1324      206C6F6E 
- 1324      6720756E 
- 1324      7369676E 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 32
+ 1312              	.LASF37:
+ 1313 001c 43795261 		.ascii	"CyRamVectors\000"
+ 1313      6D566563 
+ 1313      746F7273 
+ 1313      00
+ 1314              	.LASF19:
+ 1315 0029 61646472 		.ascii	"address\000"
+ 1315      65737300 
+ 1316              	.LASF3:
+ 1317 0031 73686F72 		.ascii	"short unsigned int\000"
+ 1317      7420756E 
+ 1317      7369676E 
+ 1317      65642069 
+ 1317      6E7400
+ 1318              	.LASF26:
+ 1319 0044 4953525F 		.ascii	"ISR_counter_GetState\000"
+ 1319      636F756E 
+ 1319      7465725F 
+ 1319      47657453 
+ 1319      74617465 
+ 1320              	.LASF11:
+ 1321 0059 666C6F61 		.ascii	"float\000"
+ 1321      7400
+ 1322              	.LASF7:
+ 1323 005f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1323      206C6F6E 
+ 1323      6720756E 
+ 1323      7369676E 
+ 1323      65642069 
+ 1324              	.LASF1:
+ 1325 0076 756E7369 		.ascii	"unsigned char\000"
+ 1325      676E6564 
+ 1325      20636861 
+ 1325      7200
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 32
 
 
- 1324      65642069 
- 1325              	.LASF1:
- 1326 00b2 756E7369 		.ascii	"unsigned char\000"
- 1326      676E6564 
- 1326      20636861 
- 1326      7200
- 1327              	.LASF29:
- 1328 00c0 4953525F 		.ascii	"ISR_counter_StartEx\000"
- 1328      636F756E 
- 1328      7465725F 
- 1328      53746172 
- 1328      74457800 
- 1329              	.LASF21:
- 1330 00d4 696E7465 		.ascii	"interruptState\000"
- 1330      72727570 
- 1330      74537461 
- 1330      746500
- 1331              	.LASF5:
- 1332 00e3 6C6F6E67 		.ascii	"long unsigned int\000"
- 1332      20756E73 
- 1332      69676E65 
- 1332      6420696E 
- 1332      7400
- 1333              	.LASF9:
- 1334 00f5 75696E74 		.ascii	"uint8\000"
- 1334      3800
- 1335              	.LASF20:
- 1336 00fb 7072696F 		.ascii	"priority\000"
- 1336      72697479 
- 1336      00
- 1337              	.LASF36:
- 1338 0104 4953525F 		.ascii	"ISR_counter_GetPriority\000"
- 1338      636F756E 
- 1338      7465725F 
- 1338      47657450 
- 1338      72696F72 
- 1339              	.LASF12:
- 1340 011c 646F7562 		.ascii	"double\000"
- 1340      6C6500
- 1341              	.LASF27:
- 1342 0123 4953525F 		.ascii	"ISR_counter_Disable\000"
- 1342      636F756E 
- 1342      7465725F 
- 1342      44697361 
- 1342      626C6500 
- 1343              	.LASF10:
- 1344 0137 75696E74 		.ascii	"uint32\000"
- 1344      333200
- 1345              	.LASF38:
- 1346 013e 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1346      74657243 
- 1346      72697469 
- 1346      63616C53 
- 1346      65637469 
- 1347              	.LASF8:
- 1348 0155 756E7369 		.ascii	"unsigned int\000"
- 1348      676E6564 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 33
+ 1326              	.LASF35:
+ 1327 0084 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 1327      73657273 
+ 1327      5C4D6F73 
+ 1327      65735C44 
+ 1327      6F63756D 
+ 1328 00b2 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ 1328      5C627132 
+ 1328      30303220 
+ 1328      54657374 
+ 1328      65725C62 
+ 1329              	.LASF29:
+ 1330 00d9 4953525F 		.ascii	"ISR_counter_StartEx\000"
+ 1330      636F756E 
+ 1330      7465725F 
+ 1330      53746172 
+ 1330      74457800 
+ 1331              	.LASF21:
+ 1332 00ed 696E7465 		.ascii	"interruptState\000"
+ 1332      72727570 
+ 1332      74537461 
+ 1332      746500
+ 1333              	.LASF5:
+ 1334 00fc 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1334      20756E73 
+ 1334      69676E65 
+ 1334      6420696E 
+ 1334      7400
+ 1335              	.LASF9:
+ 1336 010e 75696E74 		.ascii	"uint8\000"
+ 1336      3800
+ 1337              	.LASF20:
+ 1338 0114 7072696F 		.ascii	"priority\000"
+ 1338      72697479 
+ 1338      00
+ 1339              	.LASF36:
+ 1340 011d 4953525F 		.ascii	"ISR_counter_GetPriority\000"
+ 1340      636F756E 
+ 1340      7465725F 
+ 1340      47657450 
+ 1340      72696F72 
+ 1341              	.LASF12:
+ 1342 0135 646F7562 		.ascii	"double\000"
+ 1342      6C6500
+ 1343              	.LASF27:
+ 1344 013c 4953525F 		.ascii	"ISR_counter_Disable\000"
+ 1344      636F756E 
+ 1344      7465725F 
+ 1344      44697361 
+ 1344      626C6500 
+ 1345              	.LASF10:
+ 1346 0150 75696E74 		.ascii	"uint32\000"
+ 1346      333200
+ 1347              	.LASF38:
+ 1348 0157 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1348      74657243 
+ 1348      72697469 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 33
 
 
- 1348      20696E74 
- 1348      00
- 1349              	.LASF24:
- 1350 0162 4953525F 		.ascii	"ISR_counter_Enable\000"
- 1350      636F756E 
- 1350      7465725F 
- 1350      456E6162 
- 1350      6C6500
- 1351              	.LASF39:
- 1352 0175 43794578 		.ascii	"CyExitCriticalSection\000"
- 1352      69744372 
- 1352      69746963 
- 1352      616C5365 
- 1352      6374696F 
- 1353              	.LASF17:
- 1354 018b 4953525F 		.ascii	"ISR_counter_SetVector\000"
- 1354      636F756E 
- 1354      7465725F 
- 1354      53657456 
- 1354      6563746F 
- 1355              	.LASF33:
- 1356 01a1 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 1356      4320342E 
- 1356      382E3420 
- 1356      32303134 
- 1356      30353236 
- 1357 01d4 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 1357      20726576 
- 1357      6973696F 
- 1357      6E203231 
- 1357      31333538 
- 1358 0207 67202D66 		.ascii	"g -ffunction-sections\000"
- 1358      66756E63 
- 1358      74696F6E 
- 1358      2D736563 
- 1358      74696F6E 
- 1359              	.LASF15:
- 1360 021d 63796973 		.ascii	"cyisraddress\000"
- 1360      72616464 
- 1360      72657373 
- 1360      00
- 1361              	.LASF28:
- 1362 022a 4953525F 		.ascii	"ISR_counter_Start\000"
- 1362      636F756E 
- 1362      7465725F 
- 1362      53746172 
- 1362      7400
- 1363              	.LASF16:
- 1364 023c 73697A65 		.ascii	"sizetype\000"
- 1364      74797065 
- 1364      00
- 1365              	.LASF6:
- 1366 0245 6C6F6E67 		.ascii	"long long int\000"
- 1366      206C6F6E 
- 1366      6720696E 
- 1366      7400
- 1367              	.LASF18:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 34
+ 1348      63616C53 
+ 1348      65637469 
+ 1349              	.LASF8:
+ 1350 016e 756E7369 		.ascii	"unsigned int\000"
+ 1350      676E6564 
+ 1350      20696E74 
+ 1350      00
+ 1351              	.LASF24:
+ 1352 017b 4953525F 		.ascii	"ISR_counter_Enable\000"
+ 1352      636F756E 
+ 1352      7465725F 
+ 1352      456E6162 
+ 1352      6C6500
+ 1353              	.LASF39:
+ 1354 018e 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1354      69744372 
+ 1354      69746963 
+ 1354      616C5365 
+ 1354      6374696F 
+ 1355              	.LASF17:
+ 1356 01a4 4953525F 		.ascii	"ISR_counter_SetVector\000"
+ 1356      636F756E 
+ 1356      7465725F 
+ 1356      53657456 
+ 1356      6563746F 
+ 1357              	.LASF33:
+ 1358 01ba 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1358      4320342E 
+ 1358      382E3420 
+ 1358      32303134 
+ 1358      30353236 
+ 1359 01ed 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 1359      20726576 
+ 1359      6973696F 
+ 1359      6E203231 
+ 1359      31333538 
+ 1360 0220 67202D66 		.ascii	"g -ffunction-sections\000"
+ 1360      66756E63 
+ 1360      74696F6E 
+ 1360      2D736563 
+ 1360      74696F6E 
+ 1361              	.LASF15:
+ 1362 0236 63796973 		.ascii	"cyisraddress\000"
+ 1362      72616464 
+ 1362      72657373 
+ 1362      00
+ 1363              	.LASF28:
+ 1364 0243 4953525F 		.ascii	"ISR_counter_Start\000"
+ 1364      636F756E 
+ 1364      7465725F 
+ 1364      53746172 
+ 1364      7400
+ 1365              	.LASF16:
+ 1366 0255 73697A65 		.ascii	"sizetype\000"
+ 1366      74797065 
+ 1366      00
+ 1367              	.LASF6:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 34
 
 
- 1368 0253 4953525F 		.ascii	"ISR_counter_SetPriority\000"
- 1368      636F756E 
- 1368      7465725F 
- 1368      53657450 
- 1368      72696F72 
- 1369              	.LASF13:
- 1370 026b 63686172 		.ascii	"char\000"
- 1370      00
- 1371              	.LASF30:
- 1372 0270 4953525F 		.ascii	"ISR_counter_Stop\000"
- 1372      636F756E 
- 1372      7465725F 
- 1372      53746F70 
+ 1368 025e 6C6F6E67 		.ascii	"long long int\000"
+ 1368      206C6F6E 
+ 1368      6720696E 
+ 1368      7400
+ 1369              	.LASF18:
+ 1370 026c 4953525F 		.ascii	"ISR_counter_SetPriority\000"
+ 1370      636F756E 
+ 1370      7465725F 
+ 1370      53657450 
+ 1370      72696F72 
+ 1371              	.LASF13:
+ 1372 0284 63686172 		.ascii	"char\000"
  1372      00
- 1373              	.LASF32:
- 1374 0281 4953525F 		.ascii	"ISR_counter_ClearPending\000"
+ 1373              	.LASF30:
+ 1374 0289 4953525F 		.ascii	"ISR_counter_Stop\000"
  1374      636F756E 
  1374      7465725F 
- 1374      436C6561 
- 1374      7250656E 
- 1375              	.LASF37:
- 1376 029a 43795261 		.ascii	"CyRamVectors\000"
- 1376      6D566563 
- 1376      746F7273 
- 1376      00
+ 1374      53746F70 
+ 1374      00
+ 1375              	.LASF32:
+ 1376 029a 4953525F 		.ascii	"ISR_counter_ClearPending\000"
+ 1376      636F756E 
+ 1376      7465725F 
+ 1376      436C6561 
+ 1376      7250656E 
  1377              	.LASF2:
- 1378 02a7 73686F72 		.ascii	"short int\000"
+ 1378 02b3 73686F72 		.ascii	"short int\000"
  1378      7420696E 
  1378      7400
  1379              	.LASF31:
- 1380 02b1 4953525F 		.ascii	"ISR_counter_SetPending\000"
+ 1380 02bd 4953525F 		.ascii	"ISR_counter_SetPending\000"
  1380      636F756E 
  1380      7465725F 
  1380      53657450 
  1380      656E6469 
  1381              	.LASF22:
- 1382 02c8 7072696F 		.ascii	"priorityOffset\000"
+ 1382 02d4 7072696F 		.ascii	"priorityOffset\000"
  1382      72697479 
  1382      4F666673 
  1382      657400
  1383              	.LASF4:
- 1384 02d7 6C6F6E67 		.ascii	"long int\000"
+ 1384 02e3 6C6F6E67 		.ascii	"long int\000"
  1384      20696E74 
  1384      00
  1385              	.LASF0:
- 1386 02e0 7369676E 		.ascii	"signed char\000"
+ 1386 02ec 7369676E 		.ascii	"signed char\000"
  1386      65642063 
  1386      68617200 
  1387              	.LASF34:
- 1388 02ec 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\ISR_counter.c\000"
+ 1388 02f8 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\ISR_counter.c\000"
  1388      6E657261 
  1388      7465645F 
  1388      536F7572 
  1388      63655C50 
  1389              	.LASF25:
- 1390 0313 4953525F 		.ascii	"ISR_counter_GetVector\000"
+ 1390 031f 4953525F 		.ascii	"ISR_counter_GetVector\000"
  1390      636F756E 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc4ZljMO.s 			page 35
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccntbfXN.s 			page 35
 
 
  1390      7465725F 

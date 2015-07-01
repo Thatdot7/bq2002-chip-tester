@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: ResolutionClk.c
+* File Name: MicroSec_CLK.c
 * Version 2.20
 *
 *  Description:
@@ -17,12 +17,12 @@
 *******************************************************************************/
 
 #include <cydevice_trm.h>
-#include "ResolutionClk.h"
+#include "MicroSec_CLK.h"
 
 #if defined CYREG_PERI_DIV_CMD
 
 /*******************************************************************************
-* Function Name: ResolutionClk_StartEx
+* Function Name: MicroSec_CLK_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -36,24 +36,24 @@
 *  None
 *
 *******************************************************************************/
-void ResolutionClk_StartEx(uint32 alignClkDiv)
+void MicroSec_CLK_StartEx(uint32 alignClkDiv)
 {
     /* Make sure any previous start command has finished. */
-    while((ResolutionClk_CMD_REG & ResolutionClk_CMD_ENABLE_MASK) != 0u)
+    while((MicroSec_CLK_CMD_REG & MicroSec_CLK_CMD_ENABLE_MASK) != 0u)
     {
     }
     
     /* Specify the target divider and it's alignment divider, and enable. */
-    ResolutionClk_CMD_REG =
-        ((uint32)ResolutionClk__DIV_ID << ResolutionClk_CMD_DIV_SHIFT)|
-        (alignClkDiv << ResolutionClk_CMD_PA_DIV_SHIFT) |
-        (uint32)ResolutionClk_CMD_ENABLE_MASK;
+    MicroSec_CLK_CMD_REG =
+        ((uint32)MicroSec_CLK__DIV_ID << MicroSec_CLK_CMD_DIV_SHIFT)|
+        (alignClkDiv << MicroSec_CLK_CMD_PA_DIV_SHIFT) |
+        (uint32)MicroSec_CLK_CMD_ENABLE_MASK;
 }
 
 #else
 
 /*******************************************************************************
-* Function Name: ResolutionClk_Start
+* Function Name: MicroSec_CLK_Start
 ********************************************************************************
 *
 * Summary:
@@ -67,17 +67,17 @@ void ResolutionClk_StartEx(uint32 alignClkDiv)
 *
 *******************************************************************************/
 
-void ResolutionClk_Start(void)
+void MicroSec_CLK_Start(void)
 {
     /* Set the bit to enable the clock. */
-    ResolutionClk_ENABLE_REG |= ResolutionClk__ENABLE_MASK;
+    MicroSec_CLK_ENABLE_REG |= MicroSec_CLK__ENABLE_MASK;
 }
 
 #endif /* CYREG_PERI_DIV_CMD */
 
 
 /*******************************************************************************
-* Function Name: ResolutionClk_Stop
+* Function Name: MicroSec_CLK_Stop
 ********************************************************************************
 *
 * Summary:
@@ -92,31 +92,31 @@ void ResolutionClk_Start(void)
 *  None
 *
 *******************************************************************************/
-void ResolutionClk_Stop(void)
+void MicroSec_CLK_Stop(void)
 {
 #if defined CYREG_PERI_DIV_CMD
 
     /* Make sure any previous start command has finished. */
-    while((ResolutionClk_CMD_REG & ResolutionClk_CMD_ENABLE_MASK) != 0u)
+    while((MicroSec_CLK_CMD_REG & MicroSec_CLK_CMD_ENABLE_MASK) != 0u)
     {
     }
     
     /* Specify the target divider and it's alignment divider, and disable. */
-    ResolutionClk_CMD_REG =
-        ((uint32)ResolutionClk__DIV_ID << ResolutionClk_CMD_DIV_SHIFT)|
-        ((uint32)ResolutionClk_CMD_DISABLE_MASK);
+    MicroSec_CLK_CMD_REG =
+        ((uint32)MicroSec_CLK__DIV_ID << MicroSec_CLK_CMD_DIV_SHIFT)|
+        ((uint32)MicroSec_CLK_CMD_DISABLE_MASK);
 
 #else
 
     /* Clear the bit to disable the clock. */
-    ResolutionClk_ENABLE_REG &= (uint32)(~ResolutionClk__ENABLE_MASK);
+    MicroSec_CLK_ENABLE_REG &= (uint32)(~MicroSec_CLK__ENABLE_MASK);
     
 #endif /* CYREG_PERI_DIV_CMD */
 }
 
 
 /*******************************************************************************
-* Function Name: ResolutionClk_SetFractionalDividerRegister
+* Function Name: MicroSec_CLK_SetFractionalDividerRegister
 ********************************************************************************
 *
 * Summary:
@@ -131,35 +131,35 @@ void ResolutionClk_Stop(void)
 *  None
 *
 *******************************************************************************/
-void ResolutionClk_SetFractionalDividerRegister(uint16 clkDivider, uint8 clkFractional)
+void MicroSec_CLK_SetFractionalDividerRegister(uint16 clkDivider, uint8 clkFractional)
 {
     uint32 maskVal;
     uint32 regVal;
     
-#if defined (ResolutionClk__FRAC_MASK) || defined (CYREG_PERI_DIV_CMD)
+#if defined (MicroSec_CLK__FRAC_MASK) || defined (CYREG_PERI_DIV_CMD)
     
 	/* get all but divider bits */
-    maskVal = ResolutionClk_DIV_REG & 
-                    (uint32)(~(uint32)(ResolutionClk_DIV_INT_MASK | ResolutionClk_DIV_FRAC_MASK)); 
+    maskVal = MicroSec_CLK_DIV_REG & 
+                    (uint32)(~(uint32)(MicroSec_CLK_DIV_INT_MASK | MicroSec_CLK_DIV_FRAC_MASK)); 
 	/* combine mask and new divider vals into 32-bit value */
     regVal = maskVal |
-        ((uint32)((uint32)clkDivider <<  ResolutionClk_DIV_INT_SHIFT) & ResolutionClk_DIV_INT_MASK) |
-        ((uint32)((uint32)clkFractional << ResolutionClk_DIV_FRAC_SHIFT) & ResolutionClk_DIV_FRAC_MASK);
+        ((uint32)((uint32)clkDivider <<  MicroSec_CLK_DIV_INT_SHIFT) & MicroSec_CLK_DIV_INT_MASK) |
+        ((uint32)((uint32)clkFractional << MicroSec_CLK_DIV_FRAC_SHIFT) & MicroSec_CLK_DIV_FRAC_MASK);
     
 #else
     /* get all but integer divider bits */
-    maskVal = ResolutionClk_DIV_REG & (uint32)(~(uint32)ResolutionClk__DIVIDER_MASK);
+    maskVal = MicroSec_CLK_DIV_REG & (uint32)(~(uint32)MicroSec_CLK__DIVIDER_MASK);
     /* combine mask and new divider val into 32-bit value */
     regVal = clkDivider | maskVal;
     
-#endif /* ResolutionClk__FRAC_MASK || CYREG_PERI_DIV_CMD */
+#endif /* MicroSec_CLK__FRAC_MASK || CYREG_PERI_DIV_CMD */
 
-    ResolutionClk_DIV_REG = regVal;
+    MicroSec_CLK_DIV_REG = regVal;
 }
 
 
 /*******************************************************************************
-* Function Name: ResolutionClk_GetDividerRegister
+* Function Name: MicroSec_CLK_GetDividerRegister
 ********************************************************************************
 *
 * Summary:
@@ -173,15 +173,15 @@ void ResolutionClk_SetFractionalDividerRegister(uint16 clkDivider, uint8 clkFrac
 *  divide by 2, the return value will be 1.
 *
 *******************************************************************************/
-uint16 ResolutionClk_GetDividerRegister(void)
+uint16 MicroSec_CLK_GetDividerRegister(void)
 {
-    return (uint16)((ResolutionClk_DIV_REG & ResolutionClk_DIV_INT_MASK)
-        >> ResolutionClk_DIV_INT_SHIFT);
+    return (uint16)((MicroSec_CLK_DIV_REG & MicroSec_CLK_DIV_INT_MASK)
+        >> MicroSec_CLK_DIV_INT_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: ResolutionClk_GetFractionalDividerRegister
+* Function Name: MicroSec_CLK_GetFractionalDividerRegister
 ********************************************************************************
 *
 * Summary:
@@ -195,15 +195,15 @@ uint16 ResolutionClk_GetDividerRegister(void)
 *  0 if the fractional divider is not in use.
 *
 *******************************************************************************/
-uint8 ResolutionClk_GetFractionalDividerRegister(void)
+uint8 MicroSec_CLK_GetFractionalDividerRegister(void)
 {
-#if defined (ResolutionClk__FRAC_MASK)
+#if defined (MicroSec_CLK__FRAC_MASK)
     /* return fractional divider bits */
-    return (uint8)((ResolutionClk_DIV_REG & ResolutionClk_DIV_FRAC_MASK)
-        >> ResolutionClk_DIV_FRAC_SHIFT);
+    return (uint8)((MicroSec_CLK_DIV_REG & MicroSec_CLK_DIV_FRAC_MASK)
+        >> MicroSec_CLK_DIV_FRAC_SHIFT);
 #else
     return 0u;
-#endif /* ResolutionClk__FRAC_MASK */
+#endif /* MicroSec_CLK__FRAC_MASK */
 }
 
 

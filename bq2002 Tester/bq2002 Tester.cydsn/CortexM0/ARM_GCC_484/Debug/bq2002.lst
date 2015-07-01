@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
   34              	.L3:
   35 0006 C046     		.align	2
   36              	.L2:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 2
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 2
 
 
   37 0008 00000000 		.word	.LANCHOR0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
   32:.\bq2002.c    ****         case TM_Mode_2C:
   33:.\bq2002.c    ****             TM_SetDriveMode(TM_DM_STRONG);
   81              		.loc 1 33 0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 3
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 3
 
 
   82 0022 0620     		mov	r0, #6
@@ -177,72 +177,72 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  126 0006 00000000 		.4byte	.Ldebug_abbrev0
  127 000a 04       		.byte	0x4
  128 000b 01       		.uleb128 0x1
- 129 000c 69010000 		.4byte	.LASF18
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 4
+ 129 000c 75010000 		.4byte	.LASF18
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 4
 
 
  130 0010 01       		.byte	0x1
- 131 0011 F9000000 		.4byte	.LASF19
- 132 0015 0E000000 		.4byte	.LASF20
+ 131 0011 12010000 		.4byte	.LASF19
+ 132 0015 B6000000 		.4byte	.LASF20
  133 0019 00000000 		.4byte	.Ldebug_ranges0+0
  134 001d 00000000 		.4byte	0
  135 0021 00000000 		.4byte	.Ldebug_line0
  136 0025 02       		.uleb128 0x2
- 137 0026 39010000 		.4byte	.LASF12
+ 137 0026 52010000 		.4byte	.LASF12
  138 002a 02       		.byte	0x2
  139 002b 0D       		.byte	0xd
  140 002c 30000000 		.4byte	0x30
  141 0030 03       		.uleb128 0x3
- 142 0031 2B010000 		.4byte	.LASF21
+ 142 0031 44010000 		.4byte	.LASF21
  143 0035 04       		.byte	0x4
  144 0036 02       		.byte	0x2
  145 0037 0D       		.byte	0xd
  146 0038 4F000000 		.4byte	0x4f
  147 003c 04       		.uleb128 0x4
- 148 003d 5A010000 		.4byte	.LASF0
+ 148 003d 66010000 		.4byte	.LASF0
  149 0041 00       		.sleb128 0
  150 0042 04       		.uleb128 0x4
- 151 0043 EE010000 		.4byte	.LASF1
+ 151 0043 FA010000 		.4byte	.LASF1
  152 0047 01       		.sleb128 1
  153 0048 04       		.uleb128 0x4
- 154 0049 57000000 		.4byte	.LASF2
+ 154 0049 1B000000 		.4byte	.LASF2
  155 004d 02       		.sleb128 2
  156 004e 00       		.byte	0
  157 004f 05       		.uleb128 0x5
  158 0050 01       		.byte	0x1
  159 0051 06       		.byte	0x6
- 160 0052 1F010000 		.4byte	.LASF3
+ 160 0052 38010000 		.4byte	.LASF3
  161 0056 05       		.uleb128 0x5
  162 0057 01       		.byte	0x1
  163 0058 08       		.byte	0x8
- 164 0059 62000000 		.4byte	.LASF4
+ 164 0059 26000000 		.4byte	.LASF4
  165 005d 05       		.uleb128 0x5
  166 005e 02       		.byte	0x2
  167 005f 05       		.byte	0x5
- 168 0060 43010000 		.4byte	.LASF5
+ 168 0060 5C010000 		.4byte	.LASF5
  169 0064 05       		.uleb128 0x5
  170 0065 02       		.byte	0x2
  171 0066 07       		.byte	0x7
- 172 0067 0C010000 		.4byte	.LASF6
+ 172 0067 25010000 		.4byte	.LASF6
  173 006b 05       		.uleb128 0x5
  174 006c 04       		.byte	0x4
  175 006d 05       		.byte	0x5
- 176 006e E9000000 		.4byte	.LASF7
+ 176 006e AD000000 		.4byte	.LASF7
  177 0072 05       		.uleb128 0x5
  178 0073 04       		.byte	0x4
  179 0074 07       		.byte	0x7
- 180 0075 96000000 		.4byte	.LASF8
+ 180 0075 5A000000 		.4byte	.LASF8
  181 0079 05       		.uleb128 0x5
  182 007a 08       		.byte	0x8
  183 007b 05       		.byte	0x5
  184 007c 00000000 		.4byte	.LASF9
  185 0080 05       		.uleb128 0x5
  186 0081 08       		.byte	0x8
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 5
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 5
 
 
  187 0082 07       		.byte	0x7
- 188 0083 A8000000 		.4byte	.LASF10
+ 188 0083 6C000000 		.4byte	.LASF10
  189 0087 06       		.uleb128 0x6
  190 0088 04       		.byte	0x4
  191 0089 05       		.byte	0x5
@@ -250,30 +250,30 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  193 008e 05       		.uleb128 0x5
  194 008f 04       		.byte	0x4
  195 0090 07       		.byte	0x7
- 196 0091 4D010000 		.4byte	.LASF11
+ 196 0091 0E000000 		.4byte	.LASF11
  197 0095 02       		.uleb128 0x2
- 198 0096 90000000 		.4byte	.LASF13
+ 198 0096 54000000 		.4byte	.LASF13
  199 009a 03       		.byte	0x3
  200 009b B3       		.byte	0xb3
  201 009c 56000000 		.4byte	0x56
  202 00a0 05       		.uleb128 0x5
  203 00a1 04       		.byte	0x4
  204 00a2 04       		.byte	0x4
- 205 00a3 33010000 		.4byte	.LASF14
+ 205 00a3 4C010000 		.4byte	.LASF14
  206 00a7 05       		.uleb128 0x5
  207 00a8 08       		.byte	0x8
  208 00a9 04       		.byte	0x4
- 209 00aa F2000000 		.4byte	.LASF15
+ 209 00aa 0B010000 		.4byte	.LASF15
  210 00ae 05       		.uleb128 0x5
  211 00af 01       		.byte	0x1
  212 00b0 08       		.byte	0x8
- 213 00b1 E4000000 		.4byte	.LASF16
+ 213 00b1 A8000000 		.4byte	.LASF16
  214 00b5 05       		.uleb128 0x5
  215 00b6 04       		.byte	0x4
  216 00b7 07       		.byte	0x7
- 217 00b8 E5010000 		.4byte	.LASF17
+ 217 00b8 F1010000 		.4byte	.LASF17
  218 00bc 07       		.uleb128 0x7
- 219 00bd 80000000 		.4byte	.LASF22
+ 219 00bd 44000000 		.4byte	.LASF22
  220 00c1 01       		.byte	0x1
  221 00c2 12       		.byte	0x12
  222 00c3 25000000 		.4byte	0x25
@@ -282,7 +282,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  225 00cf 01       		.uleb128 0x1
  226 00d0 9C       		.byte	0x9c
  227 00d1 08       		.uleb128 0x8
- 228 00d2 D4000000 		.4byte	.LASF23
+ 228 00d2 98000000 		.4byte	.LASF23
  229 00d6 01       		.byte	0x1
  230 00d7 17       		.byte	0x17
  231 00d8 00000000 		.4byte	.LFB34
@@ -291,14 +291,14 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  234 00e1 9C       		.byte	0x9c
  235 00e2 51010000 		.4byte	0x151
  236 00e6 09       		.uleb128 0x9
- 237 00e7 04010000 		.4byte	.LASF24
+ 237 00e7 1D010000 		.4byte	.LASF24
  238 00eb 01       		.byte	0x1
  239 00ec 17       		.byte	0x17
  240 00ed 25000000 		.4byte	0x25
  241 00f1 00000000 		.4byte	.LLST0
  242 00f5 0A       		.uleb128 0xa
  243 00f6 1A000000 		.4byte	.LVL2
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 6
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 6
 
 
  244 00fa 62010000 		.4byte	0x162
@@ -350,7 +350,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  290 014f 00       		.byte	0
  291 0150 00       		.byte	0
  292 0151 0D       		.uleb128 0xd
- 293 0152 BF000000 		.4byte	.LASF25
+ 293 0152 83000000 		.4byte	.LASF25
  294 0156 01       		.byte	0x1
  295 0157 10       		.byte	0x10
  296 0158 25000000 		.4byte	0x25
@@ -358,10 +358,10 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  298 015d 03       		.byte	0x3
  299 015e 00000000 		.4byte	currentMode
  300 0162 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 7
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 7
 
 
- 301 0163 70000000 		.4byte	.LASF26
+ 301 0163 34000000 		.4byte	.LASF26
  302 0167 04       		.byte	0x4
  303 0168 1E       		.byte	0x1e
  304 0169 73010000 		.4byte	0x173
@@ -369,7 +369,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  306 016e 95000000 		.4byte	0x95
  307 0172 00       		.byte	0
  308 0173 10       		.uleb128 0x10
- 309 0174 CB000000 		.4byte	.LASF27
+ 309 0174 8F000000 		.4byte	.LASF27
  310 0178 04       		.byte	0x4
  311 0179 1D       		.byte	0x1d
  312 017a 0F       		.uleb128 0xf
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  355 0025 0B       		.uleb128 0xb
  356 0026 0B       		.uleb128 0xb
  357 0027 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 8
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 8
 
 
  358 0028 0B       		.uleb128 0xb
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  412 005e 06       		.uleb128 0x6
  413 005f 40       		.uleb128 0x40
  414 0060 18       		.uleb128 0x18
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 9
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 9
 
 
  415 0061 9742     		.uleb128 0x2117
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  469 009b 00       		.byte	0
  470 009c 0B       		.uleb128 0xb
  471 009d 8A8201   		.uleb128 0x410a
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 10
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 10
 
 
  472 00a0 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  526 00d9 13       		.uleb128 0x13
  527 00da 00       		.byte	0
  528 00db 00       		.byte	0
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 11
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 11
 
 
  529 00dc 10       		.uleb128 0x10
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  583 0054 32000000 		.4byte	.LVL9
  584 0058 0100     		.2byte	0x1
  585 005a 50       		.byte	0x50
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 12
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 12
 
 
  586 005b 32000000 		.4byte	.LVL9
@@ -709,146 +709,146 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 1
  626      206C6F6E 
  626      6720696E 
  626      7400
- 627              	.LASF20:
- 628 000e 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
- 628      6F63756D 
- 628      656E7473 
- 628      5C476974 
- 628      4875625C 
- 629 003d 65737465 		.ascii	"ester\\bq2002 Tester.cydsn\000"
- 629      725C6271 
- 629      32303032 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 13
+ 627              	.LASF11:
+ 628 000e 756E7369 		.ascii	"unsigned int\000"
+ 628      676E6564 
+ 628      20696E74 
+ 628      00
+ 629              	.LASF2:
+ 630 001b 544D5F4D 		.ascii	"TM_Mode_2C\000"
+ 630      6F64655F 
+ 630      324300
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 13
 
 
- 629      20546573 
- 629      7465722E 
- 630              	.LASF2:
- 631 0057 544D5F4D 		.ascii	"TM_Mode_2C\000"
- 631      6F64655F 
- 631      324300
- 632              	.LASF4:
- 633 0062 756E7369 		.ascii	"unsigned char\000"
- 633      676E6564 
- 633      20636861 
- 633      7200
- 634              	.LASF26:
- 635 0070 544D5F53 		.ascii	"TM_SetDriveMode\000"
- 635      65744472 
- 635      6976654D 
- 635      6F646500 
- 636              	.LASF22:
- 637 0080 544D5F4D 		.ascii	"TM_Mode_GetMode\000"
- 637      6F64655F 
- 637      4765744D 
- 637      6F646500 
- 638              	.LASF13:
- 639 0090 75696E74 		.ascii	"uint8\000"
- 639      3800
- 640              	.LASF8:
- 641 0096 6C6F6E67 		.ascii	"long unsigned int\000"
- 641      20756E73 
- 641      69676E65 
- 641      6420696E 
- 641      7400
- 642              	.LASF10:
- 643 00a8 6C6F6E67 		.ascii	"long long unsigned int\000"
- 643      206C6F6E 
- 643      6720756E 
- 643      7369676E 
- 643      65642069 
- 644              	.LASF25:
- 645 00bf 63757272 		.ascii	"currentMode\000"
- 645      656E744D 
- 645      6F646500 
- 646              	.LASF27:
- 647 00cb 544D5F57 		.ascii	"TM_Write\000"
- 647      72697465 
- 647      00
- 648              	.LASF23:
- 649 00d4 544D5F4D 		.ascii	"TM_Mode_SetMode\000"
- 649      6F64655F 
- 649      5365744D 
- 649      6F646500 
- 650              	.LASF16:
- 651 00e4 63686172 		.ascii	"char\000"
- 651      00
- 652              	.LASF7:
- 653 00e9 6C6F6E67 		.ascii	"long int\000"
- 653      20696E74 
- 653      00
- 654              	.LASF15:
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 14
+ 631              	.LASF4:
+ 632 0026 756E7369 		.ascii	"unsigned char\000"
+ 632      676E6564 
+ 632      20636861 
+ 632      7200
+ 633              	.LASF26:
+ 634 0034 544D5F53 		.ascii	"TM_SetDriveMode\000"
+ 634      65744472 
+ 634      6976654D 
+ 634      6F646500 
+ 635              	.LASF22:
+ 636 0044 544D5F4D 		.ascii	"TM_Mode_GetMode\000"
+ 636      6F64655F 
+ 636      4765744D 
+ 636      6F646500 
+ 637              	.LASF13:
+ 638 0054 75696E74 		.ascii	"uint8\000"
+ 638      3800
+ 639              	.LASF8:
+ 640 005a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 640      20756E73 
+ 640      69676E65 
+ 640      6420696E 
+ 640      7400
+ 641              	.LASF10:
+ 642 006c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 642      206C6F6E 
+ 642      6720756E 
+ 642      7369676E 
+ 642      65642069 
+ 643              	.LASF25:
+ 644 0083 63757272 		.ascii	"currentMode\000"
+ 644      656E744D 
+ 644      6F646500 
+ 645              	.LASF27:
+ 646 008f 544D5F57 		.ascii	"TM_Write\000"
+ 646      72697465 
+ 646      00
+ 647              	.LASF23:
+ 648 0098 544D5F4D 		.ascii	"TM_Mode_SetMode\000"
+ 648      6F64655F 
+ 648      5365744D 
+ 648      6F646500 
+ 649              	.LASF16:
+ 650 00a8 63686172 		.ascii	"char\000"
+ 650      00
+ 651              	.LASF7:
+ 652 00ad 6C6F6E67 		.ascii	"long int\000"
+ 652      20696E74 
+ 652      00
+ 653              	.LASF20:
+ 654 00b6 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 654      73657273 
+ 654      5C4D6F73 
+ 654      65735C44 
+ 654      6F63756D 
+ 655 00e4 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 14
 
 
- 655 00f2 646F7562 		.ascii	"double\000"
- 655      6C6500
- 656              	.LASF19:
- 657 00f9 2E5C6271 		.ascii	".\\bq2002.c\000"
- 657      32303032 
- 657      2E6300
- 658              	.LASF24:
- 659 0104 6E65774D 		.ascii	"newMode\000"
- 659      6F646500 
- 660              	.LASF6:
- 661 010c 73686F72 		.ascii	"short unsigned int\000"
- 661      7420756E 
- 661      7369676E 
- 661      65642069 
- 661      6E7400
- 662              	.LASF3:
- 663 011f 7369676E 		.ascii	"signed char\000"
- 663      65642063 
- 663      68617200 
- 664              	.LASF21:
- 665 012b 544D5F4D 		.ascii	"TM_Mode\000"
- 665      6F646500 
- 666              	.LASF14:
- 667 0133 666C6F61 		.ascii	"float\000"
- 667      7400
- 668              	.LASF12:
- 669 0139 544D5F4D 		.ascii	"TM_Mode_t\000"
- 669      6F64655F 
+ 655      5C627132 
+ 655      30303220 
+ 655      54657374 
+ 655      65725C62 
+ 656              	.LASF15:
+ 657 010b 646F7562 		.ascii	"double\000"
+ 657      6C6500
+ 658              	.LASF19:
+ 659 0112 2E5C6271 		.ascii	".\\bq2002.c\000"
+ 659      32303032 
+ 659      2E6300
+ 660              	.LASF24:
+ 661 011d 6E65774D 		.ascii	"newMode\000"
+ 661      6F646500 
+ 662              	.LASF6:
+ 663 0125 73686F72 		.ascii	"short unsigned int\000"
+ 663      7420756E 
+ 663      7369676E 
+ 663      65642069 
+ 663      6E7400
+ 664              	.LASF3:
+ 665 0138 7369676E 		.ascii	"signed char\000"
+ 665      65642063 
+ 665      68617200 
+ 666              	.LASF21:
+ 667 0144 544D5F4D 		.ascii	"TM_Mode\000"
+ 667      6F646500 
+ 668              	.LASF14:
+ 669 014c 666C6F61 		.ascii	"float\000"
  669      7400
- 670              	.LASF5:
- 671 0143 73686F72 		.ascii	"short int\000"
- 671      7420696E 
+ 670              	.LASF12:
+ 671 0152 544D5F4D 		.ascii	"TM_Mode_t\000"
+ 671      6F64655F 
  671      7400
- 672              	.LASF11:
- 673 014d 756E7369 		.ascii	"unsigned int\000"
- 673      676E6564 
- 673      20696E74 
- 673      00
+ 672              	.LASF5:
+ 673 015c 73686F72 		.ascii	"short int\000"
+ 673      7420696E 
+ 673      7400
  674              	.LASF0:
- 675 015a 544D5F4D 		.ascii	"TM_Mode_Half_C\000"
+ 675 0166 544D5F4D 		.ascii	"TM_Mode_Half_C\000"
  675      6F64655F 
  675      48616C66 
  675      5F4300
  676              	.LASF18:
- 677 0169 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 677 0175 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
  677      4320342E 
  677      382E3420 
  677      32303134 
  677      30353236 
- 678 019c 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 678 01a8 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
  678      20726576 
  678      6973696F 
  678      6E203231 
  678      31333538 
- 679 01cf 67202D66 		.ascii	"g -ffunction-sections\000"
+ 679 01db 67202D66 		.ascii	"g -ffunction-sections\000"
  679      66756E63 
  679      74696F6E 
-ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccdD5DWg.s 			page 15
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQj544N.s 			page 15
 
 
  679      2D736563 
  679      74696F6E 
  680              	.LASF17:
- 681 01e5 73697A65 		.ascii	"sizetype\000"
+ 681 01f1 73697A65 		.ascii	"sizetype\000"
  681      74797065 
  681      00
  682              	.LASF1:
- 683 01ee 544D5F4D 		.ascii	"TM_Mode_1C\000"
+ 683 01fa 544D5F4D 		.ascii	"TM_Mode_1C\000"
  683      6F64655F 
  683      314300
  684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

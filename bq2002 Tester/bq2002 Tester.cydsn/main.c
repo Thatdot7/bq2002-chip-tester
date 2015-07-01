@@ -23,8 +23,9 @@ int main()
 {
 
     UART_1_Start();
-    isr_1_StartEx(debug);
+    ISR_counter_StartEx(debug);
     PWM_1_Start();
+    TCPWM_Start();
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
@@ -45,13 +46,13 @@ int main()
         
        // TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_STOP);
         
-        uint16 pulse_width = TCPWM_ReadCapture();
+        //uint16 pulse_width = TCPWM_ReadCapture();
         
-        char uart_message[5];
-        sprintf(uart_message, "%d\r\n", pulse_width);
+        //char uart_message[5];
+        //sprintf(uart_message, "%d\r\n", pulse_width);
         
-        UART_1_UartPutString(uart_message);
-        CyDelay(2000);
+        //UART_1_UartPutString(uart_message);
+        //CyDelay(2000);
         
     }
 }

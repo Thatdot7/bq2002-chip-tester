@@ -1,4 +1,4 @@
---------------- Rebuild Started: 06/30/2015 23:36:42 Project: bq2002 Tester, Configuration: ARM GCC 4.8.4 Debug ---------------
+--------------- Rebuild Started: 07/01/2015 12:00:20 Project: bq2002 Tester, Configuration: ARM GCC 4.8.4 Debug ---------------
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\main.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\bq2002.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\cyfitter_cfg.o"
@@ -19,7 +19,7 @@ Deleting file ".\CortexM0\ARM_GCC_484\Debug\cyPm.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\cyutils.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\CyLFClk.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\INH.o"
-Deleting file ".\CortexM0\ARM_GCC_484\Debug\ResolutionClk.o"
+Deleting file ".\CortexM0\ARM_GCC_484\Debug\ISR_counter.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\UART_1.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART_INT.o"
@@ -32,10 +32,9 @@ Deleting file ".\CortexM0\ARM_GCC_484\Debug\UART_1_tx.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\UART_1_rx.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\TCPWM.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\TCPWM_PM.o"
-Deleting file ".\CortexM0\ARM_GCC_484\Debug\isr_1.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\PWM_1.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\PWM_1_PM.o"
-Deleting file ".\CortexM0\ARM_GCC_484\Debug\Debug_Out.o"
+Deleting file ".\CortexM0\ARM_GCC_484\Debug\MicroSec_CLK.o"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.hex"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.map"
@@ -47,7 +46,7 @@ Deleting file ".\bq2002 Tester_timing.html"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\.deps\C_FILE.P"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\.deps\ARM_C_FILE.P"
 Deleting file ".\CortexM0\ARM_GCC_484\Debug\.deps\GNU_ARM_ASM_FILE.P"
-cydsfit.exe -.appdatapath "C:\Users\Moses\AppData\Local\Cypress Semiconductor\PSoC Creator\3.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\bq2002 Tester.cyprj" -d CY8C4245AXI-483 -s "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit.exe -.appdatapath "C:\Users\Moses\AppData\Local\Cypress Semiconductor\PSoC Creator\3.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "C:\Users\Moses\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\bq2002 Tester.cyprj" -d CY8C4245AXI-483 -s "C:\Users\Moses\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation ...
 Synthesis ...
@@ -66,7 +65,7 @@ Dependency Generation ...
 Clean Temporary Files ...
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\main.c -o .\CortexM0\ARM_GCC_484\Debug\main.o
 .\main.c: In function 'main':
-.\main.c:32:13: warning: unused variable 'IDAC_VAL' [-Wunused-variable]
+.\main.c:33:13: warning: unused variable 'IDAC_VAL' [-Wunused-variable]
      uint8_t IDAC_VAL = 0;
              ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/bq2002.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\bq2002.c -o .\CortexM0\ARM_GCC_484\Debug\bq2002.o
@@ -88,7 +87,7 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\P
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/cyutils.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\cyutils.c -o .\CortexM0\ARM_GCC_484\Debug\cyutils.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/CyLFClk.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\CyLFClk.c -o .\CortexM0\ARM_GCC_484\Debug\CyLFClk.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/INH.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\INH.c -o .\CortexM0\ARM_GCC_484\Debug\INH.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/ResolutionClk.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\ResolutionClk.c -o .\CortexM0\ARM_GCC_484\Debug\ResolutionClk.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/ISR_counter.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\ISR_counter.c -o .\CortexM0\ARM_GCC_484\Debug\ISR_counter.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/UART_1.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\UART_1.c -o .\CortexM0\ARM_GCC_484\Debug\UART_1.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/UART_1_SPI_UART.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\UART_1_SPI_UART.c -o .\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/UART_1_SPI_UART_INT.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\UART_1_SPI_UART_INT.c -o .\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART_INT.o
@@ -101,15 +100,14 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\P
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/UART_1_rx.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\UART_1_rx.c -o .\CortexM0\ARM_GCC_484\Debug\UART_1_rx.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/TCPWM.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\TCPWM.c -o .\CortexM0\ARM_GCC_484\Debug\TCPWM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/TCPWM_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\TCPWM_PM.c -o .\CortexM0\ARM_GCC_484\Debug\TCPWM_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/isr_1.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\isr_1.c -o .\CortexM0\ARM_GCC_484\Debug\isr_1.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/PWM_1.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\PWM_1.c -o .\CortexM0\ARM_GCC_484\Debug\PWM_1.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/PWM_1_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\PWM_1_PM.c -o .\CortexM0\ARM_GCC_484\Debug\PWM_1_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/Debug_Out.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\Debug_Out.c -o .\CortexM0\ARM_GCC_484\Debug\Debug_Out.o
-arm-none-eabi-ar.exe -rs ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.a" .\CortexM0\ARM_GCC_484\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_484\Debug\Bootloadable_1.o .\CortexM0\ARM_GCC_484\Debug\V_DD.o .\CortexM0\ARM_GCC_484\Debug\V_SS.o .\CortexM0\ARM_GCC_484\Debug\TM.o .\CortexM0\ARM_GCC_484\Debug\IDAC_1.o .\CortexM0\ARM_GCC_484\Debug\IDAC_1_PM.o .\CortexM0\ARM_GCC_484\Debug\BAT.o .\CortexM0\ARM_GCC_484\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_484\Debug\CyFlash.o .\CortexM0\ARM_GCC_484\Debug\CyLib.o .\CortexM0\ARM_GCC_484\Debug\cyPm.o .\CortexM0\ARM_GCC_484\Debug\cyutils.o .\CortexM0\ARM_GCC_484\Debug\CyLFClk.o .\CortexM0\ARM_GCC_484\Debug\INH.o .\CortexM0\ARM_GCC_484\Debug\ResolutionClk.o .\CortexM0\ARM_GCC_484\Debug\UART_1.o .\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART.o .\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART_INT.o .\CortexM0\ARM_GCC_484\Debug\UART_1_PM.o .\CortexM0\ARM_GCC_484\Debug\UART_1_UART.o .\CortexM0\ARM_GCC_484\Debug\UART_1_BOOT.o .\CortexM0\ARM_GCC_484\Debug\UART_1_UART_BOOT.o .\CortexM0\ARM_GCC_484\Debug\UART_1_SCBCLK.o .\CortexM0\ARM_GCC_484\Debug\UART_1_tx.o .\CortexM0\ARM_GCC_484\Debug\UART_1_rx.o .\CortexM0\ARM_GCC_484\Debug\TCPWM.o .\CortexM0\ARM_GCC_484\Debug\TCPWM_PM.o .\CortexM0\ARM_GCC_484\Debug\isr_1.o .\CortexM0\ARM_GCC_484\Debug\PWM_1.o .\CortexM0\ARM_GCC_484\Debug\PWM_1_PM.o .\CortexM0\ARM_GCC_484\Debug\Debug_Out.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/MicroSec_CLK.lst -g -D DEBUG -Wall -ffunction-sections -Og -c .\Generated_Source\PSoC4\MicroSec_CLK.c -o .\CortexM0\ARM_GCC_484\Debug\MicroSec_CLK.o
+arm-none-eabi-ar.exe -rs ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.a" .\CortexM0\ARM_GCC_484\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_484\Debug\Bootloadable_1.o .\CortexM0\ARM_GCC_484\Debug\V_DD.o .\CortexM0\ARM_GCC_484\Debug\V_SS.o .\CortexM0\ARM_GCC_484\Debug\TM.o .\CortexM0\ARM_GCC_484\Debug\IDAC_1.o .\CortexM0\ARM_GCC_484\Debug\IDAC_1_PM.o .\CortexM0\ARM_GCC_484\Debug\BAT.o .\CortexM0\ARM_GCC_484\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_484\Debug\CyFlash.o .\CortexM0\ARM_GCC_484\Debug\CyLib.o .\CortexM0\ARM_GCC_484\Debug\cyPm.o .\CortexM0\ARM_GCC_484\Debug\cyutils.o .\CortexM0\ARM_GCC_484\Debug\CyLFClk.o .\CortexM0\ARM_GCC_484\Debug\INH.o .\CortexM0\ARM_GCC_484\Debug\ISR_counter.o .\CortexM0\ARM_GCC_484\Debug\UART_1.o .\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART.o .\CortexM0\ARM_GCC_484\Debug\UART_1_SPI_UART_INT.o .\CortexM0\ARM_GCC_484\Debug\UART_1_PM.o .\CortexM0\ARM_GCC_484\Debug\UART_1_UART.o .\CortexM0\ARM_GCC_484\Debug\UART_1_BOOT.o .\CortexM0\ARM_GCC_484\Debug\UART_1_UART_BOOT.o .\CortexM0\ARM_GCC_484\Debug\UART_1_SCBCLK.o .\CortexM0\ARM_GCC_484\Debug\UART_1_tx.o .\CortexM0\ARM_GCC_484\Debug\UART_1_rx.o .\CortexM0\ARM_GCC_484\Debug\TCPWM.o .\CortexM0\ARM_GCC_484\Debug\TCPWM_PM.o .\CortexM0\ARM_GCC_484\Debug\PWM_1.o .\CortexM0\ARM_GCC_484\Debug\PWM_1_PM.o .\CortexM0\ARM_GCC_484\Debug\MicroSec_CLK.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf" .\CortexM0\ARM_GCC_484\Debug\main.o .\CortexM0\ARM_GCC_484\Debug\bq2002.o .\CortexM0\ARM_GCC_484\Debug\cybootloader.o .\CortexM0\ARM_GCC_484\Debug\cymetadata.o .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o ".\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.a" "C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_484\Debug\CyComponentLibrary.a" -mcpu=cortex-m0 -mthumb -g -ffunction-sections -Og "-Wl,-Map,.\CortexM0\ARM_GCC_484\Debug/bq2002 Tester.map" -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -Wl,--end-group
-cyelftool.exe -B "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf" --flash_row_size 128 --flash_size 32768 --flash_array_size 32768
-cyelftool.exe -S "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf"
-Flash used: 10752 of 32768 bytes (32.8 %). Bootloader: 4992 bytes. Application: 5632 bytes. Metadata: 128 bytes.
-SRAM used: 1560 of 4096 bytes (38.1 %). Stack: 1024 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 06/30/2015 23:36:59 ---------------
+cyelftool.exe -B "C:\Users\Moses\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf" --flash_row_size 128 --flash_size 32768 --flash_array_size 32768
+cyelftool.exe -S "C:\Users\Moses\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf"
+Flash used: 8320 of 32768 bytes (25.4 %). Bootloader: 4992 bytes. Application: 3200 bytes. Metadata: 128 bytes.
+SRAM used: 1440 of 4096 bytes (35.2 %). Stack: 1024 bytes. Heap: 128 bytes.
+--------------- Rebuild Succeeded: 07/01/2015 12:00:43 ---------------
