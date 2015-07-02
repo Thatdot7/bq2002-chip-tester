@@ -1,0 +1,10 @@
+--------------- Rebuild Started: 07/02/2015 21:11:00 Project: bq2002 Tester, Configuration: ARM GCC 4.8.4 Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\Moses\AppData\Local\Cypress Semiconductor\PSoC Creator\3.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\bq2002 Tester.cyprj" -d CY8C4245AXI-483 -s "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Error: cdf.M0015: bq2002 Tester.cyprj: The fitter could not open the project specified on the command line: (Name cannot begin with the '<' character, hexadecimal value 0x3C. Line 1340, position 2.). (File=E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\bq2002 Tester.cyprj)
+Error: bse.M0202: Internal Error (aborting): Object reference not set to an instance of an object. (App=cydsfit)
+Stack Trace:
+   at CyDesigner.PSoC.CyDsFit.Dispose(Boolean wasUser)
+   at CyDesigner.PSoC.CyDsFit.Dispose()
+   at CyDesigner.PSoC.CyDsFit.Run(String[] args, TimeSpan loadTime, TimeSpan createTime)
+   at CyDesigner.PSoC.Program.InternalRun(CyApp myApp, String[] args)Error: cdf.M0005: CyDsFit aborted due to errors, please address all errors and rerun CyDsFit. (App=cydsfit)
+--------------- Rebuild Failed: 07/02/2015 21:11:01 ---------------

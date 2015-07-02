@@ -25,17 +25,11 @@ void init()
 {
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     UART_1_Start();
-<<<<<<< HEAD
     TCPWM_Start();
     TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
     ISR_Button1_StartEx(Button1_Press);
     IDAC_1_Start();
-
-=======
-    ISR_counter_StartEx(debug);
-    PWM_1_Start();
-    TCPWM_Start();
->>>>>>> origin/master
+    
     CyGlobalIntEnable; /* Enable global interrupts. */
 }
 
@@ -53,7 +47,6 @@ int main()
     
     for(;;)
     {
-<<<<<<< HEAD
         if(isr_flag != 0)
         {
             isr_flag = 0;
@@ -81,26 +74,6 @@ int main()
             ISR_Button1_Enable();
         
         }
-=======
-        /* Place your application code here. */
-        //TM_Mode_SetMode((TM_Mode_GetMode() + 1) % 3);
-        
-        //TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_RELOAD);
-        //TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
-        
-        //CyDelay(130);
-        
-       // TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_STOP);
-        
-        //uint16 pulse_width = TCPWM_ReadCapture();
-        
-        //char uart_message[5];
-        //sprintf(uart_message, "%d\r\n", pulse_width);
-        
-        //UART_1_UartPutString(uart_message);
-        //CyDelay(2000);
->>>>>>> origin/master
-        
     }
 }
 
