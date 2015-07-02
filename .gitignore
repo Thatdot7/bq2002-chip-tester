@@ -43,7 +43,7 @@ Temporary Items
 .apdisk
 
 # Other file types directly associated with the PSoC Creator application
-bq2002 Tester/*.cywrk.*
+bq2002 Tester/bq2002 Tester.cydsn/*.cywrk.*
 bq2002 Tester/bq2002 Tester.cydsn/*.cyprj.*
 bq2002 Tester/bq2002 Tester.cydsn/*.cycdx
 bq2002 Tester/bq2002 Tester.cydsn/*.cyfit
