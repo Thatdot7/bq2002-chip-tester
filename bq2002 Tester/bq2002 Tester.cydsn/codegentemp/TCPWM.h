@@ -86,12 +86,12 @@ extern uint8  TCPWM_initVar;
 /* Signal present */
 #define TCPWM_TC_RELOAD_SIGNAL_PRESENT       (1lu)
 #define TCPWM_TC_COUNT_SIGNAL_PRESENT        (0lu)
-#define TCPWM_TC_START_SIGNAL_PRESENT        (0lu)
+#define TCPWM_TC_START_SIGNAL_PRESENT        (1lu)
 #define TCPWM_TC_STOP_SIGNAL_PRESENT         (0lu)
 #define TCPWM_TC_CAPTURE_SIGNAL_PRESENT      (1lu)
 
 /* Interrupt Mask */
-#define TCPWM_TC_INTERRUPT_MASK              (2lu)
+#define TCPWM_TC_INTERRUPT_MASK              (0lu)
 
 /* PWM Mode */
 /* Parameters */

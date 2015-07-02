@@ -11,7 +11,6 @@
 */
 
 #include "bq2002.h"
-#include <project.h>
 
 static TM_Mode_t currentMode = TM_Mode_1C;
 
@@ -40,6 +39,5 @@ void TM_Mode_SetMode(TM_Mode_t newMode)
             break;
     }
 }
-
 
 /* [] END OF FILE */

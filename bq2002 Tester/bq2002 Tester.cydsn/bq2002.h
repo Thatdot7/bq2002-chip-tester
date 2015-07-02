@@ -10,6 +10,11 @@
  * ========================================
 */
 
+#ifndef BQ2002_H
+#define BQ2002_H
+
+#include <project.h>
+
 typedef enum TM_Mode TM_Mode_t;
 
 enum TM_Mode {
@@ -21,5 +26,5 @@ enum TM_Mode {
 TM_Mode_t TM_Mode_GetMode();
 void TM_Mode_SetMode(TM_Mode_t newMode);
 
-
+#endif
 /* [] END OF FILE */

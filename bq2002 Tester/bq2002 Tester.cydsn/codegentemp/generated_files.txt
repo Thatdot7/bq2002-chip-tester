@@ -18,9 +18,9 @@
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\cydisabledsheets.h" value="NONE;" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Bootloadable_1.c" value="ARM_C_FILE;Bootloadable_1" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Bootloadable_1.h" value="NONE;Bootloadable_1" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_DD.c" value="ARM_C_FILE;V_DD" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_DD.h" value="NONE;V_DD" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_DD_aliases.h" value="NONE;V_DD" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_CC.c" value="ARM_C_FILE;V_CC" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_CC.h" value="NONE;V_CC" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_CC_aliases.h" value="NONE;V_CC" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_SS.c" value="ARM_C_FILE;V_SS" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_SS.h" value="NONE;V_SS" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\V_SS_aliases.h" value="NONE;V_SS" />
@@ -36,11 +36,6 @@
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\INH.c" value="ARM_C_FILE;INH" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\INH.h" value="NONE;INH" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\INH_aliases.h" value="NONE;INH" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TCPWM.c" value="ARM_C_FILE;TCPWM" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TCPWM.h" value="NONE;TCPWM" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TCPWM_PM.c" value="ARM_C_FILE;TCPWM" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\ResolutionClk.c" value="ARM_C_FILE;ResolutionClk" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\ResolutionClk.h" value="NONE;ResolutionClk" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1.c" value="ARM_C_FILE;UART_1" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1.h" value="NONE;UART_1" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_SPI_UART.h" value="NONE;UART_1" />
@@ -54,14 +49,30 @@
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_SPI_UART_PVT.h" value="NONE;UART_1" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_PVT.h" value="NONE;UART_1" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_BOOT.h" value="NONE;UART_1" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Debug_Out.c" value="ARM_C_FILE;Debug_Out" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Debug_Out.h" value="NONE;Debug_Out" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Debug_Out_aliases.h" value="NONE;Debug_Out" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\isr_1.c" value="ARM_C_FILE;isr_1" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\isr_1.h" value="NONE;isr_1" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\PWM_1.c" value="ARM_C_FILE;PWM_1" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\PWM_1.h" value="NONE;PWM_1" />
-  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\PWM_1_PM.c" value="ARM_C_FILE;PWM_1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TCPWM.c" value="ARM_C_FILE;TCPWM" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TCPWM.h" value="NONE;TCPWM" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TCPWM_PM.c" value="ARM_C_FILE;TCPWM" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\MicroSec_CLK.c" value="ARM_C_FILE;MicroSec_CLK" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\MicroSec_CLK.h" value="NONE;MicroSec_CLK" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\CC.c" value="ARM_C_FILE;CC" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\CC.h" value="NONE;CC" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\CC_aliases.h" value="NONE;CC" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\LED_N.c" value="ARM_C_FILE;LED_N" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\LED_N.h" value="NONE;LED_N" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\LED_N_aliases.h" value="NONE;LED_N" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TS.c" value="ARM_C_FILE;TS" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TS.h" value="NONE;TS" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\TS_aliases.h" value="NONE;TS" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Button1.c" value="ARM_C_FILE;Button1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Button1.h" value="NONE;Button1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Button1_aliases.h" value="NONE;Button1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Debounce_Clk.c" value="ARM_C_FILE;Debounce_Clk" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Debounce_Clk.h" value="NONE;Debounce_Clk" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\ISR_Button1.c" value="ARM_C_FILE;ISR_Button1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\ISR_Button1.h" value="NONE;ISR_Button1" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Button1_VDD.c" value="ARM_C_FILE;Button1_VDD" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Button1_VDD.h" value="NONE;Button1_VDD" />
+  <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\Button1_VDD_aliases.h" value="NONE;Button1_VDD" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_SCBCLK.c" value="ARM_C_FILE;UART_1_SCBCLK" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_SCBCLK.h" value="NONE;UART_1_SCBCLK" />
   <file name="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\codegentemp\UART_1_tx.c" value="ARM_C_FILE;UART_1_tx" />

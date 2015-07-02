@@ -58,9 +58,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cydisabledsheets.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Bootloadable_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Bootloadable_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_DD_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_SS_aliases.h</File>
@@ -96,8 +93,9 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\INH.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\INH.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\INH_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ResolutionClk.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ResolutionClk.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CC.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CC.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CC_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\UART_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\UART_1.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\UART_1_SPI_UART.h</File>
@@ -122,14 +120,27 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TCPWM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TCPWM.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TCPWM_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\isr_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\isr_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Debug_Out.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Debug_Out.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Debug_Out_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\MicroSec_CLK.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\MicroSec_CLK.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LED_N.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LED_N.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\LED_N_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TS.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TS.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\TS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Button1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Button1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Button1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ISR_Button1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ISR_Button1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Button1_VDD.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Button1_VDD.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Button1_VDD_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_CC.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_CC.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_CC_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Debounce_Clk.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Debounce_Clk.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\Export\ARM_GCC_Generic">

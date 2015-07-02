@@ -26,6 +26,30 @@ E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Gener
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h : 
 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/Button1.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1.c : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_aliases.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/Button1_VDD.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_VDD.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_VDD.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_VDD_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_VDD.c : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_VDD.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Button1_VDD_aliases.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/CC.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CC.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CC.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CC_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CC.c : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CC.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CC_aliases.h : 
+
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/Cm0Start.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Cm0Start.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Cm0Start.c : 
@@ -44,13 +68,11 @@ E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Corte
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.c : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/Debug_Out.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debug_Out.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debug_Out.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debug_Out_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/Debounce_Clk.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debounce_Clk.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debounce_Clk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debug_Out.c : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debounce_Clk.c : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debug_Out.h : 
-
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debug_Out_aliases.h : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/Debounce_Clk.h : 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/IDAC_1.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/IDAC_1.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/IDAC_1.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
@@ -70,21 +92,25 @@ E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Gener
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/INH_aliases.h : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/PWM_1.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/ISR_Button1.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ISR_Button1.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ISR_Button1.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1.c : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ISR_Button1.c : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1.h : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ISR_Button1.h : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/PWM_1_PM.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1_PM.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/LED_N.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/LED_N.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/LED_N.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/LED_N_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/PWM_1_PM.c : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/LED_N.c : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/ResolutionClk.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ResolutionClk.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ResolutionClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/LED_N.h : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ResolutionClk.c : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/LED_N_aliases.h : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/ResolutionClk.h : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/MicroSec_CLK.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/MicroSec_CLK.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/MicroSec_CLK.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/MicroSec_CLK.c : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/MicroSec_CLK.h : 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/TCPWM.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TCPWM.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TCPWM.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
@@ -103,6 +129,14 @@ E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Gener
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TM.h : 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TM_aliases.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/TS.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TS.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TS.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TS_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TS.c : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TS.h : 
+
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/TS_aliases.h : 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/UART_1.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_PINS.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_PVT.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_SCBCLK.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_SPI_UART.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_SPI_UART_PVT.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_rx.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_rx_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_tx.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_tx_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
@@ -166,13 +200,13 @@ E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Corte
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/UART_1_tx.c : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/V_DD.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_DD.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_DD.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_DD_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/V_CC.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_CC.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_CC.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_CC_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_DD.c : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_CC.c : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_DD.h : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_CC.h : 
 
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_DD_aliases.h : 
+E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_CC_aliases.h : 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/V_SS.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_SS.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_SS.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/V_SS_aliases.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cypins.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h 
 
@@ -203,10 +237,4 @@ E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Gener
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/cyutils.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyutils.c 
 
 E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyutils.c : 
-
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/CortexM0/ARM_GCC_484/Debug/isr_1.o : E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLFClk.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/CyLib.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cyfitter.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/cytypes.h E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/isr_1.c E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/isr_1.h 
-
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/isr_1.c : 
-
-E:/Documents/GitHub/bq2002-chip-tester/bq2002\ Tester/bq2002\ Tester.cydsn/Generated_Source/PSoC4/isr_1.h : 
 

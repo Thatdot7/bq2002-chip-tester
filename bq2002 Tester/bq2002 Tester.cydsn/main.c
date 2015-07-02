@@ -13,45 +13,67 @@
 #include <stdio.h>
 #include "bq2002.h"
 
-CY_ISR(debug)
+static volatile CYBIT isr_flag = 0;     // Flag to indicate button press
+
+CY_ISR(Button1_Press)
 {
-    TCPWM_ClearInterrupt(TCPWM_INTR_MASK_CC_MATCH);
-    UART_1_UartPutString("Hello\r\n");
+    ISR_Button1_Disable();
+    isr_flag = 1;
+}
+
+void init()
+{
+    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+    UART_1_Start();
+    TCPWM_Start();
+    TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
+    ISR_Button1_StartEx(Button1_Press);
+    IDAC_1_Start();
+
+    CyGlobalIntEnable; /* Enable global interrupts. */
+}
+
+void UART_PutInt16(uint16 message)
+{
+    char uart_message[5];
+            
+    sprintf(uart_message, "%d\r\n", message);
+    UART_1_UartPutString(uart_message);
 }
 
 int main()
 {
-
-    UART_1_Start();
-    isr_1_StartEx(debug);
-    PWM_1_Start();
-    CyGlobalIntEnable; /* Enable global interrupts. */
-
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    IDAC_1_Start();
-    uint8_t IDAC_VAL = 0;
-    
-    TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
+    init();
     
     for(;;)
     {
-        /* Place your application code here. */
-        //TM_Mode_SetMode((TM_Mode_GetMode() + 1) % 3);
+        if(isr_flag != 0)
+        {
+            isr_flag = 0;
+            
+            UART_1_UartPutString("Starting Testing Procedure\r\n");
+            UART_1_UartPutString("==========================\r\n");
+            
+            TM_Mode_SetMode(TM_Mode_1C);
+            INH_Write(0);
+            TS_Write(1);
+            V_CC_Write(1);
+            CyDelay(70);
+            TS_Write(0);
+            CyDelay(70);
+            UART_PutInt16(TCPWM_ReadCapture());
+
+            /*
+            TS_Write(1);
+            V_CC_Write(0);
+            CyDelay(70);
+            V_CC_Write(1);
+            CyDelay(70);
+            UART_PutInt16(TCPWM_ReadCapture());*/
+
+            ISR_Button1_Enable();
         
-        //TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_RELOAD);
-        //TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
-        
-        //CyDelay(130);
-        
-       // TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_STOP);
-        
-        uint16 pulse_width = TCPWM_ReadCapture();
-        
-        char uart_message[5];
-        sprintf(uart_message, "%d\r\n", pulse_width);
-        
-        UART_1_UartPutString(uart_message);
-        CyDelay(2000);
+        }
         
     }
 }
