@@ -1,9 +1,0 @@
---------------- Build Started: 07/02/2015 18:12:34 Project: bq2002 Tester, Configuration: ARM GCC 4.8.4 Debug ---------------
-The code generation step is up to date.
-The compile step is up to date, no work needs to be done.
-The link step is up to date, no work needs to be done.
-cyelftool.exe -B "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf" --flash_row_size 128 --flash_size 32768 --flash_array_size 32768
-cyelftool.exe -S "E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\CortexM0\ARM_GCC_484\Debug\bq2002 Tester.elf"
-Flash used: 11008 of 32768 bytes (33.6 %). Bootloader: 4992 bytes. Application: 5888 bytes. Metadata: 128 bytes.
-SRAM used: 1568 of 4096 bytes (38.3 %). Stack: 1024 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 07/02/2015 18:12:35 ---------------
