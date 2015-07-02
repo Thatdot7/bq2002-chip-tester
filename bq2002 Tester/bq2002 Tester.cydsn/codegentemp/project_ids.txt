@@ -1,5 +1,0 @@
-E:\Documents\GitHub\bq2002-chip-tester\bq2002 Tester\bq2002 Tester.cydsn\bq2002 Tester.cyprj|b0860d02-ab92-4926-ad9c-263fae107ba8
-C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|47bb26c6-3e70-46c2-bc46-cda523bab172
-C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2340e84b-f5fc-43be-8f04-a3101e11b3c5
-C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|556953ed-46ef-4212-9e7e-f6e7cac51919
-C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|da50436c-1e9c-4099-86f4-fc6b3d6011da
