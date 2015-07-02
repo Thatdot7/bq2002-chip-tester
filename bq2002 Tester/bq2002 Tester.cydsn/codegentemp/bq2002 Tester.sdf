@@ -1,6 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
+<<<<<<< HEAD
  (DATE "2015-07-02T10:05:36Z")
+=======
+ (DATE "2015-07-01T02:00:29Z")
+>>>>>>> origin/master
  (DESIGN "bq2002 Tester")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -12,6 +16,7 @@
   (INSTANCE *)
   (DELAY
    (ABSOLUTE
+<<<<<<< HEAD
     (INTERCONNECT ClockBlock.hfclk Button1\(0\).in_clock (0.000:0.000:0.000))
     (INTERCONNECT ClockBlock.hfclk CC\(0\).in_clock (0.000:0.000:0.000))
     (INTERCONNECT ClockBlock.hfclk LED_N\(0\).in_clock (0.000:0.000:0.000))
@@ -23,16 +28,57 @@
     (INTERCONNECT Button1\(0\).fb Net_760.main_0 (4.609:4.609:4.609))
     (INTERCONNECT ClockGenBlock.gen_clk_out_0 Net_760.clock_0 (0.000:0.000:0.000))
     (INTERCONNECT Net_760.q ISR_Button1.interrupt (1.000:1.000:1.000))
+=======
+    (INTERCONNECT ClockBlock.hfclk ISR_counter.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\PWM_1\:PWMUDB\:genblk1\:ctrlreg\\.busclk (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.busclk (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.busclk (0.000:0.000:0.000))
+    (INTERCONNECT Net_664.q \\TCPWM\:cy_m0s8_tcpwm_1\\.capture (4.968:4.968:4.968))
+    (INTERCONNECT Net_664.q \\TCPWM\:cy_m0s8_tcpwm_1\\.reload (4.968:4.968:4.968))
+    (INTERCONNECT ClockGenBlock.gen_clk_out_0 Net_664.clock_0 (0.000:0.000:0.000))
+    (INTERCONNECT ClockGenBlock.gen_clk_out_0 \\PWM_1\:PWMUDB\:genblk1\:ctrlreg\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockGenBlock.gen_clk_out_0 \\PWM_1\:PWMUDB\:runmode_enable\\.clock_0 (0.000:0.000:0.000))
+    (INTERCONNECT ClockGenBlock.gen_clk_out_0 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockGenBlock.gen_clk_out_0 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.ff_div_8 \\TCPWM\:cy_m0s8_tcpwm_1\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\TCPWM\:cy_m0s8_tcpwm_1\\.interrupt ISR_counter.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cl0_comb Net_664.main_1 (2.237:2.237:2.237))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:genblk1\:ctrlreg\\.control_7 \\PWM_1\:PWMUDB\:runmode_enable\\.main_0 (2.259:2.259:2.259))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:runmode_enable\\.q Net_664.main_0 (2.961:2.961:2.961))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:runmode_enable\\.q \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.cs_addr_1 (2.862:2.862:2.862))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:runmode_enable\\.q \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cs_addr_1 (2.970:2.970:2.970))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.z0_comb \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.cs_addr_2 (2.538:2.538:2.538))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.z0_comb \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cs_addr_2 (2.539:2.539:2.539))
+>>>>>>> origin/master
     (INTERCONNECT \\UART_1\:SCB\\.tx \\UART_1\:tx\(0\)\\.pin_input (1.000:1.000:1.000))
     (INTERCONNECT \\UART_1\:rx\(0\)\\.fb \\UART_1\:SCB\\.rx (1.000:1.000:1.000))
     (INTERCONNECT ClockBlock.ff_div_2 \\UART_1\:SCB\\.clock (0.000:0.000:0.000))
     (INTERCONNECT \\UART_1\:tx\(0\)\\.pad_out \\UART_1\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
+<<<<<<< HEAD
     (INTERCONNECT __ONE__.q BAT\(0\).pin_input (5.744:5.744:5.744))
     (INTERCONNECT __ONE__.q \\IDAC_1\:cy_psoc4_idac\\.en (6.456:6.456:6.456))
     (INTERCONNECT ClockBlock.udb_div_0 ClockGenBlock.gen_clk_in_0 (0.000:0.000:0.000))
     (INTERCONNECT Button1\(0\)_PAD Button1\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Button1_VDD\(0\)_PAD Button1_VDD\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT CC\(0\)_PAD CC\(0\).pad_in (0.000:0.000:0.000))
+=======
+    (INTERCONNECT __ONE__.q BAT\(0\).pin_input (5.496:5.496:5.496))
+    (INTERCONNECT __ONE__.q \\IDAC_1\:cy_psoc4_idac\\.en (6.196:6.196:6.196))
+    (INTERCONNECT ClockBlock.udb_div_0 ClockGenBlock.gen_clk_in_0 (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.ce0 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.ce0i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.cl0 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cl0i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.z0 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.z0i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.ff0 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.ff0i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.ce1 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.ce1i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.cl1 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cl1i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.z1 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.z1i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.ff1 \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.ff1i (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.co_msb \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.ci (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.sol_msb \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.sir (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.cfbo \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cfbi (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.sor \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.sil (0.000:0.000:0.000))
+    (INTERCONNECT \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u1\\.cmsbo \\PWM_1\:PWMUDB\:sP16\:pwmdp\:u0\\.cmsbi (0.000:0.000:0.000))
+>>>>>>> origin/master
     (INTERCONNECT INH\(0\)_PAD INH\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT LED_N\(0\)_PAD LED_N\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT TM\(0\)_PAD TM\(0\).pad_in (0.000:0.000:0.000))

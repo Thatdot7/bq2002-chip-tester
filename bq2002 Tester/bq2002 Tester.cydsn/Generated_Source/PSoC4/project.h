@@ -38,6 +38,7 @@
 #include "UART_1_BOOT.h"
 #include "TCPWM.h"
 #include "MicroSec_CLK.h"
+<<<<<<< HEAD
 #include "CC.h"
 #include "CC_aliases.h"
 #include "LED_N.h"
@@ -50,6 +51,10 @@
 #include "ISR_Button1.h"
 #include "Button1_VDD.h"
 #include "Button1_VDD_aliases.h"
+=======
+#include "PWM_1.h"
+#include "ISR_counter.h"
+>>>>>>> origin/master
 #include "UART_1_SCBCLK.h"
 #include "UART_1_tx.h"
 #include "UART_1_tx_aliases.h"

@@ -632,6 +632,7 @@
 .set UART_1_tx__PS, CYREG_PRT4_PS
 .set UART_1_tx__SHIFT, 1
 
+<<<<<<< HEAD
 /* Button1 */
 .set Button1__0__DM__MASK, 0x38
 .set Button1__0__DM__SHIFT, 3
@@ -766,6 +767,25 @@
 .set MicroSec_CLK__ENABLE_MASK, 0x80000000
 .set MicroSec_CLK__MASK, 0x80000000
 .set MicroSec_CLK__REGISTER, CYREG_CLK_DIVIDER_A00
+=======
+/* ISR_counter */
+.set ISR_counter__INTC_CLR_EN_REG, CYREG_CM0_ICER
+.set ISR_counter__INTC_CLR_PD_REG, CYREG_CM0_ICPR
+.set ISR_counter__INTC_MASK, 0x10000
+.set ISR_counter__INTC_NUMBER, 16
+.set ISR_counter__INTC_PRIOR_MASK, 0xC0
+.set ISR_counter__INTC_PRIOR_NUM, 3
+.set ISR_counter__INTC_PRIOR_REG, CYREG_CM0_IPR4
+.set ISR_counter__INTC_SET_EN_REG, CYREG_CM0_ISER
+.set ISR_counter__INTC_SET_PD_REG, CYREG_CM0_ISPR
+
+/* MicroSec_CLK */
+.set MicroSec_CLK__DIVIDER_MASK, 0x0000FFFF
+.set MicroSec_CLK__ENABLE, CYREG_CLK_DIVIDER_B00
+.set MicroSec_CLK__ENABLE_MASK, 0x80000000
+.set MicroSec_CLK__MASK, 0x80000000
+.set MicroSec_CLK__REGISTER, CYREG_CLK_DIVIDER_B00
+>>>>>>> origin/master
 
 /* Miscellaneous */
 .set CYDEV_BCLK__HFCLK__HZ, 24000000

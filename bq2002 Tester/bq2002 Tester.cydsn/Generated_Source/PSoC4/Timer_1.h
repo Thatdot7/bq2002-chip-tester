@@ -86,12 +86,12 @@ extern uint8  Timer_1_initVar;
 /* Signal present */
 #define Timer_1_TC_RELOAD_SIGNAL_PRESENT       (1lu)
 #define Timer_1_TC_COUNT_SIGNAL_PRESENT        (0lu)
-#define Timer_1_TC_START_SIGNAL_PRESENT        (1lu)
+#define Timer_1_TC_START_SIGNAL_PRESENT        (0lu)
 #define Timer_1_TC_STOP_SIGNAL_PRESENT         (0lu)
 #define Timer_1_TC_CAPTURE_SIGNAL_PRESENT      (1lu)
 
 /* Interrupt Mask */
-#define Timer_1_TC_INTERRUPT_MASK              (3lu)
+#define Timer_1_TC_INTERRUPT_MASK              (2lu)
 
 /* PWM Mode */
 /* Parameters */

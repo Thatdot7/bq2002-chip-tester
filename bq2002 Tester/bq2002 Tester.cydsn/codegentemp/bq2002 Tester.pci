@@ -1,5 +1,9 @@
 # bq2002 Tester
+<<<<<<< HEAD
 # 2015-07-02 10:05:35Z
+=======
+# 2015-07-01 02:00:27Z
+>>>>>>> origin/master
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
@@ -10,8 +14,11 @@ set_io "Button1(0)" iocell 3 1
 set_io "Button1_VDD(0)" iocell 3 0
 set_io "CC(0)" iocell 1 7
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+<<<<<<< HEAD
 set_io "INH(0)" iocell 1 6
 set_io "LED_N(0)" iocell 2 2
+=======
+>>>>>>> origin/master
 set_io "TM(0)" iocell 2 1
 set_io "TS(0)" iocell 1 4
 set_io "V_CC(0)" iocell 1 5

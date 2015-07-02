@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckTfzfF.s 			page 1
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -51,6 +55,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckTfzfF.s 			page 1
   29              		.cfi_def_cfa_offset 8
   30              		.cfi_offset 3, -8
   31              		.cfi_offset 14, -4
+<<<<<<< HEAD
   20:.\main.c      ****     ISR_Button1_Disable();
   32              		.loc 1 20 0
   33 0002 FFF7FEFF 		bl	ISR_Button1_Disable
@@ -1583,3 +1588,870 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckTfzfF.s 			page 1
  1286 02e2 43794465 		.ascii	"CyDelay\000"
  1286      6C617900 
  1287              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+=======
+  18:.\main.c      ****     TCPWM_ClearInterrupt(TCPWM_INTR_MASK_CC_MATCH);
+  32              		.loc 1 18 0
+  33 0002 0220     		mov	r0, #2
+  34 0004 FFF7FEFF 		bl	TCPWM_ClearInterrupt
+  35              	.LVL0:
+  19:.\main.c      ****     UART_1_UartPutString("Hello\r\n");
+  36              		.loc 1 19 0
+  37 0008 0148     		ldr	r0, .L2
+  38 000a FFF7FEFF 		bl	UART_1_UartPutString
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 2
+
+
+  39              	.LVL1:
+  20:.\main.c      **** }
+  40              		.loc 1 20 0
+  41              		@ sp needed
+  42 000e 08BD     		pop	{r3, pc}
+  43              	.L3:
+  44              		.align	2
+  45              	.L2:
+  46 0010 00000000 		.word	.LC0
+  47              		.cfi_endproc
+  48              	.LFE33:
+  49              		.size	debug, .-debug
+  50              		.section	.text.main,"ax",%progbits
+  51              		.align	2
+  52              		.global	main
+  53              		.code	16
+  54              		.thumb_func
+  55              		.type	main, %function
+  56              	main:
+  57              	.LFB34:
+  21:.\main.c      **** 
+  22:.\main.c      **** int main()
+  23:.\main.c      **** {
+  58              		.loc 1 23 0
+  59              		.cfi_startproc
+  60 0000 08B5     		push	{r3, lr}
+  61              		.cfi_def_cfa_offset 8
+  62              		.cfi_offset 3, -8
+  63              		.cfi_offset 14, -4
+  24:.\main.c      **** 
+  25:.\main.c      ****     UART_1_Start();
+  64              		.loc 1 25 0
+  65 0002 FFF7FEFF 		bl	UART_1_Start
+  66              	.LVL2:
+  26:.\main.c      ****     ISR_counter_StartEx(debug);
+  67              		.loc 1 26 0
+  68 0006 0748     		ldr	r0, .L6
+  69 0008 FFF7FEFF 		bl	ISR_counter_StartEx
+  70              	.LVL3:
+  27:.\main.c      ****     PWM_1_Start();
+  71              		.loc 1 27 0
+  72 000c FFF7FEFF 		bl	PWM_1_Start
+  73              	.LVL4:
+  28:.\main.c      ****     TCPWM_Start();
+  74              		.loc 1 28 0
+  75 0010 FFF7FEFF 		bl	TCPWM_Start
+  76              	.LVL5:
+  29:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  77              		.loc 1 29 0
+  78              	@ 29 ".\main.c" 1
+  79 0014 62B6     		CPSIE   i
+  80              	@ 0 "" 2
+  30:.\main.c      **** 
+  31:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  32:.\main.c      ****     IDAC_1_Start();
+  81              		.loc 1 32 0
+  82              		.code	16
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 3
+
+
+  83 0016 FFF7FEFF 		bl	IDAC_1_Start
+  84              	.LVL6:
+  33:.\main.c      ****     uint8_t IDAC_VAL = 0;
+  34:.\main.c      ****     
+  35:.\main.c      ****     TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
+  85              		.loc 1 35 0
+  86 001a 0120     		mov	r0, #1
+  87 001c 1821     		mov	r1, #24
+  88 001e FFF7FEFF 		bl	TCPWM_TriggerCommand
+  89              	.LVL7:
+  90              	.L5:
+  91 0022 FEE7     		b	.L5
+  92              	.L7:
+  93              		.align	2
+  94              	.L6:
+  95 0024 00000000 		.word	debug
+  96              		.cfi_endproc
+  97              	.LFE34:
+  98              		.size	main, .-main
+  99              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 100              		.align	2
+ 101              	.LC0:
+ 102 0000 48656C6C 		.ascii	"Hello\015\012\000"
+ 102      6F0D0A00 
+ 103              		.text
+ 104              	.Letext0:
+ 105              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.2\\psoc creator\\import\\gnu\\arm\\4.8.
+ 106              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.2\\psoc creator\\import\\gnu\\arm\\4.8.
+ 107              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
+ 108              		.file 5 "Generated_Source\\PSoC4/TCPWM.h"
+ 109              		.file 6 "Generated_Source\\PSoC4/UART_1_SPI_UART.h"
+ 110              		.file 7 "Generated_Source\\PSoC4/ISR_counter.h"
+ 111              		.file 8 "Generated_Source\\PSoC4/UART_1.h"
+ 112              		.file 9 "Generated_Source\\PSoC4/PWM_1.h"
+ 113              		.file 10 "Generated_Source\\PSoC4/IDAC_1.h"
+ 114              		.section	.debug_info,"",%progbits
+ 115              	.Ldebug_info0:
+ 116 0000 E4010000 		.4byte	0x1e4
+ 117 0004 0400     		.2byte	0x4
+ 118 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 119 000a 04       		.byte	0x4
+ 120 000b 01       		.uleb128 0x1
+ 121 000c 61010000 		.4byte	.LASF27
+ 122 0010 01       		.byte	0x1
+ 123 0011 FB000000 		.4byte	.LASF28
+ 124 0015 6E000000 		.4byte	.LASF29
+ 125 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 126 001d 00000000 		.4byte	0
+ 127 0021 00000000 		.4byte	.Ldebug_line0
+ 128 0025 02       		.uleb128 0x2
+ 129 0026 01       		.byte	0x1
+ 130 0027 06       		.byte	0x6
+ 131 0028 32020000 		.4byte	.LASF0
+ 132 002c 03       		.uleb128 0x3
+ 133 002d 0D000000 		.4byte	.LASF9
+ 134 0031 02       		.byte	0x2
+ 135 0032 1C       		.byte	0x1c
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 4
+
+
+ 136 0033 37000000 		.4byte	0x37
+ 137 0037 02       		.uleb128 0x2
+ 138 0038 01       		.byte	0x1
+ 139 0039 08       		.byte	0x8
+ 140 003a 60000000 		.4byte	.LASF1
+ 141 003e 02       		.uleb128 0x2
+ 142 003f 02       		.byte	0x2
+ 143 0040 05       		.byte	0x5
+ 144 0041 06020000 		.4byte	.LASF2
+ 145 0045 02       		.uleb128 0x2
+ 146 0046 02       		.byte	0x2
+ 147 0047 07       		.byte	0x7
+ 148 0048 41000000 		.4byte	.LASF3
+ 149 004c 02       		.uleb128 0x2
+ 150 004d 04       		.byte	0x4
+ 151 004e 05       		.byte	0x5
+ 152 004f 38000000 		.4byte	.LASF4
+ 153 0053 02       		.uleb128 0x2
+ 154 0054 04       		.byte	0x4
+ 155 0055 07       		.byte	0x7
+ 156 0056 DD000000 		.4byte	.LASF5
+ 157 005a 02       		.uleb128 0x2
+ 158 005b 08       		.byte	0x8
+ 159 005c 05       		.byte	0x5
+ 160 005d F3010000 		.4byte	.LASF6
+ 161 0061 02       		.uleb128 0x2
+ 162 0062 08       		.byte	0x8
+ 163 0063 07       		.byte	0x7
+ 164 0064 42010000 		.4byte	.LASF7
+ 165 0068 04       		.uleb128 0x4
+ 166 0069 04       		.byte	0x4
+ 167 006a 05       		.byte	0x5
+ 168 006b 696E7400 		.ascii	"int\000"
+ 169 006f 02       		.uleb128 0x2
+ 170 0070 04       		.byte	0x4
+ 171 0071 07       		.byte	0x7
+ 172 0072 20010000 		.4byte	.LASF8
+ 173 0076 03       		.uleb128 0x3
+ 174 0077 59010000 		.4byte	.LASF10
+ 175 007b 03       		.byte	0x3
+ 176 007c 2A       		.byte	0x2a
+ 177 007d 2C000000 		.4byte	0x2c
+ 178 0081 03       		.uleb128 0x3
+ 179 0082 10010000 		.4byte	.LASF11
+ 180 0086 04       		.byte	0x4
+ 181 0087 B5       		.byte	0xb5
+ 182 0088 53000000 		.4byte	0x53
+ 183 008c 02       		.uleb128 0x2
+ 184 008d 04       		.byte	0x4
+ 185 008e 04       		.byte	0x4
+ 186 008f 5A000000 		.4byte	.LASF12
+ 187 0093 02       		.uleb128 0x2
+ 188 0094 08       		.byte	0x8
+ 189 0095 04       		.byte	0x4
+ 190 0096 04010000 		.4byte	.LASF13
+ 191 009a 03       		.uleb128 0x3
+ 192 009b C3000000 		.4byte	.LASF14
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 5
+
+
+ 193 009f 04       		.byte	0x4
+ 194 00a0 C4       		.byte	0xc4
+ 195 00a1 A5000000 		.4byte	0xa5
+ 196 00a5 02       		.uleb128 0x2
+ 197 00a6 01       		.byte	0x1
+ 198 00a7 08       		.byte	0x8
+ 199 00a8 01020000 		.4byte	.LASF15
+ 200 00ac 05       		.uleb128 0x5
+ 201 00ad DD010000 		.4byte	.LASF16
+ 202 00b1 04       		.byte	0x4
+ 203 00b2 6F01     		.2byte	0x16f
+ 204 00b4 B8000000 		.4byte	0xb8
+ 205 00b8 06       		.uleb128 0x6
+ 206 00b9 04       		.byte	0x4
+ 207 00ba BE000000 		.4byte	0xbe
+ 208 00be 07       		.uleb128 0x7
+ 209 00bf 02       		.uleb128 0x2
+ 210 00c0 04       		.byte	0x4
+ 211 00c1 07       		.byte	0x7
+ 212 00c2 EA010000 		.4byte	.LASF17
+ 213 00c6 08       		.uleb128 0x8
+ 214 00c7 54000000 		.4byte	.LASF18
+ 215 00cb 01       		.byte	0x1
+ 216 00cc 10       		.byte	0x10
+ 217 00cd 00000000 		.4byte	.LFB33
+ 218 00d1 14000000 		.4byte	.LFE33-.LFB33
+ 219 00d5 01       		.uleb128 0x1
+ 220 00d6 9C       		.byte	0x9c
+ 221 00d7 02010000 		.4byte	0x102
+ 222 00db 09       		.uleb128 0x9
+ 223 00dc 08000000 		.4byte	.LVL0
+ 224 00e0 77010000 		.4byte	0x177
+ 225 00e4 EE000000 		.4byte	0xee
+ 226 00e8 0A       		.uleb128 0xa
+ 227 00e9 01       		.uleb128 0x1
+ 228 00ea 50       		.byte	0x50
+ 229 00eb 01       		.uleb128 0x1
+ 230 00ec 32       		.byte	0x32
+ 231 00ed 00       		.byte	0
+ 232 00ee 0B       		.uleb128 0xb
+ 233 00ef 0E000000 		.4byte	.LVL1
+ 234 00f3 89010000 		.4byte	0x189
+ 235 00f7 0A       		.uleb128 0xa
+ 236 00f8 01       		.uleb128 0x1
+ 237 00f9 50       		.byte	0x50
+ 238 00fa 05       		.uleb128 0x5
+ 239 00fb 03       		.byte	0x3
+ 240 00fc 00000000 		.4byte	.LC0
+ 241 0100 00       		.byte	0
+ 242 0101 00       		.byte	0
+ 243 0102 0C       		.uleb128 0xc
+ 244 0103 0B010000 		.4byte	.LASF19
+ 245 0107 01       		.byte	0x1
+ 246 0108 16       		.byte	0x16
+ 247 0109 68000000 		.4byte	0x68
+ 248 010d 00000000 		.4byte	.LFB34
+ 249 0111 28000000 		.4byte	.LFE34-.LFB34
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 6
+
+
+ 250 0115 01       		.uleb128 0x1
+ 251 0116 9C       		.byte	0x9c
+ 252 0117 77010000 		.4byte	0x177
+ 253 011b 0D       		.uleb128 0xd
+ 254 011c 17010000 		.4byte	.LASF30
+ 255 0120 01       		.byte	0x1
+ 256 0121 21       		.byte	0x21
+ 257 0122 76000000 		.4byte	0x76
+ 258 0126 00       		.byte	0
+ 259 0127 0E       		.uleb128 0xe
+ 260 0128 06000000 		.4byte	.LVL2
+ 261 012c A6010000 		.4byte	0x1a6
+ 262 0130 09       		.uleb128 0x9
+ 263 0131 0C000000 		.4byte	.LVL3
+ 264 0135 AD010000 		.4byte	0x1ad
+ 265 0139 47010000 		.4byte	0x147
+ 266 013d 0A       		.uleb128 0xa
+ 267 013e 01       		.uleb128 0x1
+ 268 013f 50       		.byte	0x50
+ 269 0140 05       		.uleb128 0x5
+ 270 0141 03       		.byte	0x3
+ 271 0142 00000000 		.4byte	debug
+ 272 0146 00       		.byte	0
+ 273 0147 0E       		.uleb128 0xe
+ 274 0148 10000000 		.4byte	.LVL4
+ 275 014c BE010000 		.4byte	0x1be
+ 276 0150 0E       		.uleb128 0xe
+ 277 0151 14000000 		.4byte	.LVL5
+ 278 0155 C5010000 		.4byte	0x1c5
+ 279 0159 0E       		.uleb128 0xe
+ 280 015a 1A000000 		.4byte	.LVL6
+ 281 015e CD010000 		.4byte	0x1cd
+ 282 0162 0B       		.uleb128 0xb
+ 283 0163 22000000 		.4byte	.LVL7
+ 284 0167 D4010000 		.4byte	0x1d4
+ 285 016b 0A       		.uleb128 0xa
+ 286 016c 01       		.uleb128 0x1
+ 287 016d 51       		.byte	0x51
+ 288 016e 01       		.uleb128 0x1
+ 289 016f 48       		.byte	0x48
+ 290 0170 0A       		.uleb128 0xa
+ 291 0171 01       		.uleb128 0x1
+ 292 0172 50       		.byte	0x50
+ 293 0173 01       		.uleb128 0x1
+ 294 0174 31       		.byte	0x31
+ 295 0175 00       		.byte	0
+ 296 0176 00       		.byte	0
+ 297 0177 0F       		.uleb128 0xf
+ 298 0178 2D010000 		.4byte	.LASF20
+ 299 017c 05       		.byte	0x5
+ 300 017d 4601     		.2byte	0x146
+ 301 017f 89010000 		.4byte	0x189
+ 302 0183 10       		.uleb128 0x10
+ 303 0184 81000000 		.4byte	0x81
+ 304 0188 00       		.byte	0
+ 305 0189 0F       		.uleb128 0xf
+ 306 018a 23000000 		.4byte	.LASF21
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 7
+
+
+ 307 018e 06       		.byte	0x6
+ 308 018f 7701     		.2byte	0x177
+ 309 0191 9B010000 		.4byte	0x19b
+ 310 0195 10       		.uleb128 0x10
+ 311 0196 9B010000 		.4byte	0x19b
+ 312 019a 00       		.byte	0
+ 313 019b 06       		.uleb128 0x6
+ 314 019c 04       		.byte	0x4
+ 315 019d A1010000 		.4byte	0x1a1
+ 316 01a1 11       		.uleb128 0x11
+ 317 01a2 9A000000 		.4byte	0x9a
+ 318 01a6 12       		.uleb128 0x12
+ 319 01a7 00000000 		.4byte	.LASF23
+ 320 01ab 08       		.byte	0x8
+ 321 01ac 68       		.byte	0x68
+ 322 01ad 13       		.uleb128 0x13
+ 323 01ae C9000000 		.4byte	.LASF22
+ 324 01b2 07       		.byte	0x7
+ 325 01b3 18       		.byte	0x18
+ 326 01b4 BE010000 		.4byte	0x1be
+ 327 01b8 10       		.uleb128 0x10
+ 328 01b9 AC000000 		.4byte	0xac
+ 329 01bd 00       		.byte	0
+ 330 01be 12       		.uleb128 0x12
+ 331 01bf EF000000 		.4byte	.LASF24
+ 332 01c3 09       		.byte	0x9
+ 333 01c4 92       		.byte	0x92
+ 334 01c5 14       		.uleb128 0x14
+ 335 01c6 17000000 		.4byte	.LASF25
+ 336 01ca 05       		.byte	0x5
+ 337 01cb 3101     		.2byte	0x131
+ 338 01cd 12       		.uleb128 0x12
+ 339 01ce 25020000 		.4byte	.LASF26
+ 340 01d2 0A       		.byte	0xa
+ 341 01d3 52       		.byte	0x52
+ 342 01d4 15       		.uleb128 0x15
+ 343 01d5 10020000 		.4byte	.LASF31
+ 344 01d9 05       		.byte	0x5
+ 345 01da 3A01     		.2byte	0x13a
+ 346 01dc 10       		.uleb128 0x10
+ 347 01dd 81000000 		.4byte	0x81
+ 348 01e1 10       		.uleb128 0x10
+ 349 01e2 81000000 		.4byte	0x81
+ 350 01e6 00       		.byte	0
+ 351 01e7 00       		.byte	0
+ 352              		.section	.debug_abbrev,"",%progbits
+ 353              	.Ldebug_abbrev0:
+ 354 0000 01       		.uleb128 0x1
+ 355 0001 11       		.uleb128 0x11
+ 356 0002 01       		.byte	0x1
+ 357 0003 25       		.uleb128 0x25
+ 358 0004 0E       		.uleb128 0xe
+ 359 0005 13       		.uleb128 0x13
+ 360 0006 0B       		.uleb128 0xb
+ 361 0007 03       		.uleb128 0x3
+ 362 0008 0E       		.uleb128 0xe
+ 363 0009 1B       		.uleb128 0x1b
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 8
+
+
+ 364 000a 0E       		.uleb128 0xe
+ 365 000b 55       		.uleb128 0x55
+ 366 000c 17       		.uleb128 0x17
+ 367 000d 11       		.uleb128 0x11
+ 368 000e 01       		.uleb128 0x1
+ 369 000f 10       		.uleb128 0x10
+ 370 0010 17       		.uleb128 0x17
+ 371 0011 00       		.byte	0
+ 372 0012 00       		.byte	0
+ 373 0013 02       		.uleb128 0x2
+ 374 0014 24       		.uleb128 0x24
+ 375 0015 00       		.byte	0
+ 376 0016 0B       		.uleb128 0xb
+ 377 0017 0B       		.uleb128 0xb
+ 378 0018 3E       		.uleb128 0x3e
+ 379 0019 0B       		.uleb128 0xb
+ 380 001a 03       		.uleb128 0x3
+ 381 001b 0E       		.uleb128 0xe
+ 382 001c 00       		.byte	0
+ 383 001d 00       		.byte	0
+ 384 001e 03       		.uleb128 0x3
+ 385 001f 16       		.uleb128 0x16
+ 386 0020 00       		.byte	0
+ 387 0021 03       		.uleb128 0x3
+ 388 0022 0E       		.uleb128 0xe
+ 389 0023 3A       		.uleb128 0x3a
+ 390 0024 0B       		.uleb128 0xb
+ 391 0025 3B       		.uleb128 0x3b
+ 392 0026 0B       		.uleb128 0xb
+ 393 0027 49       		.uleb128 0x49
+ 394 0028 13       		.uleb128 0x13
+ 395 0029 00       		.byte	0
+ 396 002a 00       		.byte	0
+ 397 002b 04       		.uleb128 0x4
+ 398 002c 24       		.uleb128 0x24
+ 399 002d 00       		.byte	0
+ 400 002e 0B       		.uleb128 0xb
+ 401 002f 0B       		.uleb128 0xb
+ 402 0030 3E       		.uleb128 0x3e
+ 403 0031 0B       		.uleb128 0xb
+ 404 0032 03       		.uleb128 0x3
+ 405 0033 08       		.uleb128 0x8
+ 406 0034 00       		.byte	0
+ 407 0035 00       		.byte	0
+ 408 0036 05       		.uleb128 0x5
+ 409 0037 16       		.uleb128 0x16
+ 410 0038 00       		.byte	0
+ 411 0039 03       		.uleb128 0x3
+ 412 003a 0E       		.uleb128 0xe
+ 413 003b 3A       		.uleb128 0x3a
+ 414 003c 0B       		.uleb128 0xb
+ 415 003d 3B       		.uleb128 0x3b
+ 416 003e 05       		.uleb128 0x5
+ 417 003f 49       		.uleb128 0x49
+ 418 0040 13       		.uleb128 0x13
+ 419 0041 00       		.byte	0
+ 420 0042 00       		.byte	0
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 9
+
+
+ 421 0043 06       		.uleb128 0x6
+ 422 0044 0F       		.uleb128 0xf
+ 423 0045 00       		.byte	0
+ 424 0046 0B       		.uleb128 0xb
+ 425 0047 0B       		.uleb128 0xb
+ 426 0048 49       		.uleb128 0x49
+ 427 0049 13       		.uleb128 0x13
+ 428 004a 00       		.byte	0
+ 429 004b 00       		.byte	0
+ 430 004c 07       		.uleb128 0x7
+ 431 004d 15       		.uleb128 0x15
+ 432 004e 00       		.byte	0
+ 433 004f 27       		.uleb128 0x27
+ 434 0050 19       		.uleb128 0x19
+ 435 0051 00       		.byte	0
+ 436 0052 00       		.byte	0
+ 437 0053 08       		.uleb128 0x8
+ 438 0054 2E       		.uleb128 0x2e
+ 439 0055 01       		.byte	0x1
+ 440 0056 3F       		.uleb128 0x3f
+ 441 0057 19       		.uleb128 0x19
+ 442 0058 03       		.uleb128 0x3
+ 443 0059 0E       		.uleb128 0xe
+ 444 005a 3A       		.uleb128 0x3a
+ 445 005b 0B       		.uleb128 0xb
+ 446 005c 3B       		.uleb128 0x3b
+ 447 005d 0B       		.uleb128 0xb
+ 448 005e 27       		.uleb128 0x27
+ 449 005f 19       		.uleb128 0x19
+ 450 0060 11       		.uleb128 0x11
+ 451 0061 01       		.uleb128 0x1
+ 452 0062 12       		.uleb128 0x12
+ 453 0063 06       		.uleb128 0x6
+ 454 0064 40       		.uleb128 0x40
+ 455 0065 18       		.uleb128 0x18
+ 456 0066 9742     		.uleb128 0x2117
+ 457 0068 19       		.uleb128 0x19
+ 458 0069 01       		.uleb128 0x1
+ 459 006a 13       		.uleb128 0x13
+ 460 006b 00       		.byte	0
+ 461 006c 00       		.byte	0
+ 462 006d 09       		.uleb128 0x9
+ 463 006e 898201   		.uleb128 0x4109
+ 464 0071 01       		.byte	0x1
+ 465 0072 11       		.uleb128 0x11
+ 466 0073 01       		.uleb128 0x1
+ 467 0074 31       		.uleb128 0x31
+ 468 0075 13       		.uleb128 0x13
+ 469 0076 01       		.uleb128 0x1
+ 470 0077 13       		.uleb128 0x13
+ 471 0078 00       		.byte	0
+ 472 0079 00       		.byte	0
+ 473 007a 0A       		.uleb128 0xa
+ 474 007b 8A8201   		.uleb128 0x410a
+ 475 007e 00       		.byte	0
+ 476 007f 02       		.uleb128 0x2
+ 477 0080 18       		.uleb128 0x18
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 10
+
+
+ 478 0081 9142     		.uleb128 0x2111
+ 479 0083 18       		.uleb128 0x18
+ 480 0084 00       		.byte	0
+ 481 0085 00       		.byte	0
+ 482 0086 0B       		.uleb128 0xb
+ 483 0087 898201   		.uleb128 0x4109
+ 484 008a 01       		.byte	0x1
+ 485 008b 11       		.uleb128 0x11
+ 486 008c 01       		.uleb128 0x1
+ 487 008d 31       		.uleb128 0x31
+ 488 008e 13       		.uleb128 0x13
+ 489 008f 00       		.byte	0
+ 490 0090 00       		.byte	0
+ 491 0091 0C       		.uleb128 0xc
+ 492 0092 2E       		.uleb128 0x2e
+ 493 0093 01       		.byte	0x1
+ 494 0094 3F       		.uleb128 0x3f
+ 495 0095 19       		.uleb128 0x19
+ 496 0096 03       		.uleb128 0x3
+ 497 0097 0E       		.uleb128 0xe
+ 498 0098 3A       		.uleb128 0x3a
+ 499 0099 0B       		.uleb128 0xb
+ 500 009a 3B       		.uleb128 0x3b
+ 501 009b 0B       		.uleb128 0xb
+ 502 009c 49       		.uleb128 0x49
+ 503 009d 13       		.uleb128 0x13
+ 504 009e 11       		.uleb128 0x11
+ 505 009f 01       		.uleb128 0x1
+ 506 00a0 12       		.uleb128 0x12
+ 507 00a1 06       		.uleb128 0x6
+ 508 00a2 40       		.uleb128 0x40
+ 509 00a3 18       		.uleb128 0x18
+ 510 00a4 9742     		.uleb128 0x2117
+ 511 00a6 19       		.uleb128 0x19
+ 512 00a7 01       		.uleb128 0x1
+ 513 00a8 13       		.uleb128 0x13
+ 514 00a9 00       		.byte	0
+ 515 00aa 00       		.byte	0
+ 516 00ab 0D       		.uleb128 0xd
+ 517 00ac 34       		.uleb128 0x34
+ 518 00ad 00       		.byte	0
+ 519 00ae 03       		.uleb128 0x3
+ 520 00af 0E       		.uleb128 0xe
+ 521 00b0 3A       		.uleb128 0x3a
+ 522 00b1 0B       		.uleb128 0xb
+ 523 00b2 3B       		.uleb128 0x3b
+ 524 00b3 0B       		.uleb128 0xb
+ 525 00b4 49       		.uleb128 0x49
+ 526 00b5 13       		.uleb128 0x13
+ 527 00b6 1C       		.uleb128 0x1c
+ 528 00b7 0B       		.uleb128 0xb
+ 529 00b8 00       		.byte	0
+ 530 00b9 00       		.byte	0
+ 531 00ba 0E       		.uleb128 0xe
+ 532 00bb 898201   		.uleb128 0x4109
+ 533 00be 00       		.byte	0
+ 534 00bf 11       		.uleb128 0x11
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 11
+
+
+ 535 00c0 01       		.uleb128 0x1
+ 536 00c1 31       		.uleb128 0x31
+ 537 00c2 13       		.uleb128 0x13
+ 538 00c3 00       		.byte	0
+ 539 00c4 00       		.byte	0
+ 540 00c5 0F       		.uleb128 0xf
+ 541 00c6 2E       		.uleb128 0x2e
+ 542 00c7 01       		.byte	0x1
+ 543 00c8 3F       		.uleb128 0x3f
+ 544 00c9 19       		.uleb128 0x19
+ 545 00ca 03       		.uleb128 0x3
+ 546 00cb 0E       		.uleb128 0xe
+ 547 00cc 3A       		.uleb128 0x3a
+ 548 00cd 0B       		.uleb128 0xb
+ 549 00ce 3B       		.uleb128 0x3b
+ 550 00cf 05       		.uleb128 0x5
+ 551 00d0 27       		.uleb128 0x27
+ 552 00d1 19       		.uleb128 0x19
+ 553 00d2 3C       		.uleb128 0x3c
+ 554 00d3 19       		.uleb128 0x19
+ 555 00d4 01       		.uleb128 0x1
+ 556 00d5 13       		.uleb128 0x13
+ 557 00d6 00       		.byte	0
+ 558 00d7 00       		.byte	0
+ 559 00d8 10       		.uleb128 0x10
+ 560 00d9 05       		.uleb128 0x5
+ 561 00da 00       		.byte	0
+ 562 00db 49       		.uleb128 0x49
+ 563 00dc 13       		.uleb128 0x13
+ 564 00dd 00       		.byte	0
+ 565 00de 00       		.byte	0
+ 566 00df 11       		.uleb128 0x11
+ 567 00e0 26       		.uleb128 0x26
+ 568 00e1 00       		.byte	0
+ 569 00e2 49       		.uleb128 0x49
+ 570 00e3 13       		.uleb128 0x13
+ 571 00e4 00       		.byte	0
+ 572 00e5 00       		.byte	0
+ 573 00e6 12       		.uleb128 0x12
+ 574 00e7 2E       		.uleb128 0x2e
+ 575 00e8 00       		.byte	0
+ 576 00e9 3F       		.uleb128 0x3f
+ 577 00ea 19       		.uleb128 0x19
+ 578 00eb 03       		.uleb128 0x3
+ 579 00ec 0E       		.uleb128 0xe
+ 580 00ed 3A       		.uleb128 0x3a
+ 581 00ee 0B       		.uleb128 0xb
+ 582 00ef 3B       		.uleb128 0x3b
+ 583 00f0 0B       		.uleb128 0xb
+ 584 00f1 27       		.uleb128 0x27
+ 585 00f2 19       		.uleb128 0x19
+ 586 00f3 3C       		.uleb128 0x3c
+ 587 00f4 19       		.uleb128 0x19
+ 588 00f5 00       		.byte	0
+ 589 00f6 00       		.byte	0
+ 590 00f7 13       		.uleb128 0x13
+ 591 00f8 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 12
+
+
+ 592 00f9 01       		.byte	0x1
+ 593 00fa 3F       		.uleb128 0x3f
+ 594 00fb 19       		.uleb128 0x19
+ 595 00fc 03       		.uleb128 0x3
+ 596 00fd 0E       		.uleb128 0xe
+ 597 00fe 3A       		.uleb128 0x3a
+ 598 00ff 0B       		.uleb128 0xb
+ 599 0100 3B       		.uleb128 0x3b
+ 600 0101 0B       		.uleb128 0xb
+ 601 0102 27       		.uleb128 0x27
+ 602 0103 19       		.uleb128 0x19
+ 603 0104 3C       		.uleb128 0x3c
+ 604 0105 19       		.uleb128 0x19
+ 605 0106 01       		.uleb128 0x1
+ 606 0107 13       		.uleb128 0x13
+ 607 0108 00       		.byte	0
+ 608 0109 00       		.byte	0
+ 609 010a 14       		.uleb128 0x14
+ 610 010b 2E       		.uleb128 0x2e
+ 611 010c 00       		.byte	0
+ 612 010d 3F       		.uleb128 0x3f
+ 613 010e 19       		.uleb128 0x19
+ 614 010f 03       		.uleb128 0x3
+ 615 0110 0E       		.uleb128 0xe
+ 616 0111 3A       		.uleb128 0x3a
+ 617 0112 0B       		.uleb128 0xb
+ 618 0113 3B       		.uleb128 0x3b
+ 619 0114 05       		.uleb128 0x5
+ 620 0115 27       		.uleb128 0x27
+ 621 0116 19       		.uleb128 0x19
+ 622 0117 3C       		.uleb128 0x3c
+ 623 0118 19       		.uleb128 0x19
+ 624 0119 00       		.byte	0
+ 625 011a 00       		.byte	0
+ 626 011b 15       		.uleb128 0x15
+ 627 011c 2E       		.uleb128 0x2e
+ 628 011d 01       		.byte	0x1
+ 629 011e 3F       		.uleb128 0x3f
+ 630 011f 19       		.uleb128 0x19
+ 631 0120 03       		.uleb128 0x3
+ 632 0121 0E       		.uleb128 0xe
+ 633 0122 3A       		.uleb128 0x3a
+ 634 0123 0B       		.uleb128 0xb
+ 635 0124 3B       		.uleb128 0x3b
+ 636 0125 05       		.uleb128 0x5
+ 637 0126 27       		.uleb128 0x27
+ 638 0127 19       		.uleb128 0x19
+ 639 0128 3C       		.uleb128 0x3c
+ 640 0129 19       		.uleb128 0x19
+ 641 012a 00       		.byte	0
+ 642 012b 00       		.byte	0
+ 643 012c 00       		.byte	0
+ 644              		.section	.debug_aranges,"",%progbits
+ 645 0000 24000000 		.4byte	0x24
+ 646 0004 0200     		.2byte	0x2
+ 647 0006 00000000 		.4byte	.Ldebug_info0
+ 648 000a 04       		.byte	0x4
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 13
+
+
+ 649 000b 00       		.byte	0
+ 650 000c 0000     		.2byte	0
+ 651 000e 0000     		.2byte	0
+ 652 0010 00000000 		.4byte	.LFB33
+ 653 0014 14000000 		.4byte	.LFE33-.LFB33
+ 654 0018 00000000 		.4byte	.LFB34
+ 655 001c 28000000 		.4byte	.LFE34-.LFB34
+ 656 0020 00000000 		.4byte	0
+ 657 0024 00000000 		.4byte	0
+ 658              		.section	.debug_ranges,"",%progbits
+ 659              	.Ldebug_ranges0:
+ 660 0000 00000000 		.4byte	.LFB33
+ 661 0004 14000000 		.4byte	.LFE33
+ 662 0008 00000000 		.4byte	.LFB34
+ 663 000c 28000000 		.4byte	.LFE34
+ 664 0010 00000000 		.4byte	0
+ 665 0014 00000000 		.4byte	0
+ 666              		.section	.debug_line,"",%progbits
+ 667              	.Ldebug_line0:
+ 668 0000 BD010000 		.section	.debug_str,"MS",%progbits,1
+ 668      02008F01 
+ 668      00000201 
+ 668      FB0E0D00 
+ 668      01010101 
+ 669              	.LASF23:
+ 670 0000 55415254 		.ascii	"UART_1_Start\000"
+ 670      5F315F53 
+ 670      74617274 
+ 670      00
+ 671              	.LASF9:
+ 672 000d 5F5F7569 		.ascii	"__uint8_t\000"
+ 672      6E74385F 
+ 672      7400
+ 673              	.LASF25:
+ 674 0017 54435057 		.ascii	"TCPWM_Start\000"
+ 674      4D5F5374 
+ 674      61727400 
+ 675              	.LASF21:
+ 676 0023 55415254 		.ascii	"UART_1_UartPutString\000"
+ 676      5F315F55 
+ 676      61727450 
+ 676      75745374 
+ 676      72696E67 
+ 677              	.LASF4:
+ 678 0038 6C6F6E67 		.ascii	"long int\000"
+ 678      20696E74 
+ 678      00
+ 679              	.LASF3:
+ 680 0041 73686F72 		.ascii	"short unsigned int\000"
+ 680      7420756E 
+ 680      7369676E 
+ 680      65642069 
+ 680      6E7400
+ 681              	.LASF18:
+ 682 0054 64656275 		.ascii	"debug\000"
+ 682      6700
+ 683              	.LASF12:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 14
+
+
+ 684 005a 666C6F61 		.ascii	"float\000"
+ 684      7400
+ 685              	.LASF1:
+ 686 0060 756E7369 		.ascii	"unsigned char\000"
+ 686      676E6564 
+ 686      20636861 
+ 686      7200
+ 687              	.LASF29:
+ 688 006e 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 688      73657273 
+ 688      5C4D6F73 
+ 688      65735C44 
+ 688      6F63756D 
+ 689 009c 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ 689      5C627132 
+ 689      30303220 
+ 689      54657374 
+ 689      65725C62 
+ 690              	.LASF14:
+ 691 00c3 63686172 		.ascii	"char8\000"
+ 691      3800
+ 692              	.LASF22:
+ 693 00c9 4953525F 		.ascii	"ISR_counter_StartEx\000"
+ 693      636F756E 
+ 693      7465725F 
+ 693      53746172 
+ 693      74457800 
+ 694              	.LASF5:
+ 695 00dd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 695      20756E73 
+ 695      69676E65 
+ 695      6420696E 
+ 695      7400
+ 696              	.LASF24:
+ 697 00ef 50574D5F 		.ascii	"PWM_1_Start\000"
+ 697      315F5374 
+ 697      61727400 
+ 698              	.LASF28:
+ 699 00fb 2E5C6D61 		.ascii	".\\main.c\000"
+ 699      696E2E63 
+ 699      00
+ 700              	.LASF13:
+ 701 0104 646F7562 		.ascii	"double\000"
+ 701      6C6500
+ 702              	.LASF19:
+ 703 010b 6D61696E 		.ascii	"main\000"
+ 703      00
+ 704              	.LASF11:
+ 705 0110 75696E74 		.ascii	"uint32\000"
+ 705      333200
+ 706              	.LASF30:
+ 707 0117 49444143 		.ascii	"IDAC_VAL\000"
+ 707      5F56414C 
+ 707      00
+ 708              	.LASF8:
+ 709 0120 756E7369 		.ascii	"unsigned int\000"
+ 709      676E6564 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 15
+
+
+ 709      20696E74 
+ 709      00
+ 710              	.LASF20:
+ 711 012d 54435057 		.ascii	"TCPWM_ClearInterrupt\000"
+ 711      4D5F436C 
+ 711      65617249 
+ 711      6E746572 
+ 711      72757074 
+ 712              	.LASF7:
+ 713 0142 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 713      206C6F6E 
+ 713      6720756E 
+ 713      7369676E 
+ 713      65642069 
+ 714              	.LASF10:
+ 715 0159 75696E74 		.ascii	"uint8_t\000"
+ 715      385F7400 
+ 716              	.LASF27:
+ 717 0161 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 717      4320342E 
+ 717      382E3420 
+ 717      32303134 
+ 717      30353236 
+ 718 0194 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 718      20726576 
+ 718      6973696F 
+ 718      6E203231 
+ 718      31333538 
+ 719 01c7 67202D66 		.ascii	"g -ffunction-sections\000"
+ 719      66756E63 
+ 719      74696F6E 
+ 719      2D736563 
+ 719      74696F6E 
+ 720              	.LASF16:
+ 721 01dd 63796973 		.ascii	"cyisraddress\000"
+ 721      72616464 
+ 721      72657373 
+ 721      00
+ 722              	.LASF17:
+ 723 01ea 73697A65 		.ascii	"sizetype\000"
+ 723      74797065 
+ 723      00
+ 724              	.LASF6:
+ 725 01f3 6C6F6E67 		.ascii	"long long int\000"
+ 725      206C6F6E 
+ 725      6720696E 
+ 725      7400
+ 726              	.LASF15:
+ 727 0201 63686172 		.ascii	"char\000"
+ 727      00
+ 728              	.LASF2:
+ 729 0206 73686F72 		.ascii	"short int\000"
+ 729      7420696E 
+ 729      7400
+ 730              	.LASF31:
+ 731 0210 54435057 		.ascii	"TCPWM_TriggerCommand\000"
+ 731      4D5F5472 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccsVZ7AG.s 			page 16
+
+
+ 731      69676765 
+ 731      72436F6D 
+ 731      6D616E64 
+ 732              	.LASF26:
+ 733 0225 49444143 		.ascii	"IDAC_1_Start\000"
+ 733      5F315F53 
+ 733      74617274 
+ 733      00
+ 734              	.LASF0:
+ 735 0232 7369676E 		.ascii	"signed char\000"
+ 735      65642063 
+ 735      68617200 
+ 736              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+>>>>>>> origin/master

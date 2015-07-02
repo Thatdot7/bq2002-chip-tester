@@ -632,6 +632,7 @@
 #define UART_1_tx__PS CYREG_PRT4_PS
 #define UART_1_tx__SHIFT 1
 
+<<<<<<< HEAD
 /* Button1 */
 #define Button1__0__DM__MASK 0x38u
 #define Button1__0__DM__SHIFT 3
@@ -766,6 +767,25 @@
 #define MicroSec_CLK__ENABLE_MASK 0x80000000u
 #define MicroSec_CLK__MASK 0x80000000u
 #define MicroSec_CLK__REGISTER CYREG_CLK_DIVIDER_A00
+=======
+/* ISR_counter */
+#define ISR_counter__INTC_CLR_EN_REG CYREG_CM0_ICER
+#define ISR_counter__INTC_CLR_PD_REG CYREG_CM0_ICPR
+#define ISR_counter__INTC_MASK 0x10000u
+#define ISR_counter__INTC_NUMBER 16u
+#define ISR_counter__INTC_PRIOR_MASK 0xC0u
+#define ISR_counter__INTC_PRIOR_NUM 3u
+#define ISR_counter__INTC_PRIOR_REG CYREG_CM0_IPR4
+#define ISR_counter__INTC_SET_EN_REG CYREG_CM0_ISER
+#define ISR_counter__INTC_SET_PD_REG CYREG_CM0_ISPR
+
+/* MicroSec_CLK */
+#define MicroSec_CLK__DIVIDER_MASK 0x0000FFFFu
+#define MicroSec_CLK__ENABLE CYREG_CLK_DIVIDER_B00
+#define MicroSec_CLK__ENABLE_MASK 0x80000000u
+#define MicroSec_CLK__MASK 0x80000000u
+#define MicroSec_CLK__REGISTER CYREG_CLK_DIVIDER_B00
+>>>>>>> origin/master
 
 /* Miscellaneous */
 #define CY_PROJECT_NAME "bq2002 Tester"

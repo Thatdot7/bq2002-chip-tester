@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccqQH8tg.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -39,46 +43,50 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
   32 0006 00000000 		.4byte	.Ldebug_abbrev0
   33 000a 04       		.byte	0x4
   34 000b 01       		.uleb128 0x1
-  35 000c D3000000 		.4byte	.LASF13
+  35 000c DF000000 		.4byte	.LASF13
   36 0010 01       		.byte	0x1
-  37 0011 89000000 		.4byte	.LASF14
-  38 0015 00000000 		.4byte	.LASF15
+  37 0011 95000000 		.4byte	.LASF14
+  38 0015 14000000 		.4byte	.LASF15
   39 0019 00000000 		.4byte	.Ldebug_line0
   40 001d 02       		.uleb128 0x2
   41 001e 01       		.byte	0x1
   42 001f 06       		.byte	0x6
-  43 0020 95010000 		.4byte	.LASF0
+  43 0020 A1010000 		.4byte	.LASF0
   44 0024 02       		.uleb128 0x2
   45 0025 01       		.byte	0x1
   46 0026 08       		.byte	0x8
-  47 0027 4F000000 		.4byte	.LASF1
+  47 0027 06000000 		.4byte	.LASF1
   48 002b 02       		.uleb128 0x2
   49 002c 02       		.byte	0x2
   50 002d 05       		.byte	0x5
-  51 002e 7C010000 		.4byte	.LASF2
+  51 002e 88010000 		.4byte	.LASF2
   52 0032 02       		.uleb128 0x2
   53 0033 02       		.byte	0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 2
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccqQH8tg.s 			page 2
+>>>>>>> origin/master
 
 
   54 0034 07       		.byte	0x7
-  55 0035 6F000000 		.4byte	.LASF3
+  55 0035 7B000000 		.4byte	.LASF3
   56 0039 02       		.uleb128 0x2
   57 003a 04       		.byte	0x4
   58 003b 05       		.byte	0x5
-  59 003c 8C010000 		.4byte	.LASF4
+  59 003c 98010000 		.4byte	.LASF4
   60 0040 02       		.uleb128 0x2
   61 0041 04       		.byte	0x4
   62 0042 07       		.byte	0x7
-  63 0043 5D000000 		.4byte	.LASF5
+  63 0043 69000000 		.4byte	.LASF5
   64 0047 02       		.uleb128 0x2
   65 0048 08       		.byte	0x8
   66 0049 05       		.byte	0x5
-  67 004a 69010000 		.4byte	.LASF6
+  67 004a 75010000 		.4byte	.LASF6
   68 004e 02       		.uleb128 0x2
   69 004f 08       		.byte	0x8
   70 0050 07       		.byte	0x7
-  71 0051 BC000000 		.4byte	.LASF7
+  71 0051 C8000000 		.4byte	.LASF7
   72 0055 03       		.uleb128 0x3
   73 0056 04       		.byte	0x4
   74 0057 05       		.byte	0x5
@@ -86,24 +94,24 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
   76 005c 02       		.uleb128 0x2
   77 005d 04       		.byte	0x4
   78 005e 07       		.byte	0x7
-  79 005f AF000000 		.4byte	.LASF8
+  79 005f BB000000 		.4byte	.LASF8
   80 0063 04       		.uleb128 0x4
-  81 0064 86010000 		.4byte	.LASF16
+  81 0064 92010000 		.4byte	.LASF16
   82 0068 01       		.byte	0x1
   83 0069 B3       		.byte	0xb3
   84 006a 24000000 		.4byte	0x24
   85 006e 02       		.uleb128 0x2
   86 006f 04       		.byte	0x4
   87 0070 04       		.byte	0x4
-  88 0071 49000000 		.4byte	.LASF9
+  88 0071 00000000 		.4byte	.LASF9
   89 0075 02       		.uleb128 0x2
   90 0076 08       		.byte	0x8
   91 0077 04       		.byte	0x4
-  92 0078 82000000 		.4byte	.LASF10
+  92 0078 8E000000 		.4byte	.LASF10
   93 007c 02       		.uleb128 0x2
   94 007d 01       		.byte	0x1
   95 007e 08       		.byte	0x8
-  96 007f 77010000 		.4byte	.LASF11
+  96 007f 83010000 		.4byte	.LASF11
   97 0083 05       		.uleb128 0x5
   98 0084 63000000 		.4byte	0x63
   99 0088 93000000 		.4byte	0x93
@@ -114,11 +122,15 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
  104 0093 02       		.uleb128 0x2
  105 0094 04       		.byte	0x4
  106 0095 07       		.byte	0x7
- 107 0096 60010000 		.4byte	.LASF12
+ 107 0096 6C010000 		.4byte	.LASF12
  108 009a 07       		.uleb128 0x7
- 109 009b 4F010000 		.4byte	.LASF17
+ 109 009b 5B010000 		.4byte	.LASF17
  110 009f 02       		.byte	0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 3
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccqQH8tg.s 			page 3
+>>>>>>> origin/master
 
 
  111 00a0 1C       		.byte	0x1c
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
  165 002c 3B       		.uleb128 0x3b
  166 002d 0B       		.uleb128 0xb
  167 002e 49       		.uleb128 0x49
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 4
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccqQH8tg.s 			page 4
+>>>>>>> origin/master
 
 
  168 002f 13       		.uleb128 0x13
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
  222 0010 00000000 		.4byte	0
  223 0014 00000000 		.4byte	0
  224              		.section	.debug_line,"",%progbits
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 5
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccqQH8tg.s 			page 5
+>>>>>>> origin/master
 
 
  225              	.Ldebug_line0:
@@ -247,107 +267,111 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 1
  226      00000201 
  226      FB0E0D00 
  226      01010101 
- 227              	.LASF15:
- 228 0000 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
- 228      6F63756D 
- 228      656E7473 
- 228      5C476974 
- 228      4875625C 
- 229 002f 65737465 		.ascii	"ester\\bq2002 Tester.cydsn\000"
- 229      725C6271 
- 229      32303032 
- 229      20546573 
- 229      7465722E 
- 230              	.LASF9:
- 231 0049 666C6F61 		.ascii	"float\000"
- 231      7400
- 232              	.LASF1:
- 233 004f 756E7369 		.ascii	"unsigned char\000"
- 233      676E6564 
- 233      20636861 
- 233      7200
+ 227              	.LASF9:
+ 228 0000 666C6F61 		.ascii	"float\000"
+ 228      7400
+ 229              	.LASF1:
+ 230 0006 756E7369 		.ascii	"unsigned char\000"
+ 230      676E6564 
+ 230      20636861 
+ 230      7200
+ 231              	.LASF15:
+ 232 0014 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 232      73657273 
+ 232      5C4D6F73 
+ 232      65735C44 
+ 232      6F63756D 
+ 233 0042 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ 233      5C627132 
+ 233      30303220 
+ 233      54657374 
+ 233      65725C62 
  234              	.LASF5:
- 235 005d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 235 0069 6C6F6E67 		.ascii	"long unsigned int\000"
  235      20756E73 
  235      69676E65 
  235      6420696E 
  235      7400
  236              	.LASF3:
- 237 006f 73686F72 		.ascii	"short unsigned int\000"
+ 237 007b 73686F72 		.ascii	"short unsigned int\000"
  237      7420756E 
  237      7369676E 
  237      65642069 
  237      6E7400
  238              	.LASF10:
- 239 0082 646F7562 		.ascii	"double\000"
+ 239 008e 646F7562 		.ascii	"double\000"
  239      6C6500
  240              	.LASF14:
- 241 0089 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\cymetadata.c\000"
+ 241 0095 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\cymetadata.c\000"
  241      6E657261 
  241      7465645F 
  241      536F7572 
  241      63655C50 
  242              	.LASF8:
- 243 00af 756E7369 		.ascii	"unsigned int\000"
+ 243 00bb 756E7369 		.ascii	"unsigned int\000"
  243      676E6564 
  243      20696E74 
  243      00
  244              	.LASF7:
- 245 00bc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 245 00c8 6C6F6E67 		.ascii	"long long unsigned int\000"
  245      206C6F6E 
  245      6720756E 
  245      7369676E 
  245      65642069 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cc80ON05.s 			page 6
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccqQH8tg.s 			page 6
+>>>>>>> origin/master
 
 
  246              	.LASF13:
- 247 00d3 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 247 00df 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
  247      4320342E 
  247      382E3420 
  247      32303134 
  247      30353236 
- 248 0106 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 248 0112 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
  248      20726576 
  248      6973696F 
  248      6E203231 
  248      31333538 
- 249 0139 67202D66 		.ascii	"g -ffunction-sections\000"
+ 249 0145 67202D66 		.ascii	"g -ffunction-sections\000"
  249      66756E63 
  249      74696F6E 
  249      2D736563 
  249      74696F6E 
  250              	.LASF17:
- 251 014f 63795F6D 		.ascii	"cy_meta_loadable\000"
+ 251 015b 63795F6D 		.ascii	"cy_meta_loadable\000"
  251      6574615F 
  251      6C6F6164 
  251      61626C65 
  251      00
  252              	.LASF12:
- 253 0160 73697A65 		.ascii	"sizetype\000"
+ 253 016c 73697A65 		.ascii	"sizetype\000"
  253      74797065 
  253      00
  254              	.LASF6:
- 255 0169 6C6F6E67 		.ascii	"long long int\000"
+ 255 0175 6C6F6E67 		.ascii	"long long int\000"
  255      206C6F6E 
  255      6720696E 
  255      7400
  256              	.LASF11:
- 257 0177 63686172 		.ascii	"char\000"
+ 257 0183 63686172 		.ascii	"char\000"
  257      00
  258              	.LASF2:
- 259 017c 73686F72 		.ascii	"short int\000"
+ 259 0188 73686F72 		.ascii	"short int\000"
  259      7420696E 
  259      7400
  260              	.LASF16:
- 261 0186 75696E74 		.ascii	"uint8\000"
+ 261 0192 75696E74 		.ascii	"uint8\000"
  261      3800
  262              	.LASF4:
- 263 018c 6C6F6E67 		.ascii	"long int\000"
+ 263 0198 6C6F6E67 		.ascii	"long int\000"
  263      20696E74 
  263      00
  264              	.LASF0:
- 265 0195 7369676E 		.ascii	"signed char\000"
+ 265 01a1 7369676E 		.ascii	"signed char\000"
  265      65642063 
  265      68617200 
  266              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

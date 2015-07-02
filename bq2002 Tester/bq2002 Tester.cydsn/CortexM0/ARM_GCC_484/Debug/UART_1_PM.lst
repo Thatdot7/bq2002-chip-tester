@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
   30:.\Generated_Source\PSoC4/UART_1_PM.c ****     #include "UART_1_SPI_UART_PVT.h"
   31:.\Generated_Source\PSoC4/UART_1_PM.c **** #endif /* (UART_1_SCB_MODE_SPI_INC || UART_1_SCB_MODE_UART_INC) */
   32:.\Generated_Source\PSoC4/UART_1_PM.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 2
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 2
+>>>>>>> origin/master
 
 
   33:.\Generated_Source\PSoC4/UART_1_PM.c **** 
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
   81:.\Generated_Source\PSoC4/UART_1_PM.c ****     #if(!UART_1_CY_SCBIP_V1)
   82:.\Generated_Source\PSoC4/UART_1_PM.c ****         else if(UART_1_SCB_MODE_SPI_RUNTM_CFG)
   83:.\Generated_Source\PSoC4/UART_1_PM.c ****         {
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 3
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 3
+>>>>>>> origin/master
 
 
   84:.\Generated_Source\PSoC4/UART_1_PM.c ****             UART_1_SpiSaveConfig();
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
   43              	.L1:
  127:.\Generated_Source\PSoC4/UART_1_PM.c ****         }
  128:.\Generated_Source\PSoC4/UART_1_PM.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 4
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 4
+>>>>>>> origin/master
 
 
  129:.\Generated_Source\PSoC4/UART_1_PM.c ****     #endif /* defined (UART_1_SCB_MODE_I2C_CONST_CFG) && (UART_1_I2C_WAKE_ENABLE_CONST) */
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  158:.\Generated_Source\PSoC4/UART_1_PM.c ****         if(UART_1_SCB_MODE_I2C_RUNTM_CFG)
  159:.\Generated_Source\PSoC4/UART_1_PM.c ****         {
  160:.\Generated_Source\PSoC4/UART_1_PM.c ****             UART_1_I2CRestoreConfig();
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 5
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 5
+>>>>>>> origin/master
 
 
  161:.\Generated_Source\PSoC4/UART_1_PM.c ****         }
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
   76              	.LVL1:
   77              	.L5:
  208:.\Generated_Source\PSoC4/UART_1_PM.c ****         }
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 6
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 6
+>>>>>>> origin/master
 
 
  209:.\Generated_Source\PSoC4/UART_1_PM.c **** 
@@ -335,40 +359,45 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  104 0006 00000000 		.4byte	.Ldebug_abbrev0
  105 000a 04       		.byte	0x4
  106 000b 01       		.uleb128 0x1
- 107 000c 66010000 		.4byte	.LASF21
+ 107 000c 72010000 		.4byte	.LASF21
  108 0010 01       		.byte	0x1
- 109 0011 C2000000 		.4byte	.LASF22
- 110 0015 21000000 		.4byte	.LASF23
+ 109 0011 86000000 		.4byte	.LASF22
+ 110 0015 BF000000 		.4byte	.LASF23
  111 0019 00000000 		.4byte	.Ldebug_ranges0+0
  112 001d 00000000 		.4byte	0
  113 0021 00000000 		.4byte	.Ldebug_line0
  114 0025 02       		.uleb128 0x2
  115 0026 01       		.byte	0x1
  116 0027 06       		.byte	0x6
- 117 0028 2F010000 		.4byte	.LASF0
+ 117 0028 48010000 		.4byte	.LASF0
  118 002c 02       		.uleb128 0x2
  119 002d 01       		.byte	0x1
  120 002e 08       		.byte	0x8
- 121 002f B4000000 		.4byte	.LASF1
+ 121 002f 78000000 		.4byte	.LASF1
  122 0033 02       		.uleb128 0x2
  123 0034 02       		.byte	0x2
  124 0035 05       		.byte	0x5
- 125 0036 4F010000 		.4byte	.LASF2
+ 125 0036 68010000 		.4byte	.LASF2
  126 003a 02       		.uleb128 0x2
  127 003b 02       		.byte	0x2
  128 003c 07       		.byte	0x7
+<<<<<<< HEAD
  129 003d 1C010000 		.4byte	.LASF3
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 7
+=======
+ 129 003d 35010000 		.4byte	.LASF3
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 7
+>>>>>>> origin/master
 
 
  130 0041 02       		.uleb128 0x2
  131 0042 04       		.byte	0x4
  132 0043 05       		.byte	0x5
- 133 0044 EC000000 		.4byte	.LASF4
+ 133 0044 B0000000 		.4byte	.LASF4
  134 0048 02       		.uleb128 0x2
  135 0049 04       		.byte	0x4
  136 004a 07       		.byte	0x7
- 137 004b 7D000000 		.4byte	.LASF5
+ 137 004b 41000000 		.4byte	.LASF5
  138 004f 02       		.uleb128 0x2
  139 0050 08       		.byte	0x8
  140 0051 05       		.byte	0x5
@@ -376,7 +405,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  142 0056 02       		.uleb128 0x2
  143 0057 08       		.byte	0x8
  144 0058 07       		.byte	0x7
- 145 0059 8F000000 		.4byte	.LASF7
+ 145 0059 53000000 		.4byte	.LASF7
  146 005d 03       		.uleb128 0x3
  147 005e 04       		.byte	0x4
  148 005f 05       		.byte	0x5
@@ -384,9 +413,9 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  150 0064 02       		.uleb128 0x2
  151 0065 04       		.byte	0x4
  152 0066 07       		.byte	0x7
- 153 0067 59010000 		.4byte	.LASF8
+ 153 0067 21000000 		.4byte	.LASF8
  154 006b 04       		.uleb128 0x4
- 155 006c 77000000 		.4byte	.LASF9
+ 155 006c 3B000000 		.4byte	.LASF9
  156 0070 02       		.byte	0x2
  157 0071 B3       		.byte	0xb3
  158 0072 2C000000 		.4byte	0x2c
@@ -398,17 +427,17 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  164 0081 02       		.uleb128 0x2
  165 0082 04       		.byte	0x4
  166 0083 04       		.byte	0x4
- 167 0084 3B010000 		.4byte	.LASF11
+ 167 0084 54010000 		.4byte	.LASF11
  168 0088 02       		.uleb128 0x2
  169 0089 08       		.byte	0x8
  170 008a 04       		.byte	0x4
- 171 008b FB000000 		.4byte	.LASF12
+ 171 008b 14010000 		.4byte	.LASF12
  172 008f 02       		.uleb128 0x2
  173 0090 01       		.byte	0x1
  174 0091 08       		.byte	0x8
- 175 0092 E7000000 		.4byte	.LASF13
+ 175 0092 AB000000 		.4byte	.LASF13
  176 0096 05       		.uleb128 0x5
- 177 0097 F5000000 		.4byte	.LASF14
+ 177 0097 B9000000 		.4byte	.LASF14
  178 009b 02       		.byte	0x2
  179 009c 5F01     		.2byte	0x15f
  180 009e A2000000 		.4byte	0xa2
@@ -417,8 +446,13 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  183 00a7 02       		.uleb128 0x2
  184 00a8 04       		.byte	0x4
  185 00a9 07       		.byte	0x7
+<<<<<<< HEAD
  186 00aa E2010000 		.4byte	.LASF15
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 8
+=======
+ 186 00aa EE010000 		.4byte	.LASF15
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 8
+>>>>>>> origin/master
 
 
  187 00ae 07       		.uleb128 0x7
@@ -434,12 +468,12 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  197 00c1 00       		.byte	0
  198 00c2 00       		.byte	0
  199 00c3 04       		.uleb128 0x4
- 200 00c4 EB010000 		.4byte	.LASF16
+ 200 00c4 F7010000 		.4byte	.LASF16
  201 00c8 03       		.byte	0x3
  202 00c9 5E       		.byte	0x5e
  203 00ca AE000000 		.4byte	0xae
  204 00ce 09       		.uleb128 0x9
- 205 00cf 6A000000 		.4byte	.LASF17
+ 205 00cf 2E000000 		.4byte	.LASF17
  206 00d3 01       		.byte	0x1
  207 00d4 43       		.byte	0x43
  208 00d5 00000000 		.4byte	.LFB0
@@ -452,7 +486,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  215 00e8 1D010000 		.4byte	0x11d
  216 00ec 00       		.byte	0
  217 00ed 09       		.uleb128 0x9
- 218 00ee A6000000 		.4byte	.LASF18
+ 218 00ee 6A000000 		.4byte	.LASF18
  219 00f2 01       		.byte	0x1
  220 00f3 98       		.byte	0x98
  221 00f4 00000000 		.4byte	.LFB1
@@ -465,7 +499,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  228 0107 24010000 		.4byte	0x124
  229 010b 00       		.byte	0
  230 010c 0B       		.uleb128 0xb
- 231 010d 02010000 		.4byte	.LASF25
+ 231 010d 1B010000 		.4byte	.LASF25
  232 0111 01       		.byte	0x1
  233 0112 2C       		.byte	0x2c
  234 0113 C3000000 		.4byte	0xc3
@@ -473,12 +507,17 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  236 0118 03       		.byte	0x3
  237 0119 00000000 		.4byte	UART_1_backup
  238 011d 0C       		.uleb128 0xc
- 239 011e 10010000 		.4byte	.LASF19
+ 239 011e 29010000 		.4byte	.LASF19
  240 0122 03       		.byte	0x3
  241 0123 69       		.byte	0x69
  242 0124 0C       		.uleb128 0xc
+<<<<<<< HEAD
  243 0125 41010000 		.4byte	.LASF20
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 9
+=======
+ 243 0125 5A010000 		.4byte	.LASF20
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 9
+>>>>>>> origin/master
 
 
  244 0129 03       		.byte	0x3
@@ -538,7 +577,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  298 0031 0B       		.uleb128 0xb
  299 0032 49       		.uleb128 0x49
  300 0033 13       		.uleb128 0x13
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 10
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 10
+>>>>>>> origin/master
 
 
  301 0034 00       		.byte	0
@@ -598,7 +641,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  355 006a 19       		.uleb128 0x19
  356 006b 03       		.uleb128 0x3
  357 006c 0E       		.uleb128 0xe
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 11
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 11
+>>>>>>> origin/master
 
 
  358 006d 3A       		.uleb128 0x3a
@@ -658,7 +705,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  412 00a6 0B       		.uleb128 0xb
  413 00a7 27       		.uleb128 0x27
  414 00a8 19       		.uleb128 0x19
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 12
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 12
+>>>>>>> origin/master
 
 
  415 00a9 3C       		.uleb128 0x3c
@@ -707,6 +758,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  450 0015 656E6162 		.ascii	"enableState\000"
  450      6C655374 
  450      61746500 
+<<<<<<< HEAD
  451              	.LASF23:
  452 0021 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
  452      6F63756D 
@@ -779,58 +831,132 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 1
  479 0110 55415254 		.ascii	"UART_1_Stop\000"
  479      5F315F53 
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccQ4l51Q.s 			page 14
+=======
+ 451              	.LASF8:
+ 452 0021 756E7369 		.ascii	"unsigned int\000"
+ 452      676E6564 
+ 452      20696E74 
+ 452      00
+ 453              	.LASF17:
+ 454 002e 55415254 		.ascii	"UART_1_Sleep\000"
+ 454      5F315F53 
+ 454      6C656570 
+ 454      00
+ 455              	.LASF9:
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 13
 
 
- 479      746F7000 
- 480              	.LASF3:
- 481 011c 73686F72 		.ascii	"short unsigned int\000"
- 481      7420756E 
- 481      7369676E 
- 481      65642069 
- 481      6E7400
- 482              	.LASF0:
- 483 012f 7369676E 		.ascii	"signed char\000"
- 483      65642063 
- 483      68617200 
- 484              	.LASF11:
- 485 013b 666C6F61 		.ascii	"float\000"
- 485      7400
- 486              	.LASF20:
- 487 0141 55415254 		.ascii	"UART_1_Enable\000"
- 487      5F315F45 
- 487      6E61626C 
- 487      6500
- 488              	.LASF2:
- 489 014f 73686F72 		.ascii	"short int\000"
- 489      7420696E 
- 489      7400
- 490              	.LASF8:
- 491 0159 756E7369 		.ascii	"unsigned int\000"
- 491      676E6564 
- 491      20696E74 
- 491      00
+ 456 003b 75696E74 		.ascii	"uint8\000"
+ 456      3800
+ 457              	.LASF5:
+ 458 0041 6C6F6E67 		.ascii	"long unsigned int\000"
+ 458      20756E73 
+ 458      69676E65 
+ 458      6420696E 
+ 458      7400
+ 459              	.LASF7:
+ 460 0053 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 460      206C6F6E 
+ 460      6720756E 
+ 460      7369676E 
+ 460      65642069 
+ 461              	.LASF18:
+ 462 006a 55415254 		.ascii	"UART_1_Wakeup\000"
+ 462      5F315F57 
+ 462      616B6575 
+ 462      7000
+ 463              	.LASF1:
+ 464 0078 756E7369 		.ascii	"unsigned char\000"
+ 464      676E6564 
+ 464      20636861 
+ 464      7200
+ 465              	.LASF22:
+ 466 0086 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\UART_1_PM.c\000"
+ 466      6E657261 
+ 466      7465645F 
+ 466      536F7572 
+ 466      63655C50 
+ 467              	.LASF13:
+ 468 00ab 63686172 		.ascii	"char\000"
+ 468      00
+ 469              	.LASF4:
+ 470 00b0 6C6F6E67 		.ascii	"long int\000"
+ 470      20696E74 
+ 470      00
+ 471              	.LASF14:
+ 472 00b9 72656733 		.ascii	"reg32\000"
+ 472      3200
+ 473              	.LASF23:
+ 474 00bf 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 474      73657273 
+ 474      5C4D6F73 
+ 474      65735C44 
+ 474      6F63756D 
+ 475 00ed 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ 475      5C627132 
+ 475      30303220 
+ 475      54657374 
+ 475      65725C62 
+ 476              	.LASF12:
+ 477 0114 646F7562 		.ascii	"double\000"
+ 477      6C6500
+ 478              	.LASF25:
+ 479 011b 55415254 		.ascii	"UART_1_backup\000"
+ 479      5F315F62 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cce0TLyl.s 			page 14
+>>>>>>> origin/master
+
+
+ 479      61636B75 
+ 479      7000
+ 480              	.LASF19:
+ 481 0129 55415254 		.ascii	"UART_1_Stop\000"
+ 481      5F315F53 
+ 481      746F7000 
+ 482              	.LASF3:
+ 483 0135 73686F72 		.ascii	"short unsigned int\000"
+ 483      7420756E 
+ 483      7369676E 
+ 483      65642069 
+ 483      6E7400
+ 484              	.LASF0:
+ 485 0148 7369676E 		.ascii	"signed char\000"
+ 485      65642063 
+ 485      68617200 
+ 486              	.LASF11:
+ 487 0154 666C6F61 		.ascii	"float\000"
+ 487      7400
+ 488              	.LASF20:
+ 489 015a 55415254 		.ascii	"UART_1_Enable\000"
+ 489      5F315F45 
+ 489      6E61626C 
+ 489      6500
+ 490              	.LASF2:
+ 491 0168 73686F72 		.ascii	"short int\000"
+ 491      7420696E 
+ 491      7400
  492              	.LASF21:
- 493 0166 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 493 0172 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
  493      4320342E 
  493      382E3420 
  493      32303134 
  493      30353236 
- 494 0199 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 494 01a5 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
  494      20726576 
  494      6973696F 
  494      6E203231 
  494      31333538 
- 495 01cc 67202D66 		.ascii	"g -ffunction-sections\000"
+ 495 01d8 67202D66 		.ascii	"g -ffunction-sections\000"
  495      66756E63 
  495      74696F6E 
  495      2D736563 
  495      74696F6E 
  496              	.LASF15:
- 497 01e2 73697A65 		.ascii	"sizetype\000"
+ 497 01ee 73697A65 		.ascii	"sizetype\000"
  497      74797065 
  497      00
  498              	.LASF16:
- 499 01eb 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
+ 499 01f7 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
  499      5F315F42 
  499      41434B55 
  499      505F5354 

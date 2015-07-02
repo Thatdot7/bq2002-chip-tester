@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
   30:.\Generated_Source\PSoC4/MicroSec_CLK.c **** *
   31:.\Generated_Source\PSoC4/MicroSec_CLK.c **** * Parameters:
   32:.\Generated_Source\PSoC4/MicroSec_CLK.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 2
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 2
+>>>>>>> origin/master
 
 
   33:.\Generated_Source\PSoC4/MicroSec_CLK.c **** *    clock is started.
@@ -118,10 +126,17 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
   38              	.L3:
   39 000e C046     		.align	2
   40              	.L2:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 3
 
 
   41 0010 00000240 		.word	1073872896
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 3
+
+
+  41 0010 40000240 		.word	1073872960
+>>>>>>> origin/master
   42              		.cfi_endproc
   43              	.LFE0:
   44              		.size	MicroSec_CLK_Start, .-MicroSec_CLK_Start
@@ -178,7 +193,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
   57 0002 1A68     		ldr	r2, [r3]
   58 0004 5200     		lsl	r2, r2, #1
   59 0006 5208     		lsr	r2, r2, #1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 4
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 4
+>>>>>>> origin/master
 
 
   60 0008 1A60     		str	r2, [r3]
@@ -191,7 +210,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
   64              	.L6:
   65              		.align	2
   66              	.L5:
+<<<<<<< HEAD
   67 000c 00000240 		.word	1073872896
+=======
+  67 000c 40000240 		.word	1073872960
+>>>>>>> origin/master
   68              		.cfi_endproc
   69              	.LFE1:
   70              		.size	MicroSec_CLK_Stop, .-MicroSec_CLK_Stop
@@ -238,7 +261,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  145:.\Generated_Source\PSoC4/MicroSec_CLK.c ****     regVal = maskVal |
  146:.\Generated_Source\PSoC4/MicroSec_CLK.c ****         ((uint32)((uint32)clkDivider <<  MicroSec_CLK_DIV_INT_SHIFT) & MicroSec_CLK_DIV_INT_MASK) |
  147:.\Generated_Source\PSoC4/MicroSec_CLK.c ****         ((uint32)((uint32)clkFractional << MicroSec_CLK_DIV_FRAC_SHIFT) & MicroSec_CLK_DIV_FRAC_MAS
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 5
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 5
+>>>>>>> origin/master
 
 
  148:.\Generated_Source\PSoC4/MicroSec_CLK.c ****     
@@ -269,7 +296,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
   96              	.L9:
   97 000e C046     		.align	2
   98              	.L8:
+<<<<<<< HEAD
   99 0010 00000240 		.word	1073872896
+=======
+  99 0010 40000240 		.word	1073872960
+>>>>>>> origin/master
  100              		.cfi_endproc
  101              	.LFE2:
  102              		.size	MicroSec_CLK_SetFractionalDividerRegister, .-MicroSec_CLK_SetFractionalDividerRegister
@@ -298,7 +329,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  173:.\Generated_Source\PSoC4/MicroSec_CLK.c **** *  divide by 2, the return value will be 1.
  174:.\Generated_Source\PSoC4/MicroSec_CLK.c **** *
  175:.\Generated_Source\PSoC4/MicroSec_CLK.c **** *******************************************************************************/
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 6
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 6
+>>>>>>> origin/master
 
 
  176:.\Generated_Source\PSoC4/MicroSec_CLK.c **** uint16 MicroSec_CLK_GetDividerRegister(void)
@@ -318,7 +353,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  120              	.L12:
  121              		.align	2
  122              	.L11:
+<<<<<<< HEAD
  123 0008 00000240 		.word	1073872896
+=======
+ 123 0008 40000240 		.word	1073872960
+>>>>>>> origin/master
  124              		.cfi_endproc
  125              	.LFE3:
  126              		.size	MicroSec_CLK_GetDividerRegister, .-MicroSec_CLK_GetDividerRegister
@@ -358,7 +397,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  204:.\Generated_Source\PSoC4/MicroSec_CLK.c **** #else
  205:.\Generated_Source\PSoC4/MicroSec_CLK.c ****     return 0u;
  206:.\Generated_Source\PSoC4/MicroSec_CLK.c **** #endif /* MicroSec_CLK__FRAC_MASK */
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 7
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 7
+>>>>>>> origin/master
 
 
  207:.\Generated_Source\PSoC4/MicroSec_CLK.c **** }
@@ -379,16 +422,24 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  151 0006 00000000 		.4byte	.Ldebug_abbrev0
  152 000a 04       		.byte	0x4
  153 000b 01       		.uleb128 0x1
+<<<<<<< HEAD
  154 000c 8A010000 		.4byte	.LASF24
  155 0010 01       		.byte	0x1
  156 0011 1E010000 		.4byte	.LASF25
  157 0015 30000000 		.4byte	.LASF26
+=======
+ 154 000c 96010000 		.4byte	.LASF24
+ 155 0010 01       		.byte	0x1
+ 156 0011 2A010000 		.4byte	.LASF25
+ 157 0015 5F000000 		.4byte	.LASF26
+>>>>>>> origin/master
  158 0019 00000000 		.4byte	.Ldebug_ranges0+0
  159 001d 00000000 		.4byte	0
  160 0021 00000000 		.4byte	.Ldebug_line0
  161 0025 02       		.uleb128 0x2
  162 0026 01       		.byte	0x1
  163 0027 06       		.byte	0x6
+<<<<<<< HEAD
  164 0028 52020000 		.4byte	.LASF0
  165 002c 02       		.uleb128 0x2
  166 002d 01       		.byte	0x1
@@ -419,6 +470,38 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  191 0058 07       		.byte	0x7
  192 0059 73010000 		.4byte	.LASF7
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 8
+=======
+ 164 0028 5E020000 		.4byte	.LASF0
+ 165 002c 02       		.uleb128 0x2
+ 166 002d 01       		.byte	0x1
+ 167 002e 08       		.byte	0x8
+ 168 002f 51000000 		.4byte	.LASF1
+ 169 0033 02       		.uleb128 0x2
+ 170 0034 02       		.byte	0x2
+ 171 0035 05       		.byte	0x5
+ 172 0036 45020000 		.4byte	.LASF2
+ 173 003a 02       		.uleb128 0x2
+ 174 003b 02       		.byte	0x2
+ 175 003c 07       		.byte	0x7
+ 176 003d C6000000 		.4byte	.LASF3
+ 177 0041 02       		.uleb128 0x2
+ 178 0042 04       		.byte	0x4
+ 179 0043 05       		.byte	0x5
+ 180 0044 55020000 		.4byte	.LASF4
+ 181 0048 02       		.uleb128 0x2
+ 182 0049 04       		.byte	0x4
+ 183 004a 07       		.byte	0x7
+ 184 004b B4000000 		.4byte	.LASF5
+ 185 004f 02       		.uleb128 0x2
+ 186 0050 08       		.byte	0x8
+ 187 0051 05       		.byte	0x5
+ 188 0052 12020000 		.4byte	.LASF6
+ 189 0056 02       		.uleb128 0x2
+ 190 0057 08       		.byte	0x8
+ 191 0058 07       		.byte	0x7
+ 192 0059 7F010000 		.4byte	.LASF7
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 8
+>>>>>>> origin/master
 
 
  193 005d 03       		.uleb128 0x3
@@ -428,25 +511,40 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  197 0064 02       		.uleb128 0x2
  198 0065 04       		.byte	0x4
  199 0066 07       		.byte	0x7
+<<<<<<< HEAD
  200 0067 66010000 		.4byte	.LASF8
  201 006b 04       		.uleb128 0x4
  202 006c 43020000 		.4byte	.LASF9
+=======
+ 200 0067 72010000 		.4byte	.LASF8
+ 201 006b 04       		.uleb128 0x4
+ 202 006c 4F020000 		.4byte	.LASF9
+>>>>>>> origin/master
  203 0070 02       		.byte	0x2
  204 0071 B3       		.byte	0xb3
  205 0072 2C000000 		.4byte	0x2c
  206 0076 04       		.uleb128 0x4
+<<<<<<< HEAD
  207 0077 46010000 		.4byte	.LASF10
+=======
+ 207 0077 52010000 		.4byte	.LASF10
+>>>>>>> origin/master
  208 007b 02       		.byte	0x2
  209 007c B4       		.byte	0xb4
  210 007d 3A000000 		.4byte	0x3a
  211 0081 04       		.uleb128 0x4
+<<<<<<< HEAD
  212 0082 4D010000 		.4byte	.LASF11
+=======
+ 212 0082 59010000 		.4byte	.LASF11
+>>>>>>> origin/master
  213 0086 02       		.byte	0x2
  214 0087 B5       		.byte	0xb5
  215 0088 48000000 		.4byte	0x48
  216 008c 02       		.uleb128 0x2
  217 008d 04       		.byte	0x4
  218 008e 04       		.byte	0x4
+<<<<<<< HEAD
  219 008f 94000000 		.4byte	.LASF12
  220 0093 02       		.uleb128 0x2
  221 0094 08       		.byte	0x8
@@ -456,6 +554,17 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  225 009b 01       		.byte	0x1
  226 009c 08       		.byte	0x8
  227 009d 14020000 		.4byte	.LASF14
+=======
+ 219 008f 4B000000 		.4byte	.LASF12
+ 220 0093 02       		.uleb128 0x2
+ 221 0094 08       		.byte	0x8
+ 222 0095 04       		.byte	0x4
+ 223 0096 0E010000 		.4byte	.LASF13
+ 224 009a 02       		.uleb128 0x2
+ 225 009b 01       		.byte	0x1
+ 226 009c 08       		.byte	0x8
+ 227 009d 20020000 		.4byte	.LASF14
+>>>>>>> origin/master
  228 00a1 05       		.uleb128 0x5
  229 00a2 2A000000 		.4byte	.LASF15
  230 00a6 02       		.byte	0x2
@@ -464,7 +573,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  233 00ad 06       		.uleb128 0x6
  234 00ae 81000000 		.4byte	0x81
  235 00b2 07       		.uleb128 0x7
+<<<<<<< HEAD
  236 00b3 81000000 		.4byte	.LASF16
+=======
+ 236 00b3 38000000 		.4byte	.LASF16
+>>>>>>> origin/master
  237 00b7 01       		.byte	0x1
  238 00b8 46       		.byte	0x46
  239 00b9 00000000 		.4byte	.LFB0
@@ -472,13 +585,21 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  241 00c1 01       		.uleb128 0x1
  242 00c2 9C       		.byte	0x9c
  243 00c3 07       		.uleb128 0x7
+<<<<<<< HEAD
  244 00c4 54010000 		.4byte	.LASF17
+=======
+ 244 00c4 60010000 		.4byte	.LASF17
+>>>>>>> origin/master
  245 00c8 01       		.byte	0x1
  246 00c9 5F       		.byte	0x5f
  247 00ca 00000000 		.4byte	.LFB1
  248 00ce 10000000 		.4byte	.LFE1-.LFB1
  249 00d2 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 9
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 9
+>>>>>>> origin/master
 
 
  250 00d3 9C       		.byte	0x9c
@@ -492,27 +613,43 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  258 00e4 9C       		.byte	0x9c
  259 00e5 20010000 		.4byte	0x120
  260 00e9 09       		.uleb128 0x9
+<<<<<<< HEAD
  261 00ea F7000000 		.4byte	.LASF18
+=======
+ 261 00ea 03010000 		.4byte	.LASF18
+>>>>>>> origin/master
  262 00ee 01       		.byte	0x1
  263 00ef 86       		.byte	0x86
  264 00f0 76000000 		.4byte	0x76
  265 00f4 00000000 		.4byte	.LLST0
  266 00f8 0A       		.uleb128 0xa
+<<<<<<< HEAD
  267 00f9 10010000 		.4byte	.LASF19
+=======
+ 267 00f9 1C010000 		.4byte	.LASF19
+>>>>>>> origin/master
  268 00fd 01       		.byte	0x1
  269 00fe 86       		.byte	0x86
  270 00ff 6B000000 		.4byte	0x6b
  271 0103 01       		.uleb128 0x1
  272 0104 51       		.byte	0x51
  273 0105 0B       		.uleb128 0xb
+<<<<<<< HEAD
  274 0106 79000000 		.4byte	.LASF20
+=======
+ 274 0106 30000000 		.4byte	.LASF20
+>>>>>>> origin/master
  275 010a 01       		.byte	0x1
  276 010b 88       		.byte	0x88
  277 010c 81000000 		.4byte	0x81
  278 0110 01       		.uleb128 0x1
  279 0111 52       		.byte	0x52
  280 0112 0B       		.uleb128 0xb
+<<<<<<< HEAD
  281 0113 09010000 		.4byte	.LASF21
+=======
+ 281 0113 15010000 		.4byte	.LASF21
+>>>>>>> origin/master
  282 0117 01       		.byte	0x1
  283 0118 89       		.byte	0x89
  284 0119 81000000 		.4byte	0x81
@@ -520,7 +657,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  286 011e 50       		.byte	0x50
  287 011f 00       		.byte	0
  288 0120 0C       		.uleb128 0xc
+<<<<<<< HEAD
  289 0121 19020000 		.4byte	.LASF22
+=======
+ 289 0121 25020000 		.4byte	.LASF22
+>>>>>>> origin/master
  290 0125 01       		.byte	0x1
  291 0126 B0       		.byte	0xb0
  292 0127 76000000 		.4byte	0x76
@@ -529,7 +670,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  295 0133 01       		.uleb128 0x1
  296 0134 9C       		.byte	0x9c
  297 0135 0C       		.uleb128 0xc
+<<<<<<< HEAD
  298 0136 CD000000 		.4byte	.LASF23
+=======
+ 298 0136 D9000000 		.4byte	.LASF23
+>>>>>>> origin/master
  299 013a 01       		.byte	0x1
  300 013b C6       		.byte	0xc6
  301 013c 6B000000 		.4byte	0x6b
@@ -538,7 +683,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  304 0148 01       		.uleb128 0x1
  305 0149 9C       		.byte	0x9c
  306 014a 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 10
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 10
+>>>>>>> origin/master
 
 
  307              		.section	.debug_abbrev,"",%progbits
@@ -598,7 +747,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  361 0034 00       		.byte	0
  362 0035 00       		.byte	0
  363 0036 05       		.uleb128 0x5
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 11
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 11
+>>>>>>> origin/master
 
 
  364 0037 16       		.uleb128 0x16
@@ -658,7 +811,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  418 006e 19       		.uleb128 0x19
  419 006f 11       		.uleb128 0x11
  420 0070 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 12
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 12
+>>>>>>> origin/master
 
 
  421 0071 12       		.uleb128 0x12
@@ -718,7 +875,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  475 00a8 00       		.byte	0
  476 00a9 0C       		.uleb128 0xc
  477 00aa 2E       		.uleb128 0x2e
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 13
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 13
+>>>>>>> origin/master
 
 
  478 00ab 00       		.byte	0
@@ -778,7 +939,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  532 0028 00000000 		.4byte	.LFB3
  533 002c 0C000000 		.4byte	.LFE3-.LFB3
  534 0030 00000000 		.4byte	.LFB4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 14
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 14
+>>>>>>> origin/master
 
 
  535 0034 04000000 		.4byte	.LFE4-.LFB4
@@ -814,6 +979,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  557              	.LASF15:
  558 002a 72656733 		.ascii	"reg32\000"
  558      3200
+<<<<<<< HEAD
  559              	.LASF26:
  560 0030 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
  560      6F63756D 
@@ -847,23 +1013,67 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  569      7200
  570              	.LASF5:
  571 00a8 6C6F6E67 		.ascii	"long unsigned int\000"
+=======
+ 559              	.LASF20:
+ 560 0030 6D61736B 		.ascii	"maskVal\000"
+ 560      56616C00 
+ 561              	.LASF16:
+ 562 0038 4D696372 		.ascii	"MicroSec_CLK_Start\000"
+ 562      6F536563 
+ 562      5F434C4B 
+ 562      5F537461 
+ 562      727400
+ 563              	.LASF12:
+ 564 004b 666C6F61 		.ascii	"float\000"
+ 564      7400
+ 565              	.LASF1:
+ 566 0051 756E7369 		.ascii	"unsigned char\000"
+ 566      676E6564 
+ 566      20636861 
+ 566      7200
+ 567              	.LASF26:
+ 568 005f 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 568      73657273 
+ 568      5C4D6F73 
+ 568      65735C44 
+ 568      6F63756D 
+ 569 008d 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 15
+
+
+ 569      5C627132 
+ 569      30303220 
+ 569      54657374 
+ 569      65725C62 
+ 570              	.LASF5:
+ 571 00b4 6C6F6E67 		.ascii	"long unsigned int\000"
+>>>>>>> origin/master
  571      20756E73 
  571      69676E65 
  571      6420696E 
  571      7400
  572              	.LASF3:
+<<<<<<< HEAD
  573 00ba 73686F72 		.ascii	"short unsigned int\000"
+=======
+ 573 00c6 73686F72 		.ascii	"short unsigned int\000"
+>>>>>>> origin/master
  573      7420756E 
  573      7369676E 
  573      65642069 
  573      6E7400
  574              	.LASF23:
+<<<<<<< HEAD
  575 00cd 4D696372 		.ascii	"MicroSec_CLK_GetFractionalDividerRegister\000"
+=======
+ 575 00d9 4D696372 		.ascii	"MicroSec_CLK_GetFractionalDividerRegister\000"
+>>>>>>> origin/master
  575      6F536563 
  575      5F434C4B 
  575      5F476574 
  575      46726163 
  576              	.LASF18:
+<<<<<<< HEAD
  577 00f7 636C6B44 		.ascii	"clkDivider\000"
  577      69766964 
  577      657200
@@ -875,16 +1085,34 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  581      616C00
  582              	.LASF19:
  583 0110 636C6B46 		.ascii	"clkFractional\000"
+=======
+ 577 0103 636C6B44 		.ascii	"clkDivider\000"
+ 577      69766964 
+ 577      657200
+ 578              	.LASF13:
+ 579 010e 646F7562 		.ascii	"double\000"
+ 579      6C6500
+ 580              	.LASF21:
+ 581 0115 72656756 		.ascii	"regVal\000"
+ 581      616C00
+ 582              	.LASF19:
+ 583 011c 636C6B46 		.ascii	"clkFractional\000"
+>>>>>>> origin/master
  583      72616374 
  583      696F6E61 
  583      6C00
  584              	.LASF25:
+<<<<<<< HEAD
  585 011e 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\MicroSec_CLK.c\000"
+=======
+ 585 012a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\MicroSec_CLK.c\000"
+>>>>>>> origin/master
  585      6E657261 
  585      7465645F 
  585      536F7572 
  585      63655C50 
  586              	.LASF10:
+<<<<<<< HEAD
  587 0146 75696E74 		.ascii	"uint16\000"
  587      313600
  588              	.LASF11:
@@ -892,55 +1120,97 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  589      333200
  590              	.LASF17:
  591 0154 4D696372 		.ascii	"MicroSec_CLK_Stop\000"
+=======
+ 587 0152 75696E74 		.ascii	"uint16\000"
+ 587      313600
+ 588              	.LASF11:
+ 589 0159 75696E74 		.ascii	"uint32\000"
+ 589      333200
+ 590              	.LASF17:
+ 591 0160 4D696372 		.ascii	"MicroSec_CLK_Stop\000"
+>>>>>>> origin/master
  591      6F536563 
  591      5F434C4B 
  591      5F53746F 
  591      7000
  592              	.LASF8:
+<<<<<<< HEAD
  593 0166 756E7369 		.ascii	"unsigned int\000"
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 16
+=======
+ 593 0172 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\cctBWq81.s 			page 16
+>>>>>>> origin/master
 
 
  593      676E6564 
  593      20696E74 
  593      00
  594              	.LASF7:
+<<<<<<< HEAD
  595 0173 6C6F6E67 		.ascii	"long long unsigned int\000"
+=======
+ 595 017f 6C6F6E67 		.ascii	"long long unsigned int\000"
+>>>>>>> origin/master
  595      206C6F6E 
  595      6720756E 
  595      7369676E 
  595      65642069 
  596              	.LASF24:
+<<<<<<< HEAD
  597 018a 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+=======
+ 597 0196 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+>>>>>>> origin/master
  597      4320342E 
  597      382E3420 
  597      32303134 
  597      30353236 
+<<<<<<< HEAD
  598 01bd 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+=======
+ 598 01c9 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+>>>>>>> origin/master
  598      20726576 
  598      6973696F 
  598      6E203231 
  598      31333538 
+<<<<<<< HEAD
  599 01f0 67202D66 		.ascii	"g -ffunction-sections\000"
+=======
+ 599 01fc 67202D66 		.ascii	"g -ffunction-sections\000"
+>>>>>>> origin/master
  599      66756E63 
  599      74696F6E 
  599      2D736563 
  599      74696F6E 
  600              	.LASF6:
+<<<<<<< HEAD
  601 0206 6C6F6E67 		.ascii	"long long int\000"
+=======
+ 601 0212 6C6F6E67 		.ascii	"long long int\000"
+>>>>>>> origin/master
  601      206C6F6E 
  601      6720696E 
  601      7400
  602              	.LASF14:
+<<<<<<< HEAD
  603 0214 63686172 		.ascii	"char\000"
  603      00
  604              	.LASF22:
  605 0219 4D696372 		.ascii	"MicroSec_CLK_GetDividerRegister\000"
+=======
+ 603 0220 63686172 		.ascii	"char\000"
+ 603      00
+ 604              	.LASF22:
+ 605 0225 4D696372 		.ascii	"MicroSec_CLK_GetDividerRegister\000"
+>>>>>>> origin/master
  605      6F536563 
  605      5F434C4B 
  605      5F476574 
  605      44697669 
  606              	.LASF2:
+<<<<<<< HEAD
  607 0239 73686F72 		.ascii	"short int\000"
  607      7420696E 
  607      7400
@@ -953,6 +1223,20 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccTZWTpt.s 			page 1
  611      00
  612              	.LASF0:
  613 0252 7369676E 		.ascii	"signed char\000"
+=======
+ 607 0245 73686F72 		.ascii	"short int\000"
+ 607      7420696E 
+ 607      7400
+ 608              	.LASF9:
+ 609 024f 75696E74 		.ascii	"uint8\000"
+ 609      3800
+ 610              	.LASF4:
+ 611 0255 6C6F6E67 		.ascii	"long int\000"
+ 611      20696E74 
+ 611      00
+ 612              	.LASF0:
+ 613 025e 7369676E 		.ascii	"signed char\000"
+>>>>>>> origin/master
  613      65642063 
  613      68617200 
  614              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

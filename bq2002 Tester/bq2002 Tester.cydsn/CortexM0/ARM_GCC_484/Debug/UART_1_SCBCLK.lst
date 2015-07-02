@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
   30:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** *
   31:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** * Parameters:
   32:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 2
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 2
+>>>>>>> origin/master
 
 
   33:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** *    clock is started.
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
   38              	.L3:
   39 000e C046     		.align	2
   40              	.L2:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 3
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 3
+>>>>>>> origin/master
 
 
   41 0010 40000240 		.word	1073872960
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
   57 0002 1A68     		ldr	r2, [r3]
   58 0004 5200     		lsl	r2, r2, #1
   59 0006 5208     		lsr	r2, r2, #1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 4
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 4
+>>>>>>> origin/master
 
 
   60 0008 1A60     		str	r2, [r3]
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  145:.\Generated_Source\PSoC4/UART_1_SCBCLK.c ****     regVal = maskVal |
  146:.\Generated_Source\PSoC4/UART_1_SCBCLK.c ****         ((uint32)((uint32)clkDivider <<  UART_1_SCBCLK_DIV_INT_SHIFT) & UART_1_SCBCLK_DIV_INT_MASK)
  147:.\Generated_Source\PSoC4/UART_1_SCBCLK.c ****         ((uint32)((uint32)clkFractional << UART_1_SCBCLK_DIV_FRAC_SHIFT) & UART_1_SCBCLK_DIV_FRAC_M
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 5
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 5
+>>>>>>> origin/master
 
 
  148:.\Generated_Source\PSoC4/UART_1_SCBCLK.c ****     
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  173:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** *  divide by 2, the return value will be 1.
  174:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** *
  175:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** *******************************************************************************/
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 6
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 6
+>>>>>>> origin/master
 
 
  176:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** uint16 UART_1_SCBCLK_GetDividerRegister(void)
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  204:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** #else
  205:.\Generated_Source\PSoC4/UART_1_SCBCLK.c ****     return 0u;
  206:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** #endif /* UART_1_SCBCLK__FRAC_MASK */
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 7
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 7
+>>>>>>> origin/master
 
 
  207:.\Generated_Source\PSoC4/UART_1_SCBCLK.c **** }
@@ -379,46 +407,51 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  151 0006 00000000 		.4byte	.Ldebug_abbrev0
  152 000a 04       		.byte	0x4
  153 000b 01       		.uleb128 0x1
- 154 000c 85010000 		.4byte	.LASF24
+ 154 000c 91010000 		.4byte	.LASF24
  155 0010 01       		.byte	0x1
- 156 0011 6A000000 		.4byte	.LASF25
- 157 0015 19000000 		.4byte	.LASF26
+ 156 0011 21000000 		.4byte	.LASF25
+ 157 0015 BE000000 		.4byte	.LASF26
  158 0019 00000000 		.4byte	.Ldebug_ranges0+0
  159 001d 00000000 		.4byte	0
  160 0021 00000000 		.4byte	.Ldebug_line0
  161 0025 02       		.uleb128 0x2
  162 0026 01       		.byte	0x1
  163 0027 06       		.byte	0x6
- 164 0028 2D020000 		.4byte	.LASF0
+ 164 0028 39020000 		.4byte	.LASF0
  165 002c 02       		.uleb128 0x2
  166 002d 01       		.byte	0x1
  167 002e 08       		.byte	0x8
- 168 002f F9000000 		.4byte	.LASF1
+ 168 002f B0000000 		.4byte	.LASF1
  169 0033 02       		.uleb128 0x2
  170 0034 02       		.byte	0x2
  171 0035 05       		.byte	0x5
- 172 0036 14020000 		.4byte	.LASF2
+ 172 0036 20020000 		.4byte	.LASF2
  173 003a 02       		.uleb128 0x2
  174 003b 02       		.byte	0x2
  175 003c 07       		.byte	0x7
- 176 003d 19010000 		.4byte	.LASF3
+ 176 003d 25010000 		.4byte	.LASF3
  177 0041 02       		.uleb128 0x2
  178 0042 04       		.byte	0x4
  179 0043 05       		.byte	0x5
- 180 0044 24020000 		.4byte	.LASF4
+ 180 0044 30020000 		.4byte	.LASF4
  181 0048 02       		.uleb128 0x2
  182 0049 04       		.byte	0x4
  183 004a 07       		.byte	0x7
- 184 004b 07010000 		.4byte	.LASF5
+ 184 004b 13010000 		.4byte	.LASF5
  185 004f 02       		.uleb128 0x2
  186 0050 08       		.byte	0x8
  187 0051 05       		.byte	0x5
- 188 0052 01020000 		.4byte	.LASF6
+ 188 0052 0D020000 		.4byte	.LASF6
  189 0056 02       		.uleb128 0x2
  190 0057 08       		.byte	0x8
  191 0058 07       		.byte	0x7
+<<<<<<< HEAD
  192 0059 6E010000 		.4byte	.LASF7
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 8
+=======
+ 192 0059 7A010000 		.4byte	.LASF7
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 8
+>>>>>>> origin/master
 
 
  193 005d 03       		.uleb128 0x3
@@ -428,34 +461,34 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  197 0064 02       		.uleb128 0x2
  198 0065 04       		.byte	0x4
  199 0066 07       		.byte	0x7
- 200 0067 61010000 		.4byte	.LASF8
+ 200 0067 6D010000 		.4byte	.LASF8
  201 006b 04       		.uleb128 0x4
- 202 006c 1E020000 		.4byte	.LASF9
+ 202 006c 2A020000 		.4byte	.LASF9
  203 0070 02       		.byte	0x2
  204 0071 B3       		.byte	0xb3
  205 0072 2C000000 		.4byte	0x2c
  206 0076 04       		.uleb128 0x4
- 207 0077 53010000 		.4byte	.LASF10
+ 207 0077 5F010000 		.4byte	.LASF10
  208 007b 02       		.byte	0x2
  209 007c B4       		.byte	0xb4
  210 007d 3A000000 		.4byte	0x3a
  211 0081 04       		.uleb128 0x4
- 212 0082 5A010000 		.4byte	.LASF11
+ 212 0082 66010000 		.4byte	.LASF11
  213 0086 02       		.byte	0x2
  214 0087 B5       		.byte	0xb5
  215 0088 48000000 		.4byte	0x48
  216 008c 02       		.uleb128 0x2
  217 008d 04       		.byte	0x4
  218 008e 04       		.byte	0x4
- 219 008f A7000000 		.4byte	.LASF12
+ 219 008f 5E000000 		.4byte	.LASF12
  220 0093 02       		.uleb128 0x2
  221 0094 08       		.byte	0x8
  222 0095 04       		.byte	0x4
- 223 0096 37010000 		.4byte	.LASF13
+ 223 0096 43010000 		.4byte	.LASF13
  224 009a 02       		.uleb128 0x2
  225 009b 01       		.byte	0x1
  226 009c 08       		.byte	0x8
- 227 009d 0F020000 		.4byte	.LASF14
+ 227 009d 1B020000 		.4byte	.LASF14
  228 00a1 05       		.uleb128 0x5
  229 00a2 00000000 		.4byte	.LASF15
  230 00a6 02       		.byte	0x2
@@ -464,7 +497,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  233 00ad 06       		.uleb128 0x6
  234 00ae 81000000 		.4byte	0x81
  235 00b2 07       		.uleb128 0x7
- 236 00b3 93000000 		.4byte	.LASF16
+ 236 00b3 4A000000 		.4byte	.LASF16
  237 00b7 01       		.byte	0x1
  238 00b8 46       		.byte	0x46
  239 00b9 00000000 		.4byte	.LFB0
@@ -478,12 +511,16 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  247 00ca 00000000 		.4byte	.LFB1
  248 00ce 10000000 		.4byte	.LFE1-.LFB1
  249 00d2 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 9
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 9
+>>>>>>> origin/master
 
 
  250 00d3 9C       		.byte	0x9c
  251 00d4 08       		.uleb128 0x8
- 252 00d5 AD000000 		.4byte	.LASF27
+ 252 00d5 64000000 		.4byte	.LASF27
  253 00d9 01       		.byte	0x1
  254 00da 86       		.byte	0x86
  255 00db 00000000 		.4byte	.LFB2
@@ -492,27 +529,27 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  258 00e4 9C       		.byte	0x9c
  259 00e5 20010000 		.4byte	0x120
  260 00e9 09       		.uleb128 0x9
- 261 00ea 2C010000 		.4byte	.LASF18
+ 261 00ea 38010000 		.4byte	.LASF18
  262 00ee 01       		.byte	0x1
  263 00ef 86       		.byte	0x86
  264 00f0 76000000 		.4byte	0x76
  265 00f4 00000000 		.4byte	.LLST0
  266 00f8 0A       		.uleb128 0xa
- 267 00f9 45010000 		.4byte	.LASF19
+ 267 00f9 51010000 		.4byte	.LASF19
  268 00fd 01       		.byte	0x1
  269 00fe 86       		.byte	0x86
  270 00ff 6B000000 		.4byte	0x6b
  271 0103 01       		.uleb128 0x1
  272 0104 51       		.byte	0x51
  273 0105 0B       		.uleb128 0xb
- 274 0106 62000000 		.4byte	.LASF20
+ 274 0106 19000000 		.4byte	.LASF20
  275 010a 01       		.byte	0x1
  276 010b 88       		.byte	0x88
  277 010c 81000000 		.4byte	0x81
  278 0110 01       		.uleb128 0x1
  279 0111 52       		.byte	0x52
  280 0112 0B       		.uleb128 0xb
- 281 0113 3E010000 		.4byte	.LASF21
+ 281 0113 4A010000 		.4byte	.LASF21
  282 0117 01       		.byte	0x1
  283 0118 89       		.byte	0x89
  284 0119 81000000 		.4byte	0x81
@@ -520,7 +557,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  286 011e 50       		.byte	0x50
  287 011f 00       		.byte	0
  288 0120 0C       		.uleb128 0xc
- 289 0121 D8000000 		.4byte	.LASF22
+ 289 0121 8F000000 		.4byte	.LASF22
  290 0125 01       		.byte	0x1
  291 0126 B0       		.byte	0xb0
  292 0127 76000000 		.4byte	0x76
@@ -529,7 +566,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  295 0133 01       		.uleb128 0x1
  296 0134 9C       		.byte	0x9c
  297 0135 0C       		.uleb128 0xc
- 298 0136 39020000 		.4byte	.LASF23
+ 298 0136 45020000 		.4byte	.LASF23
  299 013a 01       		.byte	0x1
  300 013b C6       		.byte	0xc6
  301 013c 6B000000 		.4byte	0x6b
@@ -538,7 +575,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  304 0148 01       		.uleb128 0x1
  305 0149 9C       		.byte	0x9c
  306 014a 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 10
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 10
+>>>>>>> origin/master
 
 
  307              		.section	.debug_abbrev,"",%progbits
@@ -598,7 +639,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  361 0034 00       		.byte	0
  362 0035 00       		.byte	0
  363 0036 05       		.uleb128 0x5
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 11
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 11
+>>>>>>> origin/master
 
 
  364 0037 16       		.uleb128 0x16
@@ -658,7 +703,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  418 006e 19       		.uleb128 0x19
  419 006f 11       		.uleb128 0x11
  420 0070 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 12
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 12
+>>>>>>> origin/master
 
 
  421 0071 12       		.uleb128 0x12
@@ -718,7 +767,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  475 00a8 00       		.byte	0
  476 00a9 0C       		.uleb128 0xc
  477 00aa 2E       		.uleb128 0x2e
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 13
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 13
+>>>>>>> origin/master
 
 
  478 00ab 00       		.byte	0
@@ -778,7 +831,11 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  532 0028 00000000 		.4byte	.LFB3
  533 002c 0C000000 		.4byte	.LFE3-.LFB3
  534 0030 00000000 		.4byte	.LFB4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 14
+=======
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 14
+>>>>>>> origin/master
 
 
  535 0034 04000000 		.4byte	.LFE4-.LFB4
@@ -814,6 +871,7 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  558      4342434C 
  558      4B5F5374 
  558      6F7000
+<<<<<<< HEAD
  559              	.LASF26:
  560 0019 453A5C44 		.ascii	"E:\\Documents\\GitHub\\bq2002-chip-tester\\bq2002 T"
  560      6F63756D 
@@ -863,94 +921,150 @@ ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 1
  575      676E6564 
  575      20636861 
  575      7200
+=======
+ 559              	.LASF20:
+ 560 0019 6D61736B 		.ascii	"maskVal\000"
+ 560      56616C00 
+ 561              	.LASF25:
+ 562 0021 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\UART_1_SCBCLK.c\000"
+ 562      6E657261 
+ 562      7465645F 
+ 562      536F7572 
+ 562      63655C50 
+ 563              	.LASF16:
+ 564 004a 55415254 		.ascii	"UART_1_SCBCLK_Start\000"
+ 564      5F315F53 
+ 564      4342434C 
+ 564      4B5F5374 
+ 564      61727400 
+ 565              	.LASF12:
+ 566 005e 666C6F61 		.ascii	"float\000"
+ 566      7400
+ 567              	.LASF27:
+ 568 0064 55415254 		.ascii	"UART_1_SCBCLK_SetFractionalDividerRegister\000"
+ 568      5F315F53 
+ 568      4342434C 
+ 568      4B5F5365 
+ 568      74467261 
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 15
+
+
+ 569              	.LASF22:
+ 570 008f 55415254 		.ascii	"UART_1_SCBCLK_GetDividerRegister\000"
+ 570      5F315F53 
+ 570      4342434C 
+ 570      4B5F4765 
+ 570      74446976 
+ 571              	.LASF1:
+ 572 00b0 756E7369 		.ascii	"unsigned char\000"
+ 572      676E6564 
+ 572      20636861 
+ 572      7200
+ 573              	.LASF26:
+ 574 00be 433A5C55 		.ascii	"C:\\Users\\Moses\\Documents\\GitHub\\bq2002-chip-te"
+ 574      73657273 
+ 574      5C4D6F73 
+ 574      65735C44 
+ 574      6F63756D 
+ 575 00ec 73746572 		.ascii	"ster\\bq2002 Tester\\bq2002 Tester.cydsn\000"
+ 575      5C627132 
+ 575      30303220 
+ 575      54657374 
+ 575      65725C62 
+>>>>>>> origin/master
  576              	.LASF5:
- 577 0107 6C6F6E67 		.ascii	"long unsigned int\000"
+ 577 0113 6C6F6E67 		.ascii	"long unsigned int\000"
  577      20756E73 
  577      69676E65 
  577      6420696E 
  577      7400
  578              	.LASF3:
- 579 0119 73686F72 		.ascii	"short unsigned int\000"
+ 579 0125 73686F72 		.ascii	"short unsigned int\000"
  579      7420756E 
  579      7369676E 
  579      65642069 
  579      6E7400
  580              	.LASF18:
- 581 012c 636C6B44 		.ascii	"clkDivider\000"
+ 581 0138 636C6B44 		.ascii	"clkDivider\000"
  581      69766964 
  581      657200
  582              	.LASF13:
- 583 0137 646F7562 		.ascii	"double\000"
+ 583 0143 646F7562 		.ascii	"double\000"
  583      6C6500
  584              	.LASF21:
- 585 013e 72656756 		.ascii	"regVal\000"
+ 585 014a 72656756 		.ascii	"regVal\000"
  585      616C00
  586              	.LASF19:
- 587 0145 636C6B46 		.ascii	"clkFractional\000"
+ 587 0151 636C6B46 		.ascii	"clkFractional\000"
  587      72616374 
  587      696F6E61 
  587      6C00
  588              	.LASF10:
- 589 0153 75696E74 		.ascii	"uint16\000"
+ 589 015f 75696E74 		.ascii	"uint16\000"
  589      313600
  590              	.LASF11:
- 591 015a 75696E74 		.ascii	"uint32\000"
+ 591 0166 75696E74 		.ascii	"uint32\000"
  591      333200
  592              	.LASF8:
+<<<<<<< HEAD
  593 0161 756E7369 		.ascii	"unsigned int\000"
 ARM GAS  C:\Users\Moses\AppData\Local\Temp\cckQoOgc.s 			page 16
+=======
+ 593 016d 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\Moses\AppData\Local\Temp\ccOK6r7S.s 			page 16
+>>>>>>> origin/master
 
 
  593      676E6564 
  593      20696E74 
  593      00
  594              	.LASF7:
- 595 016e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 595 017a 6C6F6E67 		.ascii	"long long unsigned int\000"
  595      206C6F6E 
  595      6720756E 
  595      7369676E 
  595      65642069 
  596              	.LASF24:
- 597 0185 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 597 0191 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
  597      4320342E 
  597      382E3420 
  597      32303134 
  597      30353236 
- 598 01b8 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 598 01c4 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
  598      20726576 
  598      6973696F 
  598      6E203231 
  598      31333538 
- 599 01eb 67202D66 		.ascii	"g -ffunction-sections\000"
+ 599 01f7 67202D66 		.ascii	"g -ffunction-sections\000"
  599      66756E63 
  599      74696F6E 
  599      2D736563 
  599      74696F6E 
  600              	.LASF6:
- 601 0201 6C6F6E67 		.ascii	"long long int\000"
+ 601 020d 6C6F6E67 		.ascii	"long long int\000"
  601      206C6F6E 
  601      6720696E 
  601      7400
  602              	.LASF14:
- 603 020f 63686172 		.ascii	"char\000"
+ 603 021b 63686172 		.ascii	"char\000"
  603      00
  604              	.LASF2:
- 605 0214 73686F72 		.ascii	"short int\000"
+ 605 0220 73686F72 		.ascii	"short int\000"
  605      7420696E 
  605      7400
  606              	.LASF9:
- 607 021e 75696E74 		.ascii	"uint8\000"
+ 607 022a 75696E74 		.ascii	"uint8\000"
  607      3800
  608              	.LASF4:
- 609 0224 6C6F6E67 		.ascii	"long int\000"
+ 609 0230 6C6F6E67 		.ascii	"long int\000"
  609      20696E74 
  609      00
  610              	.LASF0:
- 611 022d 7369676E 		.ascii	"signed char\000"
+ 611 0239 7369676E 		.ascii	"signed char\000"
  611      65642063 
  611      68617200 
  612              	.LASF23:
- 613 0239 55415254 		.ascii	"UART_1_SCBCLK_GetFractionalDividerRegister\000"
+ 613 0245 55415254 		.ascii	"UART_1_SCBCLK_GetFractionalDividerRegister\000"
  613      5F315F53 
  613      4342434C 
  613      4B5F4765 
