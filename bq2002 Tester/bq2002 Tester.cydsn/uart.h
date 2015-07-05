@@ -10,24 +10,15 @@
  * ========================================
 */
 
-#ifndef BQ2002_H
-#define BQ2002_H
-
+#ifndef UART_H
+#define UART_H
+    
+#include <stdbool.h>
 #include <project.h>
-
-typedef enum TM_Mode TM_Mode_t;
-
-enum TM_Mode {
-    TM_Mode_Half_C,
-    TM_Mode_1C,
-    TM_Mode_2C
-};
-
-TM_Mode_t TM_Mode_GetMode();
-void TM_Mode_SetMode(TM_Mode_t newMode);
-
-uint16 CC_CheckPWM();
-void BAT_Simulate();
-
+    
+void UART_printCheck(char* message, bool success);
+void UART_printInt(uint16 number);
+    
 #endif
+
 /* [] END OF FILE */

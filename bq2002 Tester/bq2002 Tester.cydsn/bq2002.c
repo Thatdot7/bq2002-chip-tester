@@ -14,6 +14,8 @@
 
 static TM_Mode_t currentMode = TM_Mode_1C;
 
+extern uint16 pulse_width;
+
 TM_Mode_t TM_Mode_GetMode()
 {
     return currentMode;
@@ -45,7 +47,24 @@ uint16 CC_CheckPWM()
     TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_RELOAD);
     TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
     CyDelay(70);
-    return TCPWM_ReadCapture();
+    TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_STOP);
+    return pulse_width;
+}
+
+void BAT_Simulate()
+{
+    uint8 IDAC_VAL;
+            
+    for(IDAC_VAL = 50; IDAC_VAL < 100; IDAC_VAL++)
+    {
+        IDAC_1_SetValue(IDAC_VAL);
+        CyDelay(10);
+    }
+    for(IDAC_VAL = 100; IDAC_VAL > 90; IDAC_VAL--)
+    {
+        IDAC_1_SetValue(IDAC_VAL);
+        CyDelay(100);
+    }
 }
 
 /* [] END OF FILE */
