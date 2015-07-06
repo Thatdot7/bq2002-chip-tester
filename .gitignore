@@ -43,14 +43,16 @@ Temporary Items
 .apdisk
 
 # Other file types directly associated with the PSoC Creator application
-bq2002 Tester/bq2002 Tester.cydsn/*.cywrk.*
-bq2002 Tester/bq2002 Tester.cydsn/*.cyprj.*
-bq2002 Tester/bq2002 Tester.cydsn/*.cycdx
-bq2002 Tester/bq2002 Tester.cydsn/*.cyfit
-bq2002 Tester/bq2002 Tester.cydsn/*.rpt
-bq2002 Tester/bq2002 Tester.cydsn/*.uvproj
-bq2002 Tester/bq2002 Tester.cydsn/*_timing.html
-bq2002 Tester/bq2002 Tester.cydsn/*.cydsn/codegentemp/
-bq2002 Tester/bq2002 Tester.cydsn/*.cydsn/CortexM0/
-bq2002 Tester/bq2002 Tester.cydsn/*.cydsn/Generated_Source/
-bq2002 Tester/bq2002 Tester.cydsn/*.cydsn/Export/
+bq2002 Tester/*.cywrk.*
+bq2002 Tester/*.cydsn/*.cywrk.*
+bq2002 Tester/*.cydsn/*.cyprj.*
+bq2002 Tester/*.cydsn/*.cycdx
+bq2002 Tester/*.cydsn/*.cyfit
+bq2002 Tester/*.cydsn/*.rpt
+bq2002 Tester/*.cydsn/*.svd
+bq2002 Tester/*.cydsn/*.uvproj
+bq2002 Tester/*.cydsn/*_timing.html
+bq2002 Tester/*.cydsn/codegentemp/
+bq2002 Tester/*.cydsn/CortexM0/
+bq2002 Tester/*.cydsn/Generated_Source/
+bq2002 Tester/*.cydsn/Export/
